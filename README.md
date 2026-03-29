@@ -12,23 +12,22 @@ Each skill is a self-contained folder with a `SKILL.md` file that teaches the ag
 
 ## Installation
 
-### Claude Code (Plugin Marketplace)
+### Quick Install (single skill)
 
-Register this repository as a plugin marketplace:
+```bash
+git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills && mkdir -p ~/.claude/skills && cp -r /tmp/tz-skills/humanize ~/.claude/skills/ && rm -rf /tmp/tz-skills
+```
+
+Replace `humanize` with any skill name from the table above.
+
+### Plugin Marketplace
 
 ```
 /plugin marketplace add tzengyuxio/skills
-```
-
-Then install a specific skill:
-
-```
 /plugin install humanize@tzengyuxio-skills
 ```
 
-### Manual
-
-Copy the desired skill folder into your Claude Code skills directory:
+### Manual (if already cloned)
 
 ```bash
 cp -r humanize ~/.claude/skills/humanize

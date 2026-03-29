@@ -8,6 +8,27 @@ This skill scans text for common LLM writing characteristics — grandiose frami
 
 Primarily targets Traditional Chinese (繁體中文) writing, but the checklist and principles apply to any language.
 
+## Installation
+
+One-liner (clone and install):
+
+```bash
+git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills && mkdir -p ~/.claude/skills && cp -r /tmp/tz-skills/humanize ~/.claude/skills/ && rm -rf /tmp/tz-skills
+```
+
+Or via plugin marketplace in Claude Code:
+
+```
+/plugin marketplace add tzengyuxio/skills
+/plugin install humanize@tzengyuxio-skills
+```
+
+Manual (if already cloned):
+
+```bash
+cp -r humanize ~/.claude/skills/humanize
+```
+
 ## Usage
 
 ```
@@ -20,52 +41,50 @@ Or invoke it without arguments after writing or editing a markdown file in the c
 
 ## How It Works
 
-1. **Scan** — Checks text against a detailed checklist of AI writing patterns, categorized as Hard flags (almost certainly AI) and Soft flags (overused by AI but sometimes human)
+1. **Scan** — Checks text against a detailed checklist of 26 AI writing patterns, categorized as Hard flags (almost certainly AI) and Soft flags (overused by AI but sometimes human)
 2. **Report** — Presents findings in a table with location, pattern type, and explanation
-3. **Rewrite** — Applies rewriting principles (specific over general, show don't announce, plain vocabulary, etc.) to fix all flagged passages
-4. **Output** — Saves rewritten version as a new file (e.g., `article-v2.md`), preserving the original
+3. **Rewrite** — Applies 13 rewriting principles and personality/voice guidance to fix flagged passages
+4. **Audit** — Two-pass anti-AI self-check: pattern re-scan + "what still feels AI?" gut check
+5. **Output** — Saves rewritten version as a new file with `_clean` suffix (e.g., `article_clean.md`), preserving the original
 
 ## Pattern Categories
 
-| Category | ID | Examples |
-|----------|----|---------|
-| Content | C1–C6 | Grandiose framing, hollow summaries, vague attribution, superficial analysis, promotional tone, detail regression |
-| Structure | S1–S7 | Tricolon abuse, negative parallelisms, formulaic endings, mechanical lists, excessive bold, em dash overuse, formulaic "despite" pattern |
-| Vocabulary | V1–V5 | LLM signature words, hedging overuse, copula avoidance, elegant variation (synonym cycling), participle chains |
+| Category | ID | Patterns |
+|----------|----|----------|
+| Content | C1–C7 | Grandiose framing, hollow summaries, vague attribution, superficial analysis, promotional tone, detail regression, sycophantic tone |
+| Structure | S1–S8 | Tricolon abuse, negative parallelisms, formulaic endings, mechanical lists, excessive bold, em dash overuse, formulaic "despite", false ranges |
+| Vocabulary | V1–V6 | LLM signature words, hedging overuse, copula avoidance, elegant variation, participle chains, filler phrases |
 | Meta | M1–M4 | Chatbot artifacts, emoji in prose, numbered paragraphs as prose, markup artifacts |
+
+Each pattern includes a Before/After example demonstrating the expected rewrite.
 
 ## Rewriting Principles
 
-- Specific over general
-- Show, don't announce
-- Flat over escalating
-- Earned conclusions only
-- Name or drop (attributions)
-- Vary sentence structure
-- Allow imperfection
-- Use plain vocabulary
-- Bold for structure, not emphasis
-- Prefer prose over lists
-- Repeat naturally (don't cycle synonyms)
-- Use simple verbs (「是」over「作為」)
-- Preserve sharp details (don't smooth out specifics)
+1. Specific over general
+2. Show, don't announce
+3. Flat over escalating
+4. Earned conclusions only
+5. Name or drop (attributions)
+6. Vary sentence structure
+7. Allow imperfection
+8. Use plain vocabulary
+9. Bold for structure, not emphasis
+10. Prefer prose over lists
+11. Repeat naturally (don't cycle synonyms)
+12. Use simple verbs (「是」over「作為」)
+13. Preserve sharp details (don't smooth out specifics)
 
-## Installation
-
-Copy the skill folder into your Claude Code skills directory:
-
-```bash
-cp -r humanize ~/.claude/skills/humanize
-```
-
-Or, if this repository is registered as a plugin marketplace:
-
-```
-/plugin marketplace add tzengyuxio/skills
-/plugin install humanize@tzengyuxio-skills
-```
+Plus a **Personality and Voice** section for essays and opinion pieces: vary rhythm, acknowledge complexity, allow first person, trust the reader, cut the bow.
 
 ## Changelog
+
+### v3 — 2026-03-29
+
+- Added Before/After examples for every pattern
+- Added "Personality and Voice" section for injecting human voice after cleanup
+- Upgraded self-check to two-pass anti-AI audit (pattern re-scan + gut check)
+- Added 3 new patterns: C7 (sycophantic tone), S8 (false ranges), V6 (filler phrases)
+- Total: 26 patterns, 13 rewriting principles
 
 ### v2 — 2026-03-29
 
@@ -73,7 +92,7 @@ Or, if this repository is registered as a plugin marketplace:
 - Expanded V1 signature word lists (Chinese and English)
 - Split S2 into two variants: denial-redefinition vs escalation
 - Added 3 rewriting principles: repeat naturally, use simple verbs, preserve sharp details
-- Added self-check step: rewritten text is scanned against the same checklist before output
+- Added self-check step
 - Added English Wikipedia reference
 
 ### v1 — 2026-03-29
@@ -84,3 +103,5 @@ Or, if this repository is registered as a plugin marketplace:
 
 - [Wikipedia:AI生成文的特徵](https://zh.wikipedia.org/wiki/Wikipedia:AI%E7%94%9F%E6%88%90%E6%96%87%E7%9A%84%E7%89%B9%E5%BE%B5)
 - [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
+- [blader/humanizer](https://github.com/blader/humanizer) — English-focused humanizer skill, inspiration for personality/voice section and before/after examples
+- [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) — Simplified Chinese adaptation of blader/humanizer
