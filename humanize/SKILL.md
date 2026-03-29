@@ -34,7 +34,9 @@ Read the checklist below and flag every instance found in the text. Categorize f
 
 ### Checklist: Content Patterns
 
-Reference: [Wikipedia:AI生成文的特徵](https://zh.wikipedia.org/wiki/Wikipedia:AI%E7%94%9F%E6%88%90%E6%96%87%E7%9A%84%E7%89%B9%E5%BE%B5)
+References:
+- [Wikipedia:AI生成文的特徵](https://zh.wikipedia.org/wiki/Wikipedia:AI%E7%94%9F%E6%88%90%E6%96%87%E7%9A%84%E7%89%B9%E5%BE%B5)
+- [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 
 #### C1. Grandiose Framing (用詞浮誇) [Hard]
 Overstating importance, historical influence, or macro-level significance. Treating mundane facts as monumental.
@@ -82,6 +84,19 @@ Examples to flag:
 - 「獨特的」「創新的」「令人驚豔的」used without substantiation
 - 「完美地融合了...與...」
 - 「為讀者/用戶帶來全新的體驗」
+- 「坐落於」「位於...的心臟地帶」
+- 「蓬勃發展」「豐富的文化底蘊」
+
+#### C6. Detail Regression (細節消失) [Hard]
+AI tends toward mean reversion — omitting specific, unusual, or granular details and replacing them with generic, positive descriptions. The result reads smoothly but loses the "sharp edges" that make writing informative.
+
+Signs to flag:
+- Specific numbers, dates, or measurements replaced with vague quantities ("many", "significant")
+- Unusual or quirky details smoothed into generic descriptions
+- Concrete examples replaced with abstract categories
+- Technical specifics diluted into layman summaries when the audience is technical
+
+Note: this pattern is about what's **missing** compared to the source material. When reviewing a rewrite, compare against the original to check for lost specifics.
 
 ### Checklist: Structure Patterns
 
@@ -95,13 +110,18 @@ Examples to flag:
 - Three consecutive bullet points each starting with bold keyword + colon + description
 
 #### S2. Negative Parallel Structure (否定平行句) [Hard]
-"This is not X, but Y" used to create false profundity.
+"This is not X, but Y" used to create false profundity. Comes in two variants:
 
-Examples to flag:
+**Variant A — Denial and redefinition** (「這不是 X，而是 Y」):
 - 「這不是...而是...」
 - 「重點不在於...而在於...」
 - 「與其說是...不如說是...」
 - Especially when the distinction being drawn is trivial or obvious
+
+**Variant B — Escalation** (「不只是 X，更是 Y」):
+- 「不只是...更是...」「不僅是...也是...」
+- 「這不僅僅是...它更代表了...」
+- Clears up a "misconception" that nobody actually held
 
 #### S3. Formulaic Section Endings (公式化結尾) [Hard]
 Every section ending with an uplifting or forward-looking statement.
@@ -118,10 +138,23 @@ Lists where every item follows the exact same "**Bold keyword** — explanation"
 #### S5. Excessive Markdown Emphasis (濫用粗體) [Soft]
 Bolding keywords for emphasis throughout the text, as if writing a presentation slide rather than prose.
 
+#### S6. Overuse of Em Dashes (濫用破折號) [Soft]
+Excessive em dashes (——) for parenthetical insertions and dramatic pauses. One or two per article is fine; one per paragraph is a pattern.
+
+#### S7. Formulaic "Despite" Conclusions (公式化「儘管」句型) [Hard]
+The rigid formula: "Despite [positive aspects], [subject] faces challenges such as..." followed by vague optimism or speculation. Often appears in conclusion or "outlook" sections.
+
+Examples to flag:
+- 「儘管...取得了顯著成就，但仍面臨...等挑戰」
+- 「儘管存在這些挑戰，...仍然展現出...的潛力」
+- "Despite these challenges, [subject] continues to..." followed by positive platitude
+
 ### Checklist: Vocabulary Patterns
 
 #### V1. LLM Signature Words (AI 慣用詞) [Hard]
-Words and phrases statistically overrepresented in LLM output:
+Words and phrases statistically overrepresented in LLM output. A single instance may be coincidental; clusters are highly indicative.
+
+Note: AI vocabulary shifts with model generations. This list covers commonly observed patterns but is not exhaustive.
 
 **Chinese:**
 - 「深入探討」「深入了解」
@@ -141,6 +174,12 @@ Words and phrases statistically overrepresented in LLM output:
 - 「方法論」(when「方法」suffices)
 - 「範式」「範式轉移」
 - 「賦予」(overused)
+- 「蓬勃發展」
+- 「彰顯」「體現」
+- 「致力於」
+- 「奠定基礎」
+- 「深厚的...底蘊」
+- 「獨特魅力」
 
 **English (for bilingual or English text):**
 - "delve" / "delve into"
@@ -152,12 +191,58 @@ Words and phrases statistically overrepresented in LLM output:
 - "This is not just X — it's Y"
 - "at its core"
 - "a testament to"
+- "boasts" (as in "the city boasts a rich history")
+- "bolstered"
+- "garner"
+- "meticulous" / "meticulously"
+- "intricate" / "intricacies"
+- "interplay"
+- "enduring"
+- "fostering" / "showcasing" / "highlighting"
+- "nestled"
+- "vibrant"
+- "diverse array"
+- "in the heart of"
+- "renowned"
+- "commitment to"
+- "rich" / "profound" (as generic intensifiers)
 
 #### V2. Hedging Overuse (過度避險用語) [Soft]
 Excessive qualifying language that weakens every statement:
 - 「在某種程度上」「從某個角度來看」
 - 「可以說是」
 - 「相對而言」used repeatedly
+
+#### V3. Copula Avoidance (迴避繫詞) [Hard]
+AI systematically avoids simple "is/are" (是/有) and substitutes with fancier verbs. This creates an unnaturally elevated register throughout the text.
+
+**Chinese** — 「是」replaced with:
+- 「作為」「扮演」「代表」「象徵」「標誌著」
+- Example: 「台北是台灣的首都」→「台北作為台灣的首都，扮演著...的角色」
+
+**English** — "is/are" replaced with:
+- "serves as" / "stands as" / "represents" / "marks" / "features" / "boasts"
+- Example: "It is a museum" → "It serves as a museum and cultural landmark"
+
+#### V4. Elegant Variation (過度同義替換) [Hard]
+Due to repetition penalty in LLM decoding, AI cycles through synonyms instead of naturally repeating a key term. Human writers repeat important words; AI makes the text read like a thesaurus exercise.
+
+Examples to flag:
+- A person's name → "the protagonist" → "the key figure" → "the aforementioned individual"
+- 「該公司」→「這家企業」→「此機構」→「該組織」within the same paragraph
+- A technical term replaced by a vaguer synonym on second mention
+
+#### V5. Present Participle Chains (分詞/動詞修飾連鎖) [Hard]
+Attaching "-ing" participle phrases (or Chinese equivalents) to make vague analytical claims. Often co-occurs with C4 (Superficial Analysis) but is a distinct grammatical pattern.
+
+**English:**
+- "highlighting the importance of X, showcasing Y, and fostering Z"
+- "contributing to the broader discourse while emphasizing..."
+
+**Chinese:**
+- 「突顯了...的重要性，展現了...的精神，促進了...的發展」
+- 「彰顯了...，同時也反映了...」
+- Chains of「了」-ending verb phrases used as pseudo-analysis
 
 ### Checklist: Meta / Formatting
 
@@ -173,6 +258,15 @@ Emoji used as bullet markers or inline decoration in non-casual writing.
 
 #### M3. Numbered Paragraphs that Should Be Prose [Soft]
 Content that reads as continuous prose but is artificially split into numbered sections.
+
+#### M4. Markup Artifacts (標記語法殘留) [Hard]
+Markup syntax leaking into rendered text, beyond just code fences.
+
+Examples to flag:
+- Markdown bold/italic syntax (`**text**`, `*text*`) appearing in non-Markdown output
+- Markdown link syntax (`[text](url)`) in plain text or printed documents
+- AI-internal reference tags: `oaicite`, `contentReference`, `turn0search0`
+- Tracking parameters in URLs: `utm_source=chatgpt.com`, `utm_source=copilot.com`
 
 ## Step 3: Report Findings
 
@@ -212,6 +306,16 @@ Apply the following rewriting principles to fix all flagged passages:
 9. **Keep bold for structure, not emphasis** — Bold only in headings and definition terms, not scattered throughout body text to highlight "key concepts."
 
 10. **Prefer prose over lists** — If you can say it in two sentences, don't make it a three-item bullet list.
+
+11. **Repeat naturally** — Don't rotate synonyms to avoid repeating a word. If「公司」appears three times in a paragraph and that's natural, keep it. Human writers repeat key terms; thesaurus cycling is an AI tell.
+
+12. **Use simple verbs** — Prefer「是」「有」「做了」over「作為」「扮演著」「代表了」. Prefer "is" over "serves as". Let the sentence be plain.
+
+13. **Preserve sharp details** — Do not smooth out unusual facts, specific numbers, or rough edges into generic descriptions. If the original says "37 people attended", don't rewrite it as "many people attended".
+
+### Self-Check
+
+After completing the rewrite, scan the rewritten text against the same checklist above. It is common for the rewriting process itself to introduce new AI patterns. If new flags are found, fix them before proceeding to output.
 
 ## Step 5: Output
 
