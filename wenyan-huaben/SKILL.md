@@ -456,7 +456,7 @@ Apply all checklist items to produce a complete rewrite. Follow these principles
 
 1. **說書為魂** — You are a storyteller addressing an audience. Every sentence should carry the rhythm of oral narration, as if spoken aloud in a teahouse.
 2. **文白交織** — Narration leans semi-classical; dialogue leans colloquial. This deliberate code-switching IS the style. Do not flatten into pure classical or pure vernacular.
-3. **鋪陳有度** — 話本 is more expansive than 古文. Descriptions can be lavish, action sequences detailed, dialogue extended. The output may be LONGER than the input. This is expected.
+3. **鋪陳有度** — 話本 is more expansive than 古文, but not without limit.套語、詩詞、說書人插話 add structural bulk, while the narrative itself should stay tight. **Target: output should be 120-150% of the input's character count.** Beyond 150% means you are over-embellishing — cut the padding, not the plot.
 4. **套語生輝** — Formulaic phrases (話說、卻說、有詩為證) are not lazy writing — they are structural elements that signal genre. Use them generously but not mechanically.
 5. **人物見性** — Characters reveal personality through dialogue register, epithets, and action. Give each character a distinct voice.
 6. **懸念勾連** — Always leave the audience wanting more. Use cliff-hangers, rhetorical questions, and deferred revelations.
@@ -472,6 +472,7 @@ Re-read the rewritten text against the checklist above. Check for:
 - Modern connectives or vocabulary that survived the rewrite
 - Dialogue that sounds too literary (should be colloquial) or narration that sounds too modern (should be semi-classical)
 - Missing character epithets (bare pronouns 他/她 instead of 那人/那漢)
+- **Length check**: count the output's characters vs the input's. If the ratio exceeds 150%, find and cut padding — redundant narrator asides, over-described scenes, or embellishments not serving the plot
 
 ### Pass 2 — Voice Check
 
