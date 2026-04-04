@@ -9,6 +9,8 @@ Each skill is a self-contained folder with a `SKILL.md` file that teaches the ag
 | Skill | Description |
 |-------|-------------|
 | [humanize](./humanize/) | Review and rewrite text to remove AI-generated writing patterns |
+| [dewesternise](./dewesternise/) | Review and rewrite Traditional Chinese text to remove Europeanized (歐化) writing patterns (25-item checklist) |
+| [westernise](./westernise/) | Rewrite natural Traditional Chinese text to deliberately add 翻譯腔 (Europeanized translation accent) with 3 intensity levels (25-item checklist) |
 
 ## Installation
 
