@@ -23,10 +23,14 @@ Style transformation tools for Europeanized Chinese (翻譯腔), each with a 25-
 | [dewesternise](./dewesternise/) | Remove Europeanized writing patterns from Chinese text |
 | [westernise](./westernise/) | Deliberately add translation accent (3 intensity levels) |
 
-### English Hanjification
+### Chinese-English Language Mashup
+
+English varieties and writing system transformations — convert text into Chinese-influenced English styles or hybrid scripts.
 
 | Skill | Function |
 |-------|----------|
+| [chinglish](./chinglish/) | Transform Chinese or English into Chinglish — systematic L1-transfer patterns from Chinese grammar |
+| [singlish](./singlish/) | Transform any text into Singlish — Singaporean English creole blending Hokkien, Malay, Cantonese, and Tamil |
 | [hanjify](./hanjify/) | Transform English into Hanjified English — Hanzi carries meaning, English grammar stays intact (okurigana-style morphology) |
 
 ### Classical Chinese Rewriting
