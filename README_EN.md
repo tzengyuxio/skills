@@ -23,6 +23,12 @@ Style transformation tools for Europeanized Chinese (翻譯腔), each with a 25-
 | [dewesternise](./dewesternise/) | Remove Europeanized writing patterns from Chinese text |
 | [westernise](./westernise/) | Deliberately add translation accent (3 intensity levels) |
 
+### English Hanjification
+
+| Skill | Function |
+|-------|----------|
+| [hanjify](./hanjify/) | Transform English into Hanjified English — Hanzi carries meaning, English grammar stays intact (okurigana-style morphology) |
+
 ### Classical Chinese Rewriting
 
 Rewrite modern Chinese into different historical literary styles, each with a 20-22 item checklist.
