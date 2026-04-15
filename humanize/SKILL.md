@@ -1,13 +1,17 @@
 ---
 name: humanize
 description: >
-  Review and rewrite text to remove AI-generated writing patterns and adopt a more natural,
-  human voice. Applies a checklist of known LLM writing tics (grandiose wording, tricolon abuse,
-  vague attribution, hollow parallel structures, etc.) and rewrites flagged passages.
-  Works on markdown files or inline text. Primarily targets Traditional Chinese writing
-  but the principles apply to any language.
+  Remove AI-generated writing tics (grandiose wording, tricolon abuse, vague attribution,
+  hollow parallel structures) and rewrite flagged passages in a more natural voice.
+  Works on markdown files or inline text; checklist is tuned for Traditional Chinese
+  but principles apply to any language.
+  **Scope boundary**: humanize targets *AI-flavored tone*. If the issue is Europeanized
+  sentence structure (翻譯腔 / 歐化) — passive voice, abstract subjects, 的/們/性/地 overuse,
+  long pre-modifiers, calque prepositions — use `dewesternise` instead, which has a
+  specific 25-item 歐化 checklist.
   Triggers on "/humanize", "make it sound human", "remove AI tone", "去 AI 味",
-  "寫得更像人", "降低 AI 感".
+  "寫得更像人", "降低 AI 感" — but if the user says "翻譯腔" / "太歐化" / "去歐化",
+  route to `dewesternise` first.
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
