@@ -65,6 +65,7 @@
 | 技能 | 功能 | 範例 |
 |------|------|------|
 | [prc-bureaucratese](./prc-bureaucratese/) | 將文字轉為中共黨政公文體——高頻動詞（落實/加強/推進/深化）、副詞堆疊（紮實推進/深入貫徹/全面落實）、四字格對偶（不忘初心、牢記使命）、數字化政治套語（四個全面/五位一體）、新時代意識形態詞彙 | [demo](./prc-bureaucratese/examples/demo.md) |
+| [roc-bureaucratese-classic](./roc-bureaucratese-classic/) | 將文字轉為 1960-80 年代中華民國公文體——文言單字（之/於/以/係/為/俾/爰）、文言連接詞（茲/惟/嗣/俟/頃）、階層敬語（鈞/貴/本/職/台端）、程序套語（查照/鑒核/核備/奉悉）、主旨-說明-辦法格式 | [demo](./roc-bureaucratese-classic/examples/demo.md) |
 
 ### 文言文改寫
 

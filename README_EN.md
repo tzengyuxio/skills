@@ -65,6 +65,7 @@ Institutional/register-specific transformation tools for Chinese applied-writing
 | Skill | Function | Example |
 |-------|----------|---------|
 | [prc-bureaucratese](./prc-bureaucratese/) | Transform text into PRC party-state bureaucratese — action verbs (落實/加強/推進/深化), adverb-verb stacks (紮實推進/深入貫徹/全面落實), four-character couplets (不忘初心、牢記使命), numerical political slogans (四個全面/五位一體), New-Era ideological vocabulary | [demo](./prc-bureaucratese/examples/demo.md) |
+| [roc-bureaucratese-classic](./roc-bureaucratese-classic/) | Transform text into 1960s-80s ROC bureaucratese — classical single-char vocabulary (之/於/以/係/為/俾/爰), archaic connectives (茲/惟/嗣/俟/頃), hierarchical honorifics (鈞/貴/本/職/台端), procedural formulas (查照/鑒核/核備/奉悉), and the 主旨-說明-辦法 document format | [demo](./roc-bureaucratese-classic/examples/demo.md) |
 
 ### Classical Chinese Rewriting
 
