@@ -81,22 +81,27 @@ experiential passive borrowed from Taiwanese 予我.
 >
 > **Experiential:** 他給我騙了一次。 (He tricked me — casual register)
 
-#### G3. 「會」+ 形容詞 — 感官/狀態表達 [Hard, Light+]
+#### G3. 「會」+ 形容詞 — 描述現在狀態 [Hard, Light+]
 
-Under Hokkien influence, stative adjectives (painful, cold, itchy) often take 會,
-which in Standard Mandarin would sound like future/possibility.
+Taiwan Mandarin uses 會 + stative adjective to describe a **current** sensation
+or state. This differs from Standard Mandarin where 會 + adjective would suggest
+future possibility. The Hokkien-influenced usage treats pain, cold, itch, tiredness
+etc. as states one "會"（ē, 台語「會」）rather than states one "is".
 
-> **Standard:** 我疼。 / 這裡痛。
+> **Standard (now):** 我疼。 / 這裡痛。
 >
-> **Taiwan Mandarin:** 我會痛。 / 這裡會痛。
+> **Taiwan Mandarin:** 我會痛。 / 這裡會痛。 *(not a future prediction — a present complaint)*
 
-> **Standard:** 有點冷。
+> **Standard (now):** 有點冷。
 >
 > **Taiwan Mandarin:** 會冷耶。
 
-> **Standard:** 會癢嗎？
+> **Standard (now):** 我很累。
 >
-> **Taiwan Mandarin:** 會不會癢？
+> **Taiwan Mandarin:** 會累。
+
+Note: the genuine future-possibility use of 會（「明天會下雨」）is NOT the target
+pattern here; apply G3 only to present-state descriptions.
 
 #### G4. 強化詞堆疊 [Hard, Light+]
 
@@ -216,6 +221,10 @@ Expresses surprise, delight, or affectionate discovery. Often lightly exclamator
 >
 > **Affection:** 你人真好欸。
 
+**Position matters:** 欸 here is **sentence-final** (a particle). When 欸 appears
+**sentence-initial** it's a different item — a vocative interjection ("hey!") covered
+in S3. Same character, different pragmatic role; position disambiguates.
+
 #### P4. 齁 / 吼 — 尋求同意 / 確認 [Hard, Medium+]
 
 From Taiwanese 乎. Seeks agreement, confirms a shared observation, or softly challenges.
@@ -289,7 +298,7 @@ vocabulary, not exotica.
 | 蘇胡 | 舒服（音變） | |
 | 鴨霸 | 蠻橫、霸道 | |
 | 速配 | 相稱 | sio-phuè |
-| 踹共 | 出來講 | tshuā-kóng |
+| 踹共 | 出來講 | tshu-âi-kóng（< tshut-lâi-kóng 省音） |
 | 牽手 | 妻子 | |
 | 夭壽 | 糟了、哎呀 | iáu-siū |
 
@@ -311,7 +320,7 @@ vocabulary, not exotica.
 | 衰小 | 倒楣 |
 | 槓龜 | 沒中、失敗 |
 | 聳 / 俗 | 土、不時尚 |
-| 舍監 | 愛管閒事的人 |
+| 雞婆 | 愛管閒事 |
 
 #### V3. 日語借詞 [Soft, Medium+]
 
@@ -349,7 +358,6 @@ internet/BBS conventions and became iconic.
 | 蝦咪 / 蝦米 | 什麼 | 台語 siánn-mih |
 | 企 | 去 | 音近（老派） |
 | 窩 | 我 | 口語音近 |
-| 淡定 | 冷靜 | 形容詞化 |
 
 **Usage guidance:**
 - Light: no 擬音字
@@ -372,7 +380,6 @@ BBS / 無名小站 / 奇摩即時通 era (ca. 2000–2010). Appears only in Heav
 | 881 | 掰掰了 |
 | 520 | 我愛你 |
 | ㄟ | 欸 |
-| ^_^ㄉ | （萌化變體） |
 
 > **Standard:** 我不知道是不是真的。
 >
@@ -394,12 +401,11 @@ PTT / Dcard / FB 留言區常見。
 | 很狂 | 很猛 | 網路 |
 | 超派 | 超酷、敢衝 | 網路 |
 | GG | 完了、結束 | 遊戲 |
-| 484 | 是不是 | 諧音 |
-| 484 都可以 | 是不是都可以 | |
-| 94 | 就是 | 諧音 |
+| 484 | 是不是（諧音） | 諧音 |
+| 94 | 就是（諧音） | 諧音 |
 | 吃土 | 月底沒錢 | 網路 |
-| 滑坡 | 邏輯謬誤 | 辯論 |
 | 跳針 | 重複不休 | 網路 |
+| 淡定 | 冷靜、不動如山 | 網路（PTT） |
 
 #### V7. 口語詞彙置換 [Hard, Light+]
 
@@ -503,10 +509,13 @@ If the user doesn't specify, use **Medium**.
 **Mandarin input → Taiwan Mandarin:**
 1. Identify formal / standard written phrases and swap them for casual Taiwan Mandarin
    counterparts (V7).
-2. Add particles to 60%+ of sentences (P1-P8).
+2. Add particles (P1-P8) to sentences that carry pragmatic meaning — softening,
+   reassurance, agreement-seeking, surprise. Leave neutral/declarative sentences
+   untouched. Rule of thumb: if you're asking how the speaker **feels** about what
+   they're saying, a particle probably helps.
 3. Replace vocabulary with loanwords where fitting (V1-V3).
 4. Apply spelling transforms per intensity (V4, V5).
-5. Add emoticons and structural markers per intensity (S1, S4).
+5. Add emoticons and structural markers per intensity (S1, S4) — only on emotional peaks.
 
 **Non-Mandarin input (English, etc.) → Taiwan Mandarin:**
 1. First translate into standard Mandarin, preserving meaning.

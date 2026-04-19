@@ -43,10 +43,9 @@ on the target register.
 | 中英夾雜 | 低（每段 1-2 字） | 中（每段 3-5 字） | 高（每 2-3 句出現） |
 | 粵式句末助詞（嘅/㗎/啦/囉/喎） | 不用 | 稀疏 | 常用 |
 
-> **Note**: If a dedicated `written-cantonese` skill is added in the future, this
-> skill's Heavy mode may be narrowed to avoid overlap — leaving `hongkong-chinese`
-> focused on the formal/書面 range (Light-Medium) and `written-cantonese` taking
-> over full 粵語書面化. For now, this skill covers the full spectrum.
+See the **Intensity Levels** section below for which rule groups activate at each
+level, and **Important Notes** for the forward compatibility note with a future
+`written-cantonese` skill.
 
 ## Arguments
 
@@ -80,35 +79,44 @@ freely. This skill targets that full range.
 #### G1. 西化結構 — 受英語影響的句式 [Hard, Medium+]
 
 Hong Kong Chinese has absorbed English-influenced sentence structures through long
-contact. Long attributive modifiers, passive constructions, and abstract nominalizations
-are more common than in Taiwan Mandarin.
+contact. Typical features: long attributive modifiers, abstract nominalizations,
+passive constructions, and English-like clause ordering.
 
 > **Standard:** 這個提案值得討論。
 >
-> **HK Chinese:** 這個提案係有討論嘅價值嘅。 (過重時回退到「值得討論」)
+> **HK Chinese:** 這個提案具有重要的討論價值。 *(nominalization)*
+
+> **Standard:** 他昨天晚上跟我說了這件事。
+>
+> **HK Chinese:** 他昨天晚上告訴了我一件關於那個項目的事情。 *(long definite NP)*
+
+> **Standard:** 大家都很意外。
+>
+> **HK Chinese:** 這件事的發生令大家感到意外。 *(令-causative + nominalized subject)*
 
 > **Standard:** 請盡快回覆。
 >
-> **HK Chinese:** 請 ASAP 俾個 reply 我。
+> **HK Chinese:** 請於方便時盡快給予回覆。 *(formal nominalized)*
 
-> **Standard:** 他被選為主席。
->
-> **HK Chinese:** 佢被選為 chairman / 佢畀人選為主席。
-
-Use西化結構 lightly — overuse slides into translationese, not HK Chinese.
+Use 西化結構 with restraint — overuse slides into 翻譯腔, not authentic HK Chinese.
 
 #### G2. 「有 / 冇」+ 動詞 — 動作完成或經驗 [Hard, Medium+]
 
 Cantonese 有/冇 + V marks completion or existence. HK Chinese inherits this pattern
-in writing. At Medium, mix 有 with 了/過; at Heavy, use 有 freely.
+in writing. Medium can adopt 有 for perfective while leaving other function words
+alone; Heavy uses 冇 freely in place of 沒.
 
 > **Standard:** 我去過日本。
 >
-> **HK Chinese:** 我有去過日本。
+> **HK Medium:** 我有去過日本。
+>
+> **HK Heavy:** 我有去過日本。 *(pattern stays the same; context around it shifts)*
 
 > **Standard:** 他沒吃飯。
 >
-> **HK Chinese:** 佢冇食飯。 (Heavy) / 他沒食飯。 (Medium)
+> **HK Medium:** 他還沒有食飯。 *(keep 他/沒; swap 吃 for 食)*
+>
+> **HK Heavy:** 佢冇食飯。
 
 #### G3. 畀 / 俾 — 「給」的港式寫法 [Soft, Medium+]
 
@@ -158,10 +166,11 @@ Sentence-final particles from Cantonese. Medium: use sparingly; Heavy: use freel
 >
 > **HK Heavy:** 就係咁㗎啦。
 
-#### G6. 粵語核心虛詞替換 [Soft, Medium+ / Hard, Heavy]
+#### G6. 粵語核心虛詞替換 [Hard, Medium+]
 
-Cantonese-specific function words replace Mandarin equivalents. Medium: mix in
-selectively where the text benefits; Heavy: swap throughout.
+Cantonese-specific function words replace Mandarin equivalents. The degree of
+replacement scales sharply with intensity — selective at Medium (a few set phrases
+and demonstratives), comprehensive at Heavy (full Cantonese backbone).
 
 | 標準中文 | 粵語書寫 | 使用建議 |
 |---|---|---|
@@ -211,8 +220,6 @@ The most recognizable signature of HK Chinese. Swap these freely.
 | 書釘 | 訂書針 |
 | 原子筆 | 圓珠筆 |
 | 八達通 | 交通卡（港獨有） |
-| 平治 | 賓士（汽車） |
-| 寶馬 | BMW（港音譯） |
 
 #### V2. 港式音譯詞 [Hard, Light+]
 
@@ -240,6 +247,8 @@ HK has its own transliteration tradition, distinct from both Mainland and Taiwan
 | 士巴拿 | 扳手 spanner |
 | 鐳射 | 激光 laser |
 | 波士 | 老闆 boss |
+| 平治 | 賓士 Mercedes-Benz |
+| 寶馬 | BMW（港音譯，普通話亦同字但讀音不同） |
 
 #### V3. 傳承詞（文言遺留 / 粵語保留的古語）[Hard, Medium+]
 
@@ -258,7 +267,7 @@ linguistically "old Chinese", not "broken Chinese".
 | 講 | 說 |
 | 畀 / 俾 | 給 |
 | 嚟 | 來 |
-| 去返 | 回去 |
+| 返去 | 回去 |
 | 返工 | 上班 |
 | 收工 | 下班 |
 | 攞 | 拿 |
@@ -305,10 +314,6 @@ and usually keep their English spelling intact.
 | 評價 | 呢個 presentation 幾 OK 喎。 |
 | 動作 | Check 吓個 project 嘅 progress。 |
 
-**Morphological quirk:** HK English borrowings often gain a Cantonese suffix syllable
-(mon1 for "monitor", kon1 si2 for "constitution"). This is mostly spoken, but
-occasional spellings like 「個 mon」appear in casual text.
-
 **Intensity guidance:**
 - Light: 1-2 English words per paragraph, mostly nouns (office, meeting)
 - Medium: 3-5 per paragraph, including verbs (check, send, book)
@@ -352,10 +357,8 @@ These are fully acceptable in HK formal writing.
 | 擠擁 | 擁擠 |
 | 取錄 | 錄取 |
 | 飯盒 | 盒飯 |
-| 氣氛 (same) | 氣氛 |
 | 相片 | 照片 |
 | 天花 | 天花板 |
-| 紙巾 | 餐巾紙（不同意） |
 
 #### V8. 同形異義詞 — 港式特有意義 [Soft, Medium+]
 
