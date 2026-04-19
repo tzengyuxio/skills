@@ -1,10 +1,25 @@
-# Skills
+# Skills — Chinese Register & Style Transformation Toolkit
 
-A collection of custom skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
+A systematic skill collection targeting the **registers, styles, regional varieties, and historical layers of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Each skill is a self-contained folder with a `SKILL.md` file that teaches the agent how to perform a specific text transformation task.
+Covers four axes of Chinese-language variation:
+
+- **Human writing ↔ AI writing tics** ([humanize](./humanize/))
+- **Natural Chinese ↔ Europeanized translationese** ([dewesternise](./dewesternise/) / [westernise](./westernise/))
+- **Standard Mandarin ↔ regional varieties** ([taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/))
+- **Modern Chinese ↔ historical Literary Chinese** ([wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/), spanning ~2500 years)
+
+Plus three Chinese-English hybrid tools: [chinglish](./chinglish/), [singlish](./singlish/), [hanjify](./hanjify/).
 
 > [中文版](./README.md)
+
+## Highlights
+
+- **Controllable intensity spectrum**: most skills offer **Light / Medium / Heavy** levels — no one-size-fits-all output
+- **Systematic checklists**: each skill has 20-30 explicit rules, every one tagged with firmness and minimum intensity (e.g. `[Hard, Medium+]`) — reproducible and traceable
+- **Linguistic rigor**: each skill demarcates its linguistic scope, cites relevant research (邵敬敏, Jerry Norman, 胡適, etc.), grounds rules in real corpora, and **rejects caricature** — language varieties are treated as legitimate systems, not targets of mockery
+- **Inverse pairs and composability**: `dewesternise` ↔ `westernise` are inverse operations; skills can be chained (e.g. `dewesternise` → `taiwan-mandarin`)
+- **Public demos separated from local tests**: each skill's [`examples/`](./examples/) folder holds clean showcases; the shared [`examples/source-texts/`](./examples/source-texts/) corpus lets you compare skills side-by-side
 
 ## Available Skills
 

@@ -1,10 +1,25 @@
-# Skills
+# Skills — 中文語體轉換工具集
 
-為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造的自訂技能集。
+針對**中文語體、風格、地域變體、歷時風貌**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-每個技能是一個獨立資料夾，內含 `SKILL.md`，用來教導 AI 助手執行特定的文字處理任務。
+涵蓋四條中文語體軸：
+
+- **人類書寫 ↔ AI 寫作痕跡**（[humanize](./humanize/)）
+- **自然中文 ↔ 歐化翻譯腔**（[dewesternise](./dewesternise/) / [westernise](./westernise/)）
+- **標準華語 ↔ 地域變體**（[taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/)）
+- **現代中文 ↔ 歷代文言**（[wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/)，跨約 2500 年）
+
+外加三個中英混搭工具：[chinglish](./chinglish/)、[singlish](./singlish/)、[hanjify](./hanjify/)。
 
 > [English version](./README_EN.md)
+
+## 特色
+
+- **強度光譜可控**：多數 skill 提供**輕／中／重**三段強度，使用者依目標 register 選擇；不是一刀切的單一輸出
+- **系統化 checklist**：每個 skill 都有 20-30 項明確規則，每項標記軟硬程度與啟用強度（如 `[Hard, Medium+]`），可重現、可追溯
+- **語言學嚴謹**：明確劃定各 skill 的語言學範疇、引用相關研究（邵敬敏、Jerry Norman、胡適等）、以真實語料為範本、**排除 caricature**——把語言變體當真實系統對待，不當嘲諷對象
+- **逆操作對偶、可組合**：`dewesternise` ↔ `westernise` 互為反向；skills 可串接使用（如 `dewesternise` → `taiwan-mandarin`）
+- **公開示範與本地實驗分離**：各 skill 的 [`examples/`](./examples/) 收錄乾淨展示，共用 [`examples/source-texts/`](./examples/source-texts/) 源文庫讓各 skill 可橫向比較
 
 ## 可用技能
 
