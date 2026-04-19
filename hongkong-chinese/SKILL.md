@@ -1,15 +1,14 @@
 ---
 name: hongkong-chinese
 description: >
-  Transform text into Hong Kong Written Chinese (港式中文) — a written register of
-  Modern Standard Chinese shaped by Cantonese substrate, English contact, and
-  Hong Kong-specific social vocabulary. Features Hong Kong-specific terms
-  (巴士/的士/士多/雪櫃), transliterations (荷里活/三文治/梳化), Cantonese lexical
-  intrusions (食飯/飲茶/睇/搞掂/啲/嘢), frequent code-mixing with English
-  (開 meeting / send email), and AB/BA word-order flips (質素/私隱/擠擁).
-  Preserves standard Chinese grammar backbone (是/不/的/了/他) — distinct from
-  fully Cantonese-written text. Three intensity levels from light HK flavor
-  to heavy code-mixed text.
+  Transform text into Hong Kong Chinese (港式中文) — a written register shaped by
+  Cantonese substrate, English contact, and Hong Kong-specific social vocabulary.
+  Features Hong Kong-specific terms (巴士/的士/士多/雪櫃), transliterations
+  (荷里活/三文治/梳化), Cantonese lexicon (食飯/飲茶/睇/搞掂/啲/嘢),
+  frequent English code-mixing (開 meeting / send email), AB/BA word-order flips
+  (質素/私隱/擠擁), and — at Heavy intensity — optional full Cantonese-written
+  features (係/唔/嘅/咗/佢/呢/嗰). Three intensity levels from light HK flavor
+  (standard Chinese backbone) to heavy 港式粵語混合體.
   Useful for creative writing, cultural appreciation, language education, or humor.
   Triggers on "/hongkong-chinese", "寫成港式中文", "港式中文化", "翻成港式中文",
   "translate to hong kong chinese", "make it hong kong style", "港式書面語", "港味".
@@ -19,36 +18,35 @@ allowed-tools: Read, Write, Edit, Glob
 
 # Hong Kong Chinese — 港式中文
 
-Transform text into Hong Kong Written Chinese (港式中文) — the written variety of
-Modern Standard Chinese used in Hong Kong, shaped by decades of Cantonese substrate,
-English contact, and Hong Kong-specific social vocabulary. The result should read
-like a Hong Kong newspaper column, a Cantopop lyric sheet, or a WhatsApp message
-from a HK colleague — recognizably Chinese in grammar, unmistakably HK in flavor.
+Transform text into Hong Kong Chinese (港式中文) — the written variety used in
+Hong Kong, shaped by decades of Cantonese substrate, English contact, and
+HK-specific social vocabulary. The result should read like a Hong Kong newspaper
+column, a Cantopop lyric sheet, a LIHKG post, or a WhatsApp message from a HK
+colleague — unmistakably HK in flavor, flexibly sliding from standard Chinese
+backbone (formal register) to full 港式粵語混合體 (casual register).
 
-Hong Kong Chinese is NOT written Cantonese. It preserves the Standard Written
-Chinese grammatical backbone (是/不/沒/的/了/他/這/那) while adopting Cantonese
-lexicon (食/飲/睇/搞掂), Hong Kong-specific terms (巴士/的士/雪櫃), unique
-transliterations (荷里活/三文治), and pervasive English code-mixing. For full
-Cantonese writing with 係/唔/嘅/咗/佢/呢/嗰 throughout, a separate `written-cantonese`
-skill would be more appropriate.
+This skill covers the **full continuum** from light HK-flavored Standard Chinese
+up to heavy Cantonese-written text. At Light intensity, the output retains
+Standard Written Chinese backbone (是/不/的/了/他); at Heavy, it may slide fully
+into 粵語書面化 features (係/唔/嘅/咗/佢/呢/嗰). Users select intensity based
+on the target register.
 
-## Scope boundary
+## Scope and intensity range
 
-| | 港式中文（this skill） | 粵語書面化（out of scope） |
-|---|---|---|
-| 是 | 仍用「是」 | 全用「係」 |
-| 不 / 沒 | 仍用「不 / 沒」 | 全用「唔 / 冇」 |
-| 的 / 了 | 仍用「的 / 了」 | 全用「嘅 / 咗」 |
-| 他 / 她 | 仍用「他 / 她」 | 全用「佢」 |
-| 這 / 那 | 仍用「這 / 那」 | 全用「呢 / 嗰」 |
-| 食 / 飲 / 睇 | 可偶用或全用 | 全用 |
-| 啲 / 嘢 / 搞掂 | 可散用 | 全用 |
-| 中英夾雜 | 常見 | 常見 |
+| 層面 | Light | Medium | Heavy |
+|---|---|---|---|
+| 是 / 不 / 沒 | 保留 | 大部分保留，偶見粵字 | 可全改「係 / 唔 / 冇」 |
+| 的 / 了 | 保留 | 混用 | 可全改「嘅 / 咗」 |
+| 他 / 這 / 那 | 保留 | 混用 | 可全改「佢 / 呢 / 嗰」 |
+| 食 / 飲 / 睇 / 行 | 偶用 | 常用 | 全用 |
+| 啲 / 嘢 / 點解 / 搞掂 | 不用 | 選擇性使用 | 自由使用 |
+| 中英夾雜 | 低（每段 1-2 字） | 中（每段 3-5 字） | 高（每 2-3 句出現） |
+| 粵式句末助詞（嘅/㗎/啦/囉/喎） | 不用 | 稀疏 | 常用 |
 
-In other words: a HK reader of this skill's output recognizes it as a "HK-flavored"
-variety of Standard Written Chinese. A Mandarin reader from Taiwan or mainland China
-can still parse it, perhaps with some unfamiliar vocabulary. If they cannot parse it,
-the skill has crossed into 粵語書面化 territory and needs to be pulled back.
+> **Note**: If a dedicated `written-cantonese` skill is added in the future, this
+> skill's Heavy mode may be narrowed to avoid overlap — leaving `hongkong-chinese`
+> focused on the formal/書面 range (Light-Medium) and `written-cantonese` taking
+> over full 粵語書面化. For now, this skill covers the full spectrum.
 
 ## Arguments
 
@@ -70,8 +68,10 @@ a word-order flip). Not every rule applies to every sentence — select what fit
 naturally.
 
 Hong Kong Chinese exists on a continuum from light HK flavor (occasional HK terms
-and transliterations) to heavy code-mixing with Cantonese lexicon peppered throughout.
-This skill targets that full range.
+and transliterations on a Standard Chinese backbone) through medium code-mixing
+with selective Cantonese vocabulary, to heavy 港式粵語混合體 where Cantonese
+function words (係/唔/嘅/咗/佢/呢/嗰) and sentence particles (㗎/啦/囉/喎) appear
+freely. This skill targets that full range.
 
 ---
 
@@ -122,25 +122,25 @@ HK Chinese often writes 畀 (or 俾) for "give / to / by" instead of Standard �
 >
 > **HK Chinese:** 佢畀老闆鬧。 / 他畀老闆鬧。
 
-#### G4. 動詞 + 得 / 唔 — 可能補語 [Soft, Heavy]
+#### G4. 動詞 + 得 / 唔 — 可能補語 [Soft, Medium+]
 
-Cantonese-style possibility compounds enter HK writing at Heavy intensity.
+Cantonese-style possibility compounds. Medium: occasional; Heavy: routine.
 
 > **Standard:** 我做不到。
 >
-> **HK Chinese (Heavy):** 我做唔到。
+> **HK Chinese:** 我做唔到。
 
 > **Standard:** 看得懂。
 >
-> **HK Chinese (Heavy):** 睇得明。
+> **HK Chinese:** 睇得明。
 
-At Medium, stick with Standard 做不到 / 看得懂; only slide into 唔 forms when the
-overall tone is heavily Cantonese.
+> **Standard:** 吃不下。
+>
+> **HK Chinese:** 食唔落。
 
-#### G5. 句末「嘅」/「㗎」/「啦」/「囉」/「喎」[Soft, Heavy]
+#### G5. 句末「嘅」/「㗎」/「啦」/「囉」/「喎」[Soft, Medium+]
 
-Sentence-final particles from Cantonese. Use them sparingly — stacking too many
-particles pushes the text into 粵語書面化 rather than港式中文.
+Sentence-final particles from Cantonese. Medium: use sparingly; Heavy: use freely.
 
 | 粒子 | 功能 |
 |---|---|
@@ -149,13 +149,41 @@ particles pushes the text into 粵語書面化 rather than港式中文.
 | 啦 | 緩和、催促 |
 | 囉 | 認命、無奈 |
 | 喎 | 訝異、提醒 |
+| 咋 | 限定（只是/而已） |
+| 啩 | 推測 |
 
 > **Standard:** 就是這樣。
 >
-> **HK Chinese:** 就係咁㗎啦。 (Heavy) — note 係/咁 already粵語化
+> **HK Medium:** 就係咁樣。
+>
+> **HK Heavy:** 就係咁㗎啦。
 
-**Medium rule:** at most one Cantonese particle per paragraph; otherwise pull back
-to 標點 or「啊/呢」.
+#### G6. 粵語核心虛詞替換 [Soft, Medium+ / Hard, Heavy]
+
+Cantonese-specific function words replace Mandarin equivalents. Medium: mix in
+selectively where the text benefits; Heavy: swap throughout.
+
+| 標準中文 | 粵語書寫 | 使用建議 |
+|---|---|---|
+| 是 | 係 | Medium 稀疏，Heavy 多用 |
+| 不 | 唔 | Medium 可用於常見搭配（唔該/唔使/唔記得），Heavy 自由 |
+| 沒（有） | 冇 | Medium 可用，Heavy 常用 |
+| 的 | 嘅 | Medium 稀疏，Heavy 多用 |
+| 了 | 咗 | Heavy 常用 |
+| 著（進行） | 緊 / 住 | Heavy（食緊飯 / 著住衫） |
+| 他 / 她 | 佢 | Heavy 常用 |
+| 這 / 這個 | 呢 / 呢個 | Medium 可用，Heavy 常用 |
+| 那 / 那個 | 嗰 / 嗰個 | 同上 |
+| 和 | 同 | Medium 可用 |
+| 都（全都） | 都 | 相同，用法更自由 |
+| 也 | 都 / 亦 | |
+| 給 | 畀 / 俾 | 見 G3 |
+| 很 | 好 | Medium 常用（好靚 / 好鬼好食） |
+
+**Intensity strategy:**
+- Light: none of G6 swaps — keep Standard backbone
+- Medium: selective swaps — use 呢/嗰、唔、冇 where natural; keep 是/的/了/他 mostly
+- Heavy: full swap allowed — 係/唔/冇/嘅/咗/佢/呢/嗰 throughout
 
 ---
 
@@ -420,20 +448,19 @@ Use sparingly in Medium; more freely in Heavy.
 ## Step 3: Produce Hong Kong Chinese Output
 
 Apply the checklist to transform the entire text. Aim for a natural, consistent HK
-Chinese voice — identifiably Hong Kong, but still readable as Chinese (not fully
-Cantonese-written).
+Chinese voice at the chosen intensity — from formal HK-flavored Standard Chinese
+to casual 港式粵語混合體.
 
 ### Intensity Levels
 
-Each rule is tagged with its minimum intensity. Maintain the **scope boundary**:
-at every level, preserve 是/不/沒/的/了/他 — do not let the text collapse into
-粵語書面化.
+Each rule is tagged with its minimum intensity. Intensity controls how far the
+text slides from Standard Chinese backbone toward full Cantonese-written forms.
 
 | Level | Active Rules | Effect |
 |---|---|---|
-| **Light** | V1, V2, V5 (1-2 English words/paragraph), S3. No 粵字, no 傳承詞. | Standard Written Chinese with HK-specific vocabulary and transliterations sprinkled in — like a HK business email. |
-| **Medium** (default) | Light + G1-G3, V3-V4 (選擇性粵字), V6-V9, V5 (pervasive code-mixing), S1-S2, S4 (sparing). | Clearly HK-flavored — HK terms, Cantonese vocabulary, frequent English code-mixing, word-order flips, HK social vocabulary. |
-| **Heavy** | Medium + G4-G5 (Cantonese particles/possibility compounds), V4 full (啲/嘢/點解 everywhere), S4 liberal. Still preserves 是/不/的/了/他. | Heavy HK writing — reads like a casual blog post, Apple Daily column, or LIHKG post. Still distinguishable from full written Cantonese. |
+| **Light** | V1, V2, V5 (1-2 English words/paragraph), S3. No 粵字, no 傳承詞, no G6 function word swaps. | Standard Written Chinese with HK-specific vocabulary and transliterations sprinkled in — like a HK business email or government notice. |
+| **Medium** (default) | Light + G1-G3, G5-G6 (selective), V3-V4 (選擇性粵字), V6-V9, V5 (pervasive code-mixing), S1-S2, S4 (sparing). | Clearly HK-flavored — HK terms, Cantonese vocabulary, frequent English code-mixing, word-order flips, selective 粵字/虛詞 where natural. Mixed backbone. |
+| **Heavy** | All rules including G4-G6 full (係/唔/冇/嘅/咗/佢/呢/嗰 throughout), V4 full (啲/嘢/點解 everywhere), G5 liberal particles, S4 liberal. | Heavy HK writing — reads like a LIHKG post, casual column, or WhatsApp conversation. Backbone may be fully Cantonese-written. |
 
 If the user doesn't specify, use **Medium**.
 
@@ -445,7 +472,10 @@ If the user doesn't specify, use **Medium**.
 3. Inject English code-mixing per intensity (V5).
 4. Flip word order for AB/BA pairs (V7).
 5. Add selective 粵字 (啲/嘢/點解/搞掂) at Medium; more at Heavy.
-6. Keep 是/不/沒/的/了/他 — do NOT auto-swap to 係/唔/冇/嘅/咗/佢.
+6. Apply G6 function word swaps per intensity:
+   - Light: keep Standard 是/不/沒/的/了/他/這/那
+   - Medium: swap selectively (e.g., 呢/嗰 common, 唔 in set phrases, keep 是/的/了 mostly)
+   - Heavy: swap freely to 係/唔/冇/嘅/咗/佢/呢/嗰
 
 **Non-Chinese input → HK Chinese:**
 1. Translate to Standard Written Chinese first.
@@ -469,12 +499,17 @@ If the user doesn't specify, use **Medium**.
 - This is a **stylistic transformation tool** for creative, educational, and cultural
   purposes.
 - Hong Kong Chinese is a **legitimate written register** of Modern Standard Chinese —
-  it is recognized by linguists (e.g., 邵敬敏) as 現代漢語 in 香港 variety, with地域、
-  社會、功能三位一體的變體性質.
-- **Preserve the grammatical backbone.** The key distinguishing feature of港式中文
-  (vs 粵語書面化) is that it keeps 是/不/沒/的/了/他. If Heavy mode accidentally
-  swaps these to 係/唔/冇/嘅/咗/佢, pull back — that crosses into a different skill's
-  scope.
+  it is recognized by linguists (e.g., 邵敬敏) as 現代漢語 in 香港 variety, with 地域、
+  社會、功能三位一體的變體性質. At the formal/書面 end (Light), it is close to Standard
+  Chinese; at the casual/口語 end (Heavy), it slides into full 港式粵語混合體.
+- **Match intensity to target register.** Light suits formal writing (news, government,
+  business email); Medium suits journalism and blog posts; Heavy suits casual writing
+  (LIHKG, WhatsApp, social media). Consistency within the chosen level matters more
+  than strict boundary-keeping.
+- **Future scope note.** If a dedicated `written-cantonese` skill is added, this
+  skill's Heavy mode may be narrowed — leaving `hongkong-chinese` to cover Light-Medium
+  (formal 港式中文 with Standard Chinese backbone) and `written-cantonese` to cover
+  full 粵語書面化. For now, Heavy covers the full Cantonese-written range.
 - **Code-mixing is not random.** English insertions tend to cluster in:
   - Workplace vocabulary (office, meeting, project, deadline, email, presentation)
   - Technology (send, check, update, book, confirm, OK)

@@ -437,7 +437,12 @@ Routinely swap standard written forms for casual Taiwan Mandarin equivalents.
 | (*´∀｀) | 可愛 |
 | (￣▽￣)ﾉ | 打招呼 |
 
-Place at sentence end to mark emotion. Medium: use sparingly. Heavy: use liberally.
+Place at sentence end to mark emotion — but only on sentences that carry a real
+emotional peak. Overuse reads as performative, not authentic.
+
+- Light: none
+- Medium: at most one per paragraph, only at an emotional high point
+- Heavy: at most 1-2 per paragraph; not every sentence needs one
 
 #### S2. 語氣拉長 [Hard, Light+]
 
