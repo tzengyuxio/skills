@@ -6,7 +6,7 @@
 
 - **人類書寫 ↔ AI 寫作痕跡**（[humanize](./humanize/)）
 - **自然中文 ↔ 歐化翻譯腔**（[dewesternise](./dewesternise/) / [westernise](./westernise/)）
-- **標準華語 ↔ 地域變體**（[taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/)）
+- **標準華語 ↔ 地域變體**（[taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/) / [singapore-mandarin](./singapore-mandarin/)）
 - **現代中文 ↔ 歷代文言**（[wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/)，跨約 2500 年）
 
 外加三個中英混搭工具：[chinglish](./chinglish/)、[singlish](./singlish/)、[hanjify](./hanjify/)。
@@ -56,6 +56,7 @@
 |------|------|------|
 | [taiwan-mandarin](./taiwan-mandarin/) | 將文字轉為台灣國語——融合台語/日語借詞、擬音字（偶/粉/素/降）、注音文、語尾助詞（啦/喔/齁/耶） | [demo](./taiwan-mandarin/examples/demo.md) |
 | [hongkong-chinese](./hongkong-chinese/) | 將文字轉為港式中文——港式詞彙（巴士/的士/雪櫃）、港式音譯（荷里活/梳化/三文治）、中英夾雜、詞序倒置；Heavy 模式可涵蓋完整粵語書面化（係/唔/嘅/咗/佢/呢/嗰） | [demo](./hongkong-chinese/examples/demo.md) |
+| [singapore-mandarin](./singapore-mandarin/) | 將文字轉為新加坡華語——SG 行政生活詞（組屋/德士/樂齡/客工）、閩南語借詞（幾時/不懂/做工/怕輸）、馬來語借詞（甘榜/巴剎/atas/bodoh）、先後置句式、千-單位數字；與 singlish 共構 SG 雙胞胎 | [demo](./singapore-mandarin/examples/demo.md) |
 
 ### 文言文改寫
 

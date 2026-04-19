@@ -6,7 +6,7 @@ Covers four axes of Chinese-language variation:
 
 - **Human writing ↔ AI writing tics** ([humanize](./humanize/))
 - **Natural Chinese ↔ Europeanized translationese** ([dewesternise](./dewesternise/) / [westernise](./westernise/))
-- **Standard Mandarin ↔ regional varieties** ([taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/))
+- **Standard Mandarin ↔ regional varieties** ([taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/) / [singapore-mandarin](./singapore-mandarin/))
 - **Modern Chinese ↔ historical Literary Chinese** ([wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/), spanning ~2500 years)
 
 Plus three Chinese-English hybrid tools: [chinglish](./chinglish/), [singlish](./singlish/), [hanjify](./hanjify/).
@@ -56,6 +56,7 @@ Transform text into regional sociolects / written registers of contemporary Chin
 |-------|----------|---------|
 | [taiwan-mandarin](./taiwan-mandarin/) | Transform text into Taiwan Mandarin — Hokkien/Japanese loanwords, phonological respellings (偶/粉/素/降), BBS-era 注音文, and sentence-final particles (啦/喔/齁/耶) | [demo](./taiwan-mandarin/examples/demo.md) |
 | [hongkong-chinese](./hongkong-chinese/) | Transform text into Hong Kong Chinese — HK-specific terms (巴士/的士/雪櫃), transliterations (荷里活/梳化/三文治), English code-mixing, AB/BA word-order flips; Heavy mode extends to full written Cantonese (係/唔/嘅/咗/佢/呢/嗰) | [demo](./hongkong-chinese/examples/demo.md) |
+| [singapore-mandarin](./singapore-mandarin/) | Transform text into Singapore Mandarin (Huayu) — SG administrative vocabulary (組屋/德士/樂齡/客工), Hokkien borrowings (幾時/不懂/做工/怕輸), Malay loanwords (甘榜/巴剎/atas/bodoh), post-verbal 先 placement, 千-based number units; the Mandarin counterpart to singlish | [demo](./singapore-mandarin/examples/demo.md) |
 
 ### Classical Chinese Rewriting
 
