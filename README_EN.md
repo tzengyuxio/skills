@@ -58,6 +58,14 @@ Transform text into regional sociolects / written registers of contemporary Chin
 | [hongkong-chinese](./hongkong-chinese/) | Transform text into Hong Kong Chinese — HK-specific terms (巴士/的士/雪櫃), transliterations (荷里活/梳化/三文治), English code-mixing, AB/BA word-order flips; Heavy mode extends to full written Cantonese (係/唔/嘅/咗/佢/呢/嗰) | [demo](./hongkong-chinese/examples/demo.md) |
 | [singapore-mandarin](./singapore-mandarin/) | Transform text into Singapore Mandarin (Huayu) — SG administrative vocabulary (組屋/德士/樂齡/客工), Hokkien borrowings (幾時/不懂/做工/怕輸), Malay loanwords (甘榜/巴剎/atas/bodoh), post-verbal 先 placement, 千-based number units; the Mandarin counterpart to singlish | [demo](./singapore-mandarin/examples/demo.md) |
 
+### Applied Writing Registers (應用文類)
+
+Institutional/register-specific transformation tools for Chinese applied-writing genres. Currently two bureaucratese skills; the category leaves room for future additions (letters, notices, contracts, meeting minutes, autobiographies, etc.).
+
+| Skill | Function | Example |
+|-------|----------|---------|
+| [prc-bureaucratese](./prc-bureaucratese/) | Transform text into PRC party-state bureaucratese — action verbs (落實/加強/推進/深化), adverb-verb stacks (紮實推進/深入貫徹/全面落實), four-character couplets (不忘初心、牢記使命), numerical political slogans (四個全面/五位一體), New-Era ideological vocabulary | [demo](./prc-bureaucratese/examples/demo.md) |
+
 ### Classical Chinese Rewriting
 
 Rewrite modern Chinese into different historical literary styles, each with a 20-22 item checklist.

@@ -58,6 +58,14 @@
 | [hongkong-chinese](./hongkong-chinese/) | 將文字轉為港式中文——港式詞彙（巴士/的士/雪櫃）、港式音譯（荷里活/梳化/三文治）、中英夾雜、詞序倒置；Heavy 模式可涵蓋完整粵語書面化（係/唔/嘅/咗/佢/呢/嗰） | [demo](./hongkong-chinese/examples/demo.md) |
 | [singapore-mandarin](./singapore-mandarin/) | 將文字轉為新加坡華語——SG 行政生活詞（組屋/德士/樂齡/客工）、閩南語借詞（幾時/不懂/做工/怕輸）、馬來語借詞（甘榜/巴剎/atas/bodoh）、先後置句式、千-單位數字；與 singlish 共構 SG 雙胞胎 | [demo](./singapore-mandarin/examples/demo.md) |
 
+### 應用文類
+
+中文特定應用文體的制度化風格轉換。目前收錄兩種公文體，預留擴充給其他應用文類型（書信、啟事、契約、會議紀錄、自傳等）。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [prc-bureaucratese](./prc-bureaucratese/) | 將文字轉為中共黨政公文體——高頻動詞（落實/加強/推進/深化）、副詞堆疊（紮實推進/深入貫徹/全面落實）、四字格對偶（不忘初心、牢記使命）、數字化政治套語（四個全面/五位一體）、新時代意識形態詞彙 | [demo](./prc-bureaucratese/examples/demo.md) |
+
 ### 文言文改寫
 
 將現代中文改寫為不同時期的文言風格，各附 20-22 項 checklist。
