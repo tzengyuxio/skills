@@ -37,10 +37,10 @@
 
 將文字轉為不同華語社群的在地口語/書面變體，各附 checklist 與輕／中／重三段強度。
 
-| 技能 | 功能 |
-|------|------|
-| [taiwan-mandarin](./taiwan-mandarin/) | 將文字轉為台灣國語——融合台語/日語借詞、擬音字（偶/粉/素/降）、注音文、語尾助詞（啦/喔/齁/耶） |
-| [hongkong-chinese](./hongkong-chinese/) | 將文字轉為港式中文——港式詞彙（巴士/的士/雪櫃）、港式音譯（荷里活/梳化/三文治）、中英夾雜、詞序倒置；Heavy 模式可涵蓋完整粵語書面化（係/唔/嘅/咗/佢/呢/嗰） |
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [taiwan-mandarin](./taiwan-mandarin/) | 將文字轉為台灣國語——融合台語/日語借詞、擬音字（偶/粉/素/降）、注音文、語尾助詞（啦/喔/齁/耶） | [demo](./taiwan-mandarin/examples/demo.md) |
+| [hongkong-chinese](./hongkong-chinese/) | 將文字轉為港式中文——港式詞彙（巴士/的士/雪櫃）、港式音譯（荷里活/梳化/三文治）、中英夾雜、詞序倒置；Heavy 模式可涵蓋完整粵語書面化（係/唔/嘅/咗/佢/呢/嗰） | [demo](./hongkong-chinese/examples/demo.md) |
 
 ### 文言文改寫
 
