@@ -33,6 +33,14 @@ English varieties and writing system transformations — convert text into Chine
 | [singlish](./singlish/) | Transform any text into Singlish — Singaporean English creole blending Hokkien, Malay, Cantonese, and Tamil |
 | [hanjify](./hanjify/) | Transform English into Hanjified English — Hanzi carries meaning, English grammar stays intact (okurigana-style morphology) |
 
+### Regional Chinese Varieties
+
+Transform text into regional sociolects / written registers of contemporary Chinese-speaking communities, each with a checklist and three intensity levels.
+
+| Skill | Function |
+|-------|----------|
+| [taiwan-mandarin](./taiwan-mandarin/) | Transform text into Taiwan Mandarin — Hokkien/Japanese loanwords, phonological respellings (偶/粉/素/降), BBS-era 注音文, and sentence-final particles (啦/喔/齁/耶) |
+
 ### Classical Chinese Rewriting
 
 Rewrite modern Chinese into different historical literary styles, each with a 20-22 item checklist.
