@@ -2,9 +2,11 @@
 
 將英文文本轉換為漢字化英語——以 CJK 漢字承載語意，保留英語文法結構不變。
 
+> **規範來源**：本 skill 依 [tzengyuxio/hanjify 的 docs/spec.md](https://github.com/tzengyuxio/hanjify/blob/main/docs/spec.md) 實作（[線上工具](https://hanjify.tzengyuxio.me)）。skill 與網頁工具共享規範，差異在 skill 可上下文判斷多義字、查表工具不行。
+
 ## 功能說明
 
-Hanjify 將英文單詞替換為漢字（Hanzi/Kanji/Hanja），同時完整保留英語的文法、語序、標點與空格。採用日文送假名（okurigana）風格的形態學機制：漢字表示詞根，英文後綴以羅馬字母直接附加（如 動ing、美ful、思er）。
+Hanjify 將英文單詞替換為漢字（Hanzi/Kanji/Hanja），同時完整保留英語的文法、語序、標點與空格。採用混合形態學：屈折變化（`-s/-ed/-ing/-er/-est`）保留羅馬字、派生變化（`-er(者)/-ly(地)/-ful(的)/un-(不)/re-(再)` 等）轉漢字。
 
 轉換結果既不是英文、也不是中文或日文，而是一套獨特的「架空歷史」書寫系統——彷彿英語使用者在歷史上獨立發展出了漢字書寫。
 
@@ -44,17 +46,20 @@ cp -r hanjify ~/.claude/skills/hanjify
 > Once when I was six years old I saw a magnificent picture in a book about the jungle.
 
 **Hanjified:**
-> 一度 當 我 是ed 六 年s 古 我 見t 一 壮麗 絵 在 一 書 関於 其 密林.
+> Once 当 予 是ed 六 年s 古 予 見t a 壮麗 絵 in a 書 関於 the 密林.
 
 **Ruby:**
-> <ruby>一度<rt>Once</rt></ruby> <ruby>當<rt>when</rt></ruby> <ruby>我<rt>I</rt></ruby> <ruby>是ed<rt>was</rt></ruby> <ruby>六<rt>six</rt></ruby> <ruby>年s<rt>years</rt></ruby> <ruby>古<rt>old</rt></ruby> <ruby>我<rt>I</rt></ruby> <ruby>見t<rt>saw</rt></ruby> <ruby>一<rt>a</rt></ruby> <ruby>壮麗<rt>magnificent</rt></ruby> <ruby>絵<rt>picture</rt></ruby> <ruby>在<rt>in</rt></ruby> <ruby>一<rt>a</rt></ruby> <ruby>書<rt>book</rt></ruby> <ruby>関於<rt>about</rt></ruby> <ruby>其<rt>the</rt></ruby> <ruby>密林<rt>jungle</rt></ruby>.
+> <ruby>一度<rt>Once</rt></ruby> <ruby>当<rt>when</rt></ruby> <ruby>予<rt>I</rt></ruby> <ruby>是ed<rt>was</rt></ruby> <ruby>六<rt>six</rt></ruby> <ruby>年s<rt>years</rt></ruby> <ruby>古<rt>old</rt></ruby> <ruby>予<rt>I</rt></ruby> <ruby>見t<rt>saw</rt></ruby> a <ruby>壮麗<rt>magnificent</rt></ruby> <ruby>絵<rt>picture</rt></ruby> in a <ruby>書<rt>book</rt></ruby> <ruby>関於<rt>about</rt></ruby> the <ruby>密林<rt>jungle</rt></ruby>.
+
+> 註：`a / an / the / of / in / to / on / at` 為不轉清單條目，保留為英文。
 
 ## 核心設計
 
 - **不是翻譯** — 英語文法完全保留，只替換個別單詞為漢字
-- **送假名形態學** — 漢字詞根＋羅馬後綴（動s、動ed、動ing、思t）
-- **80+ 固定功能詞** — 冠詞、代名詞、介詞等有嚴格對照表，確保一致性
-- **泛 CJK 選字** — 混用中日韓漢字與古字，不偏向任何單一傳統
+- **混合形態學** — 屈折保留羅馬字（動s、動ed、動ing）、派生轉漢字（教者、實際地、美的）
+- **140+ 功能詞嚴格對照表** — 代名詞、助動詞、介詞等定義於 spec.md §3
+- **不轉清單** — 純虛詞 `a/an/the/of/in/to/on/at` 保留英文
+- **泛 CJK 選字** — 採三地通用優先，繁體基底＋簡化／古字／日文新字體採用清單
 - **英文慣例** — 標點與空格遵循英文，不使用中文標點
 
 ## 背景
