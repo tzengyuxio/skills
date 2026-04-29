@@ -50,7 +50,7 @@
 | 這個很時髦。 | 這個很 atas。 |
 | 今年的年終獎金很高。 | 今年花紅 very 高。 |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 設計原則
 

@@ -59,7 +59,7 @@
 | 他昨天被老闆炒了。 | 佢琴日畀老闆炒咗魷魚。 |
 | 這個提案的素質很高。 | 呢個 proposal 嘅質素幾高。 |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 設計原則
 

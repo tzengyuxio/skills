@@ -52,7 +52,7 @@
 | Why didn't they come? | How come they never come leh? |
 | The food is really good. | The food damn shiok sia. |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 背景
 

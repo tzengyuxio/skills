@@ -47,7 +47,7 @@
 | 希望你同意。 | 敬祈惠允 / 惠允為荷。 |
 | 這個方法不行。 | 所擬辦法，窒礙難行。 |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 設計原則
 

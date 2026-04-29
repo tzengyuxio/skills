@@ -46,6 +46,26 @@
 
 ---
 
+## 範例三：差不多先生傳（中文源 → Singlish）
+
+源文：[mr-chabuduo.md](../../examples/source-texts/mr-chabuduo.md)（胡適 1924，公有領域）
+
+> 你知道中國最有名的人是誰？他姓差，名不多，是各省各縣各村人氏。差不多先生的名字天天掛在大家的口頭，因為他是中國全國人的代表。他常常說：「凡事只要差不多，就好了。何必太精明呢？」他在學堂的時候，先生問他：「直隸省的西邊是哪一省？」他說是陝西。先生說：「錯了。是山西，不是陝西。」他說：「陝西同山西，不是差不多嗎？」
+
+### Light
+
+> Do you know who is the most famous person in China? His surname is Cha, name is Buduo. Every province, county, and village got people like him. The name "Mr. Chabuduo" is on everyone's lips every day, because he represents all the people in China. He always says, "Anything chabuduo also can lah. Why must so serious?" When he was in school, his teacher asked, "What province is to the west of Zhili?" He said Shaanxi. Teacher said, "Wrong, it's Shanxi, not Shaanxi." He said, "Shaanxi and Shanxi, chabuduo only what."
+
+### Medium
+
+> You know who is China most famous person? His name Cha Buduo, every province every county every village all got him one. Mr. Chabuduo name every day on everybody mouth, because he is all China people representative lor. He always say: "Anything chabuduo can already, why must so on?" When he in school time, teacher ask him: "Zhili west side is which province?" He say Shaanxi. Teacher say: "Wrong leh, is Shanxi not Shaanxi." He say: "Shaanxi and Shanxi, chabuduo only what."
+
+### Heavy
+
+> Eh you know de most famous person in China is who or not? His name Cha Buduo lah, every province every county every village all got him one sia. Mr. Chabuduo de name every day on everybody mouth, becos he is whole China representative mah. He always say one: "Wah anything chabuduo can already lor, why must so on?" When he go school time hor, teacher ask him: "Zhili west side is which province ah?" He say Shaanxi lor. Teacher say: "Alamak wrong leh, is Shanxi not Shaanxi." He say: "Aiya Shaanxi Shanxi, chabuduo only what, like dat lor."
+
+---
+
 ## 借詞示範表
 
 Singlish 詞彙融合多種語言，以下為核心借詞與其來源：

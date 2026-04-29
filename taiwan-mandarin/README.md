@@ -48,7 +48,7 @@
 | 他真的很討厭。 | 他真的有夠機車！ |
 | 不好意思，借過。 | 歹勢歹勢，借過一下。 |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 設計原則
 

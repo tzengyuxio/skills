@@ -52,7 +52,7 @@
 | Come on! You can do it! | Add oil! |
 | Caution: Wet Floor | Carefully Slide *(Heavy)* |
 
-> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+> 完整示範（3 強度 × 3 源文）請見 [examples/demo.md](./examples/demo.md)。
 
 ## 背景
 

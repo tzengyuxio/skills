@@ -46,6 +46,26 @@
 
 ---
 
+## 範例三：差不多先生傳（中文源 → Chinglish）
+
+源文：[mr-chabuduo.md](../../examples/source-texts/mr-chabuduo.md)（胡適 1924，公有領域）
+
+> 你知道中國最有名的人是誰？他姓差，名不多，是各省各縣各村人氏。差不多先生的名字天天掛在大家的口頭，因為他是中國全國人的代表。他常常說：「凡事只要差不多，就好了。何必太精明呢？」他在學堂的時候，先生問他：「直隸省的西邊是哪一省？」他說是陝西。先生說：「錯了。是山西，不是陝西。」他說：「陝西同山西，不是差不多嗎？」
+
+### Light
+
+> Do you know who is the most famous person in China? His surname is Cha, name is Buduo. Each province each county each village all have him. The name of Mr. Chabuduo every day hang in everybody's mouth, because he is representative of all China people. He often say: "All things only need chabuduo, then good. Why must so serious?" When he in school, teacher ask him: "The west side of Zhili province is which province?" He say is Shaanxi. Teacher say: "Wrong. Is Shanxi, not Shaanxi." He say: "Shaanxi and Shanxi, not chabuduo?"
+
+### Medium
+
+> You know China most famous person is who? His family name Cha, name Buduo, each province each county each village all have him. Mr. Chabuduo's name everyday all hang on everybody mouth, because he is whole China people's representative. He often say: "All thing only need chabuduo then okay, why must so careful?" He at school time, teacher ask him: "Zhili province west side is which province?" He say is Shaanxi. Teacher say: "Wrong, is Shanxi not Shaanxi." He say: "Shaanxi and Shanxi, not chabuduo?"
+
+### Heavy
+
+> You know not know China this most famous person, he is who? His family name is Cha, his name is Buduo, each one province each one county each one village all all have him. Mr. Chabuduo this name every day hang on everybody mouth side, because he is whole China people's representative person. He often often say: "Whatever thing, only require differ-not-much, then good. Why must too careful?" He at school read book time, teacher ask him: "Zhili province this west side, is which one province?" He say is Shaanxi province. Teacher say: "Wrong already. Is Shanxi, not Shaanxi." He bend head say: "Shaanxi and Shanxi, not differ-not-much?"
+
+---
+
 ## 招牌／菜單體（Heavy 專屬）
 
 Heavy 強度可進一步模擬中國街頭招牌、菜單的機器翻譯感：
