@@ -55,6 +55,10 @@ cp -r humanize ~/.claude/skills/humanize
 4. **審查** — 二輪反 AI 自檢：重掃 checklist + 「還有哪裡感覺像 AI？」直覺檢查
 5. **輸出** — 另存為 `_clean` 後綴新檔（如 `article_clean.md`），保留原檔供對照
 
+## 示範
+
+完整 Before / After 對照（含 AI 寫作模式標記）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 模式分類
 
 | 類別 | 編號 | 內容 |

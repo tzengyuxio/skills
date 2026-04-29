@@ -52,6 +52,8 @@
 | Come on! You can do it! | Add oil! |
 | Caution: Wet Floor | Carefully Slide *(Heavy)* |
 
+> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 背景
 
 Chinglish（中式英語）是中文母語者在使用英文時，因母語語法干擾（L1 transfer）而產生的系統性變異。它不是隨機的「爛英文」，每一個「錯誤」都可追溯至中英文法的結構性差異：

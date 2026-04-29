@@ -45,6 +45,10 @@
 5. **審查** — 二輪自檢：重掃 checklist + 通讀語感確認
 6. **輸出** — 另存為 `_dewesternised` 後綴新檔
 
+## 示範
+
+完整 Before / After 對照（含歐化模式標記）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 參考資料
 
 本 skill 的 checklist 編制參考了以下資料：

@@ -52,6 +52,8 @@
 | Why didn't they come? | How come they never come leh? |
 | The food is really good. | The food damn shiok sia. |
 
+> 完整示範（3 強度 × 2 源文）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 背景
 
 Singlish（新加坡式英語）是一種以英語為基底的克里奧爾語言（creole language），誕生於新加坡多語環境中英語、閩南語、馬來語、粵語、華語、潮州語、淡米爾語的長期接觸。它不是「不標準的英語」，而是有完整語法系統的獨立語言。

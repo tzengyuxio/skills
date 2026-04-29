@@ -28,6 +28,10 @@
 2. **改寫** — 依 checklist 逐項將自然中文改為歐化風格
 3. **輸出** — 另存為 `_westernised` 後綴新檔，附 3-5 組前後對比
 
+## 示範
+
+完整三段強度示範（雨天故事 + 差不多先生）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 背景知識
 
 關於歐化中文（翻譯腔）的定義、常見模式分類、以及參考文獻，請見 [dewesternise README](../dewesternise/)。本 skill 與 dewesternise 互為逆操作，共用同一套 25 項模式清單。

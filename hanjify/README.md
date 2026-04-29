@@ -53,6 +53,8 @@ cp -r hanjify ~/.claude/skills/hanjify
 
 > 註：`a / an / the / of / in / to / on / at` 為不轉清單條目，保留為英文。
 
+> 完整示範（多段源文 × 三格式輸出）請見 [examples/demo.md](./examples/demo.md)。
+
 ## 核心設計
 
 - **不是翻譯** — 英語文法完全保留，只替換個別單詞為漢字

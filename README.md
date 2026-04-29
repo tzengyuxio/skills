@@ -25,28 +25,28 @@
 
 ### AI 寫作風格處理
 
-| 技能 | 功能 |
-|------|------|
-| [humanize](./humanize/) | 去除 AI 生成文字的寫作痕跡（26 項 checklist，支援中英文） |
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [humanize](./humanize/) | 去除 AI 生成文字的寫作痕跡（26 項 checklist，支援中英文） | [demo](./humanize/examples/demo.md) |
 
 ### 翻譯腔處理
 
 針對中文「歐化」（翻譯腔）現象的風格轉換工具，各附 25 項 checklist，互為逆操作。
 
-| 技能 | 功能 |
-|------|------|
-| [dewesternise](./dewesternise/) | 去除中文的歐化寫法（被動句、抽象主語、長前飾語等） |
-| [westernise](./westernise/) | 刻意加入翻譯腔（支援輕／中／重三段強度） |
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [dewesternise](./dewesternise/) | 去除中文的歐化寫法（被動句、抽象主語、長前飾語等） | [demo](./dewesternise/examples/demo.md) |
+| [westernise](./westernise/) | 刻意加入翻譯腔（支援輕／中／重三段強度） | [demo](./westernise/examples/demo.md) |
 
 ### 中英語言混搭
 
 英語變體與書寫系統轉換工具——將文字轉為各種受華語影響的英語風格或混合書寫系統。
 
-| 技能 | 功能 |
-|------|------|
-| [chinglish](./chinglish/) | 將中文或英文轉為中式英語（Chinglish）——重現母語干擾下的系統性變異 |
-| [singlish](./singlish/) | 將任何文字轉為新加坡式英語（Singlish）——融合閩南語、馬來語的克里奧爾語言 |
-| [hanjify](./hanjify/) | 將英文轉換為漢字化英語——漢字承載語意，保留英語文法（送假名風格形態學） |
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [chinglish](./chinglish/) | 將中文或英文轉為中式英語（Chinglish）——重現母語干擾下的系統性變異 | [demo](./chinglish/examples/demo.md) |
+| [singlish](./singlish/) | 將任何文字轉為新加坡式英語（Singlish）——融合閩南語、馬來語的克里奧爾語言 | [demo](./singlish/examples/demo.md) |
+| [hanjify](./hanjify/) | 將英文轉換為漢字化英語——漢字承載語意，保留英語文法（送假名風格形態學） | [demo](./hanjify/examples/demo.md) |
 
 ### 地域中文變體
 
@@ -71,12 +71,12 @@
 
 將現代中文改寫為不同時期的文言風格，各附 20-22 項 checklist。
 
-| 技能 | 風格 | 代表作品 |
-|------|------|---------|
-| [wenyan-xianqin](./wenyan-xianqin/) | 先秦諸子體 | 論語、莊子、韓非子 |
-| [wenyan-hanwei](./wenyan-hanwei/) | 漢魏史傳體 | 史記、漢書、三國志 |
-| [wenyan-guwen](./wenyan-guwen/) | 唐宋古文體 | 韓愈、蘇軾、歐陽修 |
-| [wenyan-huaben](./wenyan-huaben/) | 話本小說體 | 水滸傳、三國演義、紅樓夢 |
+| 技能 | 風格 | 代表作品 | 範例 |
+|------|------|---------|------|
+| [wenyan-xianqin](./wenyan-xianqin/) | 先秦諸子體 | 論語、莊子、韓非子 | [demo](./wenyan-xianqin/examples/demo.md) |
+| [wenyan-hanwei](./wenyan-hanwei/) | 漢魏史傳體 | 史記、漢書、三國志 | [demo](./wenyan-hanwei/examples/demo.md) |
+| [wenyan-guwen](./wenyan-guwen/) | 唐宋古文體 | 韓愈、蘇軾、歐陽修 | [demo](./wenyan-guwen/examples/demo.md) |
+| [wenyan-huaben](./wenyan-huaben/) | 話本小說體 | 水滸傳、三國演義、紅樓夢 | [demo](./wenyan-huaben/examples/demo.md) |
 
 ## 安裝方式
 
