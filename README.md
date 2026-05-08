@@ -84,7 +84,8 @@
 
 | 技能 | 功能 | 範例 |
 |------|------|------|
-| [koanify](./koanify/) | 把任何文章改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，150–400 字白話偏雅，留白八式擇一，純敘事不附解讀 | [demo](./koanify/examples/demo.md) |
+| [koanify](./koanify/) | 把任何文章改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，100–400 字白話偏雅，留白八式擇一，純敘事不附解讀 | [demo](./koanify/examples/demo.md) |
+| [liaozhai-tale](./liaozhai-tale/) | 把任何文章改寫為聊齋體文言短篇——蒲松齡流派，200–800 字純文言，必有「異化」元素（狐／鬼／妖／精／神／異獸／物精），條件附「異史氏曰」評語 | [demo](./liaozhai-tale/examples/demo.md) |
 
 ## 安裝方式
 
