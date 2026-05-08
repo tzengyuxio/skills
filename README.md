@@ -87,6 +87,7 @@
 | [koanify](./koanify/) | 把任何文章改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，100–400 字白話偏雅，留白八式擇一，純敘事不附解讀 | [demo](./koanify/examples/demo.md) |
 | [liaozhai-tale](./liaozhai-tale/) | 把任何文章改寫為聊齋體文言短篇——蒲松齡流派，200–800 字純文言，必有「異化」元素（狐／鬼／妖／精／神／異獸／物精），條件附「異史氏曰」評語 | [demo](./liaozhai-tale/examples/demo.md) |
 | [qiongyao-romance](./qiongyao-romance/) | 把任何文章改寫為中期瓊瑤體愛情敘事——《在水一方》《一簾幽夢》流派，300–800 字白話文藝，必有愛情軸與阻礙，中度詩詞嵌入，痛感收尾。與 humanize 互為逆操作 | [demo](./qiongyao-romance/examples/demo.md) |
+| [gulong-wuxia](./gulong-wuxia/) | 把任何文章改寫為中後期古龍武俠——1969《多情劍客無情劍》之後的成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力（殺手/殺手、生/死、動/靜），不寫武打過程。與將來的 jinyong-wuxia 互為對偶 | [demo](./gulong-wuxia/examples/demo.md) |
 
 ## 安裝方式
 
