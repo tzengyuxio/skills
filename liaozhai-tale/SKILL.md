@@ -1,22 +1,12 @@
 ---
 name: liaozhai-tale
 description: >
-  Transform any article, essay, or story into a 聊齋體 classical Chinese
-  short tale (蒲松齡《聊齋誌異》流派) — a 200–800 character literary
-  Chinese narrative where one element of the source is "異化" (transposed
-  into the supernatural register: a boss becomes a fox spirit, a computer
-  becomes a haunted lacquer mirror, a teacher becomes an aged sorcerer).
-  Output uses pure 文言 with single-character vocabulary (之/於/以/曰/乃/
-  遂), 史傳式 opening (「X 縣某甲, 字 XX, 寓於某」), and conditionally
-  appends an 「異史氏曰」 commentary if the source carries satire,
-  lamentation, or moral tone.
-  **Scope boundary**: this is genre transformation requiring **mandatory
-  supernatural transposition**. For pure narrative koan (no 異類
-  required) use `koanify`. For thesis-driven 唐宋古文 (no narrative
-  framework, no 異類) use `wenyan-guwen`. For period-only voice change
-  on existing narrative use `wenyan-huaben`.
-  Triggers on "/liaozhai-tale", "改寫成聊齋", "寫成聊齋體", "做一則聊齋",
-  "蒲松齡體", "志怪短篇", "turn into a Liaozhai tale",
+  Transform any article into a 聊齋體 classical Chinese short tale (蒲松齡
+  《聊齋誌異》流派) — 200–800 character pure 文言 narrative with mandatory
+  supernatural transposition (one element becomes 狐/鬼/妖/精/神/異獸/物精),
+  史傳式 opening, and a conditional 「異史氏曰」 commentary if the source
+  carries satire or moral tone. Primarily user-invoked via "/liaozhai-tale";
+  also triggers on "改寫成聊齋", "寫成聊齋體", "蒲松齡體", "志怪短篇",
   "rewrite as a Pu Songling tale".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
@@ -30,6 +20,11 @@ allowed-tools: Read, Write, Edit, Glob
 
 風格參照：《聊齋誌異》(蒲松齡， 1740)。代表名篇：《嬰寧》《聶小倩》《狐諧》
 《促織》《種梨》《耳中人》《考城隍》《王六郎》。
+
+## 一句話靈魂
+
+**必有「異化」元素**(C-02)——人／事／物擇一變狐鬼妖精神異獸物精，缺異化
+就不是聊齋。其餘 20 條 checklist 都在服務這一條。
 
 ## Arguments
 
@@ -66,7 +61,7 @@ allowed-tools: Read, Write, Edit, Glob
 | 老闆 / 上司 | 老狐所化、坐廨吸氣的鬼判、冥司差吏 |
 | 同事 / 朋友 | 狐友、書齋鬼伴、共讀之異客 |
 | 老師 / 醫師 | 老法師、山中異人、藥師仙翁 |
-| 電腦 / 手機 | 古鏡、能映魂魄的銅器、有靈之硯、靈寢 |
+| 電腦 / 手機 | 古鏡、能映魂魄的銅器、有靈之硯、靈枕 |
 | 演算法 / 系統 | 卜筮、夢中異人指路、神判官的籙 |
 | 加班 / 趕工 | 廟祝抄經、為冥府所役、夜夜入夢之差 |
 | 失戀 / 分手 | 狐女離去、鬼妻歸塚、夢醒已三十年 |
@@ -119,10 +114,13 @@ allowed-tools: Read, Write, Edit, Glob
 
 ### Checklist: Content(內容)
 
+> **C-02 是本 skill 的核心規則(靈魂條款)**。其他規則違反可修，C-02 違反等於
+> 整體不是聊齋體，必須打掉重寫。
+
 | 編號 | 強度 | 規則 |
 |---|---|---|
 | C-01 | Hard | **保留原文核心張力**，但用「人遇異類」框架重述。可換場景、可換角色，但「問」與「應」要對得上原文 |
-| C-02 | Hard | **必須「異化」原文某元素**(人/事/物擇一變怪異)。沒有異化就不叫聊齋 |
+| C-02 | Hard | **必須「異化」原文某元素**(人/事/物擇一變怪異)。沒有異化就不叫聊齋。**這是本 skill 的靈魂條款** |
 | C-03 | Hard | **異類必有具體類型**(狐/鬼/妖/精/神/異獸/物精)，不可寫「一個怪物」「某種異物」這類模糊用詞 |
 | C-04 | Hard | **不出現現代專名與現代物件**。例外：用功能性指代替換(「東來之商」「邑中人」) |
 | C-05 | Soft | **因果結構** — 異類事件有起因，有結果(報應/化解/離去/化身)。不要寫「異類出現，故事結束」這種無因果的敘事 |

@@ -1,19 +1,12 @@
 ---
 name: koanify
 description: >
-  Transform any article, essay, or story into a narrative-style Zen koan
-  (敘事故事型禪宗公案), in the tradition of 白隱禪師's "Is that so?" — a complete
-  narrative with characters, scenes, and concrete actions, where the Zen
-  insight rests in silences and reactions rather than explanations. Output is
-  Traditional Chinese, white-vernacular with light classical particles
-  (曰/云/乃/遂), 100–400 characters, with no commentary appended.
-  **Scope boundary**: this is **genre transformation** (any-text → koan
-  narrative), not tone adjustment. For tone work use `humanize`/`dewesternise`.
-  This skill is **not** for short Q&A koans of the 趙州狗子 / 庭前柏樹子 type
-  (機鋒問答型) — that requires a different approach.
-  Triggers on "/koanify", "改寫成公案", "做成公案", "做一則公案", "寫成禪宗故事",
-  "變成禪宗公案", "把這篇改成公案", "turn into a koan", "koanify this",
-  "rewrite as a Zen koan".
+  Transform any article into a narrative-style Zen koan (敘事故事型禪宗公案)
+  in the 白隱「是這樣嗎？」 tradition — Traditional Chinese, white-vernacular
+  with light classical particles, 100–400 characters, no commentary appended.
+  This is the narrative-story type, NOT the short Q&A koan (機鋒問答型
+  趙州狗子). Primarily user-invoked via "/koanify"; also triggers on explicit
+  phrases like "改寫成公案", "做一則公案", "rewrite as a Zen koan".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
@@ -26,6 +19,11 @@ allowed-tools: Read, Write, Edit, Glob
 風格參照：白隱禪師「是這樣嗎？」(Reps & Senzaki *101 Zen Stories* #3)、
 《五燈會元》卷六「婆子燒庵」、《無門關》第 14 則「南泉斬貓」、
 《景德傳燈錄》「香嚴擊竹」。
+
+## 一句話靈魂
+
+**留白八式擇一，結尾戛然而止**——若收尾不是 Step 5 八式之一，就不是敘事
+公案。其餘 20 條 checklist 都在服務這一條。
 
 ## Arguments
 
@@ -155,7 +153,7 @@ allowed-tools: Read, Write, Edit, Glob
 | 編號 | 強度 | 規則 |
 |---|---|---|
 | M-01 | Hard | **不附評論段、不附作者按、不附 Mumon 式評唱**——除非使用者明確要求加評唱(此時應另外標示為「拈古」或「頌古」段落) |
-| M-02 | Hard | **保留「禪師不必慈祥」的可能**。原文若有衝突、暴力、不公，**不要把禪師寫成慈眉善目化解一切的調停人**——禪師可以冷酷、可以殘忍、可以表演、可以沉默 |
+| M-02 | Hard | **禁止把所有長者／權威角色寫成慈眉善目化解一切的調停人**。檢查方式：故事裡的禪師／老者／權威至少一位必須**未化解、未開示、未安慰**——可以冷酷、可以殘忍、可以表演、可以沉默、可以下錯判斷。原文若有衝突、暴力、不公，這條尤其不能違反 |
 | M-03 | Soft | **角色取無名**(「一個老婆婆」「一位旅僧」)優於取虛構名(「方禪師」「李道人」) |
 | M-04 | Soft | **三人稱限知**(只跟著主角的視角)優於全知敘事 |
 | M-05 | Hard | **若原文是議論文 / 抒情文 / 學術文**：必須先抽出核心張力，再**設計一個故事場景**承載這個張力——不要把論點直接「翻譯」成古文對話 |

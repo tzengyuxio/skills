@@ -1,25 +1,15 @@
 ---
 name: qiongyao-romance
 description: >
-  Transform any article, essay, or story into a Mid-Era Qiongyao
-  (中期瓊瑤,《在水一方》《一簾幽夢》《幾度夕陽紅》流派) romance
-  narrative — a 300–800 character modern-vernacular literary romance
-  with a mandatory love axis, a structural obstacle (誤會 / 家世 /
-  疾病 / 第三者 / 生死隔), high emotional density, mid-density
-  classical poetry inlay (max 1–2 quotations at peak emotional moments),
-  and an ending that preserves the ache rather than resolving it.
-  **Scope boundary**: this is a serious genre study, not parody — the
-  emotional intensity, exclamatory rhythm, and triple repetitions are
-  preserved because they are 瓊瑤's signature, NOT to mock. This skill
-  is the **inverse** of `humanize`: patterns humanize removes (grandiose
-  framing, tricolons, exclamations) are deliberately retained here, but
-  **only within romance narrative**.
-  For other narrative genres use `koanify` (Zen-toned narrative),
-  `liaozhai-tale` (志怪 supernatural), or relevant `wenyan-*` skill.
-  Do NOT use this skill for non-romance writing.
-  Triggers on "/qiongyao-romance", "改寫成瓊瑤", "寫成瓊瑤體",
-  "做一則瓊瑤", "瓊瑤式愛情", "rewrite as Qiongyao romance",
-  "turn into Chiung Yao style".
+  Transform any article into a Mid-Era Qiongyao (中期瓊瑤,《在水一方》
+  《一簾幽夢》流派) romance — 300–800 character modern-vernacular romance
+  with a mandatory love axis, a structural obstacle, high emotional density,
+  optional poetry inlay (max 1–2 at peak moments), and an ending that
+  preserves the ache. **Inverse of `humanize`**: the grandiose framing,
+  tricolons, and exclamations that humanize removes are deliberately retained
+  here — but **only within romance narrative**, never for general writing.
+  Primarily user-invoked via "/qiongyao-romance"; also triggers on
+  "改寫成瓊瑤", "寫成瓊瑤體", "瓊瑤式愛情", "rewrite as Qiongyao romance".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
@@ -29,14 +19,14 @@ allowed-tools: Read, Write, Edit, Glob
 把任何文章改寫成中期瓊瑤(《在水一方》《一簾幽夢》《幾度夕陽紅》)流派的
 愛情敘事——白話文藝、必有愛情軸與阻礙、中度詩詞引用、結尾保留痛感。
 
-**重要**：本 skill 與 `humanize` 互為**逆操作**。humanize 拿掉的浮誇 / 三疊
-感嘆 / 排比 / 感嘆句，正是 qiongyao-romance 要刻意保留與強化的——但**僅限
-於愛情敘事的脈絡**。離開愛情敘事這些 pattern 立刻變成 AI 文風，所以本 skill
-**不要用於一般寫作**。
-
 風格參照：中期瓊瑤(1970–1990 年代)，代表作《在水一方》(1975)、《一簾幽夢》
 (1976)、《幾度夕陽紅》、《海鷗飛處》、《卻上心頭》。古典化、詩詞引用、
 夢境與現實交錯。
+
+## 一句話靈魂
+
+**必有阻礙 + 結尾不抹平痛感**(C-03 + M-02)——沒有阻礙就不是瓊瑤，痛感被
+解釋／被化解就不是瓊瑤。其餘 20 條 checklist 都在服務這兩條。
 
 ## Arguments
 
@@ -171,7 +161,19 @@ allowed-tools: Read, Write, Edit, Glob
 
 **總計**：21 條(Hard 13 + Soft 8)。
 
-## Step 9: Output
+## Step 9: Find the Weakest Paragraph and Rewrite
+
+通常**結尾**或**情緒最高點**最弱——容易過度解釋、容易抹平痛感、容易堆砌
+排比。
+- 若結尾下了結論(「她終於明白了⋯⋯」「原來愛情就是⋯⋯」)，刪到只剩動作
+  或場景定格
+- 若情緒高峰處用了過多抽象意象(「無形的牆」「命運的刀」「最深的愛」)，
+  挑一兩個換成具體物(信、傘、玉、燈、雨痕)
+- 若內心 OS 滿到把場景擠掉，砍一段 OS 換一個動作或物件
+- **「能少一句就少一句」是瓊瑤體與其 caricature 的分界線**——濃情要服務真
+  誠，不是堆砌
+
+## Step 10: Output
 
 1. **檔案輸入**：寫入 `<原檔名>_qiongyao.md`，保留原檔
 2. **貼文輸入**：直接輸出瓊瑤體
@@ -236,6 +238,43 @@ allowed-tools: Read, Write, Edit, Glob
 | S-03 | 結尾無痛感 | 「我這輩子最幸運的事」式收尾 |
 | S-04 | 無詩詞或情境承載 | 純情緒爆發，沒有意象支撐 |
 | C-04 | 「老闆」現代專名 | 應抽象化為「東家」「廟祝」 |
+
+### 次失敗版(看似瓊瑤、實為 AI 文風)
+
+這版是 LLM 寫瓊瑤體最常見的真實失敗——**不到 caricature，但每句都太滿**：
+抽象意象連發、結尾忍不住下結論、痛感被「她明白了」包裝成成長。比上面的
+極端 mock 更難察覺，也更值得警惕。
+
+> 林夢竹站在雨裡。雨水浸濕了她的長髮，浸濕了她的衣襟，浸濕了她整個被命運
+> 辜負的青春。
+>
+> 三天的期限，像一道無形的牆橫亙在他們之間。她記得他們初遇的那個春天——
+> 那是怎樣明媚的一個春天啊！花會開，鳥會啼，而他眼裡有星辰。可是現在，他
+> 眼裡只有那些刀痕急亂的木屑、那些日復一日的疲憊。她聽見自己的心碎成了千
+> 萬片，每一片都是「來不及」，每一片都是「為什麼」。
+>
+> 阿哲抱著神像從廟前走來。雨水打在他單薄的肩上。他停在她面前，什麼也沒說，
+> 只是看著她，像看著一個夢，一個註定要醒的夢。
+>
+> 「夢竹，」他終於開口，聲音輕得像歎息，「對不起。」
+>
+> 她搖搖頭。淚水模糊了視線，可是她終於明白了——原來最深的愛，從來都不是
+> 執手相伴，而是站在雨中，目送你走向另一條我無法跟隨的路。
+>
+> 雨，還在下。
+
+**犯規清單**
+
+| 編號 | 違反 | 出處 |
+|---|---|---|
+| S-05 | 結尾下結論 | 「她終於明白了——原來最深的愛，從來都不是執手相伴⋯⋯」 |
+| M-02 | 痛感被「明白」抹平 | 給了 emotional closure(「我懂了什麼是真愛」)，未滿之愛變成「我學到了一課」 |
+| V-05 | 抽象意象擠掉具體物 | 「無形的牆」「被命運辜負的青春」「最深的愛」「無法跟隨的路」全是抽象修辭，真正可觸的物只剩雨／衣襟 |
+| (整體) | 情感濃度過載 | 每一段都在情緒高點，沒有低處讓讀者喘息——瓊瑤體靠「克制中爆發一處」，不是「全篇都爆發」 |
+
+**為何難察覺**：每個句子單獨拿出來都「像瓊瑤」，但組合起來變成「用瓊瑤式
+語言講人生哲學」——而瓊瑤體的精髓恰恰是**痛是不解釋的**。LLM 寫到結尾總
+會忍不住替讀者「總結教訓」，這是 AI 文風滲透瓊瑤體最常見的入口。
 
 ### 成功版(同一張力，真誠的瓊瑤式)
 
@@ -313,11 +352,9 @@ allowed-tools: Read, Write, Edit, Glob
 | 寫晚期歡愉派瓊瑤(《還珠格格》) | (尚未製作；可開 `qiongyao-comedic`) |
 | 寫霸道總裁體 | (尚未製作，屬於更現代的網文體系) |
 
-**特別提醒**：本 skill 與 `humanize` **互為逆操作**——
-- humanize 拿掉的浮誇 / 三疊 / 排比 / 感嘆，正是本 skill 要保留的
-- 但這些 pattern **僅在愛情敘事的脈絡下才不顯違和**
-- **不要用本 skill 改寫一般文章**(技術文件、報告、純資訊性文字)。離開
-  愛情敘事，瓊瑤體的修辭立刻變成 AI 文風
+**邊界提示**：本 skill 與 `humanize` 的修辭取捨互為逆操作，但**僅限於愛情
+敘事脈絡**。離開愛情敘事，瓊瑤式的浮誇與三疊立刻變成 AI 文風——不要用本
+skill 改寫技術文件、報告、純資訊性文字。
 
 ## Important Notes
 
