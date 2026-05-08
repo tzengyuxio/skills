@@ -1,4 +1,4 @@
-# Jinyong-wuxia — 示範
+# Jinyong-style — 示範
 
 展示 `jinyong-style` 如何把現代文章改寫成中期黃金期金庸武俠敘事，以及好的
 金庸腔長什麼樣子。

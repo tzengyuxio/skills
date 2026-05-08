@@ -5,16 +5,16 @@ description: >
   《一簾幽夢》流派) romance — 300–800 character modern-vernacular romance
   with a mandatory love axis, a structural obstacle, high emotional density,
   optional poetry inlay (max 1–2 at peak moments), and an ending that
-  preserves the ache. **Inverse of `humanize`**: the grandiose framing,
-  tricolons, and exclamations that humanize removes are deliberately retained
-  here — but **only within romance narrative**, never for general writing.
-  Primarily user-invoked via "/qiongyao-style"; also triggers on
-  "改寫成瓊瑤", "寫成瓊瑤體", "瓊瑤式愛情", "rewrite as Qiongyao romance".
+  preserves the ache. Use only for romance narrative — the grandiose
+  framing, tricolons, and exclamations are signature features of the
+  genre but become AI-flavored noise outside of it. Primarily user-invoked
+  via "/qiongyao-style"; also triggers on "改寫成瓊瑤", "寫成瓊瑤體",
+  "瓊瑤式愛情", "rewrite as Qiongyao romance".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# Qiongyao-romance — 改寫成中期瓊瑤體愛情敘事
+# Qiongyao-style — 改寫成中期瓊瑤體愛情敘事
 
 把任何文章改寫成中期瓊瑤(《在水一方》《一簾幽夢》《幾度夕陽紅》)流派的
 愛情敘事——白話文藝、必有愛情軸與阻礙、中度詩詞引用、結尾保留痛感。
@@ -108,7 +108,7 @@ allowed-tools: Read, Write, Edit, Glob
 寫一稿。原則：
 
 - **語感**：現代白話為主，允許文言句插入(然則 / 奈何 / 何嘗 / 縱使 / 此情)
-- **修辭密度**：感嘆、反問、頂真、博喻是必須的(這點與 humanize 完全相反)
+- **修辭密度**：感嘆、反問、頂真、博喻是必須的
 - **內心戲**：必有大段內心獨白，情緒透過內心 OS 直接呈現
 - **對話**：佔比 30–50%，要有金句感
 - **篇幅**：300–800 字(計入標點)，典型 500 字
@@ -144,7 +144,7 @@ allowed-tools: Read, Write, Edit, Glob
 | 編號 | 強度 | 規則 |
 |---|---|---|
 | V-01 | Hard | **現代白話為主**，允許少量文言句插入(然則 / 奈何 / 何嘗 / 縱使 / 此情)。不可純文言或純口語 |
-| V-02 | Hard | **修辭密度高**——感嘆、反問、頂真、博喻是必須的。這點與 humanize 完全相反 |
+| V-02 | Hard | **修辭密度高**——感嘆、反問、頂真、博喻是必須的 |
 | V-03 | Hard | **必有心理描述**——「她聽見自己的聲音」「他想起十年前的那個下午」「她突然發現」。這是與 koanify / liaozhai-tale 最大差異 |
 | V-04 | Soft | **三疊感嘆節制**——「我愛你愛你愛你」「不！不！不！」這類最多 1 處，且要在情緒爆發點 |
 | V-05 | Soft | **物件 / 色彩密度高**——至少 5 個視覺 / 聽覺 / 觸覺具體物(雨聲、燈光、紙的觸感、玉的溫度) |
@@ -279,14 +279,14 @@ allowed-tools: Read, Write, Edit, Glob
 | 把文章改寫為中期瓊瑤體愛情敘事(本 skill 目標) | **qiongyao-style** |
 | 寫敘事公案(冷靜留白，無愛情強制) | `koanify` |
 | 寫志怪短篇(必有異類) | `liaozhai-tale` |
-| 去除 AI 文風(逆操作：**拿掉**浮誇與三疊) | `humanize` |
+| 去除 AI 文風 / 浮誇感 | `humanize` |
 | 寫早期苦戀派瓊瑤(《窗外》《煙雨濛濛》) | (尚未製作；可開 `qiongyao-tragedy`) |
 | 寫晚期歡愉派瓊瑤(《還珠格格》) | (尚未製作；可開 `qiongyao-comedic`) |
 | 寫霸道總裁體 | (尚未製作，屬於更現代的網文體系) |
 
-**邊界提示**：本 skill 與 `humanize` 的修辭取捨互為逆操作，但**僅限於愛情
-敘事脈絡**。離開愛情敘事，瓊瑤式的浮誇與三疊立刻變成 AI 文風——不要用本
-skill 改寫技術文件、報告、純資訊性文字。
+**邊界提示**：瓊瑤式的浮誇修辭與三疊感嘆只在**愛情敘事脈絡**中成立——
+離開愛情敘事，這些 pattern 立刻變成 AI 文風。不要用本 skill 改寫技術
+文件、報告、純資訊性文字。
 
 ## Important Notes
 

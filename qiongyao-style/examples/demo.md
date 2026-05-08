@@ -1,4 +1,4 @@
-# Qiongyao-romance — 示範
+# Qiongyao-style — 示範
 
 展示 `qiongyao-style` 如何把現代文章改寫成中期瓊瑤體愛情敘事。本 skill
 沒有強度分層，單一目標：**中期瓊瑤痴情派(《在水一方》《一簾幽夢》流派)**。

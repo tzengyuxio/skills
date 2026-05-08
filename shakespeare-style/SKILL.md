@@ -1,5 +1,5 @@
 ---
-name: shakespeare-zhusheng
+name: shakespeare-style
 description: >
   Transform any article into Mid-20th-century Zhu-Shenghao-style Chinese
   translation of Shakespearean tragedy (朱生豪式中譯莎劇腔) — Traditional
@@ -10,13 +10,13 @@ description: >
   formatting (character-prefixed dialogue, stage directions, asides) is
   Soft-rule: required for outputs ≥500 chars, optional for shorter
   prose-style outputs that retain the dramatic register. Primarily
-  user-invoked via "/shakespeare-zhusheng"; also triggers on "改寫成莎劇",
+  user-invoked via "/shakespeare-style"; also triggers on "改寫成莎劇",
   "莎翁腔", "朱生豪式", "rewrite as Shakespearean tragedy".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# Shakespeare-zhusheng — 改寫成朱生豪式中譯莎劇腔
+# Shakespeare-style — 改寫成朱生豪式中譯莎劇腔
 
 把任何文章改寫成朱生豪式（1940s–50s）的中譯莎劇悲劇腔——譬喻濃密、文白
 夾雜、戲劇性情感外露，讀完讓人覺得這不只是一段敘述，而是一場小型的人類
@@ -321,7 +321,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 | 想做的事 | 用哪個 skill |
 |---|---|
-| 把文章改寫為朱生豪式中譯莎劇腔（本 skill 目標）| **shakespeare-zhusheng** |
+| 把文章改寫為朱生豪式中譯莎劇腔（本 skill 目標）| **shakespeare-style** |
 | 寫莎翁原作 Early Modern English | （不在本 skill 範圍）|
 | 寫梁實秋式譯本腔（較精準淺白）| （日後可開 `shakespeare-liangshiqiu`）|
 | 寫敘事公案（東方禪宗）| `koanify` |

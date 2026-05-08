@@ -1,4 +1,4 @@
-# Shakespeare-zhusheng — 改寫成朱生豪式中譯莎劇腔
+# Shakespeare-style — 改寫成朱生豪式中譯莎劇腔
 
 把任何文章改寫成朱生豪式（1940s–50s）的中譯莎劇悲劇腔。
 
@@ -19,7 +19,7 @@
 | 戲劇性 | 強烈呼告／感嘆／反問 | 學術譯本偏陳述 |
 | 翻譯感 | 適度保留（強化「中譯」印象） | caricature 翻譯腔（westernise 領域） |
 
-`shakespeare-zhusheng` 鎖定這個風格的共同 DNA：**譬喻密度 + 文白夾雜 +
+`shakespeare-style` 鎖定這個風格的共同 DNA：**譬喻密度 + 文白夾雜 +
 戲劇性情感外露**。
 
 ## 風格參考
@@ -88,7 +88,7 @@
 兩者**都**會帶有歐化翻譯感——這是中譯西洋文學的本質，本 skill 不視為
 違規。差別在**美學目標**：
 
-| | shakespeare-zhusheng | westernise |
+| | shakespeare-style | westernise |
 |---|---|---|
 | 美學目標 | **戲劇詩意 + 翻譯感** 並存 | **caricature 式的彆扭翻譯腔** |
 | 翻譯感 | 強化「西洋文學中譯」的閱讀印象 | 刻意凸顯翻譯的彆扭感、異質感 |
@@ -106,7 +106,7 @@
 ```bash
 git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
   && mkdir -p ~/.claude/skills \
-  && cp -r /tmp/tz-skills/shakespeare-zhusheng ~/.claude/skills/ \
+  && cp -r /tmp/tz-skills/shakespeare-style ~/.claude/skills/ \
   && rm -rf /tmp/tz-skills
 ```
 
@@ -114,24 +114,24 @@ git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
 
 ```
 /plugin marketplace add tzengyuxio/skills
-/plugin install shakespeare-zhusheng@tzengyuxio-skills
+/plugin install shakespeare-style@tzengyuxio-skills
 ```
 
 手動安裝：
 
 ```bash
-cp -r shakespeare-zhusheng ~/.claude/skills/shakespeare-zhusheng
+cp -r shakespeare-style ~/.claude/skills/shakespeare-style
 ```
 
 ## 使用方式
 
 ```
-/shakespeare-zhusheng path/to/article.md
+/shakespeare-style path/to/article.md
 ```
 
 也可以直接貼一段文字進來，或剛寫完一份文件後無參數呼叫。
 
-**觸發詞：** `/shakespeare-zhusheng`、「改寫成莎劇」「莎翁腔」「朱生豪
+**觸發詞：** `/shakespeare-style`、「改寫成莎劇」「莎翁腔」「朱生豪
 式」「rewrite as Shakespearean tragedy」
 
 ## 運作流程

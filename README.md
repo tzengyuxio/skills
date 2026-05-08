@@ -12,7 +12,7 @@
 | 地域中文變體 | 3 | taiwan / hongkong / singapore |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| 文學體裁改寫 | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-zhusheng |
+| 文學體裁改寫 | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style |
 
 > [English version](./README_EN.md)
 
@@ -92,7 +92,7 @@
 | [qiongyao-style](./qiongyao-style/) | 改寫為中期瓊瑤體愛情敘事——《在水一方》《一簾幽夢》流派，300–800 字白話文藝，必有愛情軸與阻礙，痛感收尾 | [demo](./qiongyao-style/examples/demo.md) |
 | [gulong-style](./gulong-style/) | 改寫為中後期古龍武俠——1969《多情劍客無情劍》後成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力，不寫武打過程 | [demo](./gulong-style/examples/demo.md) |
 | [jinyong-style](./jinyong-style/) | 改寫為中期黃金期金庸武俠——1957–1969 五大代表作（射鵰/神鵰/倚天/天龍/笑傲），400–1200 字章回式長句，必有招式詳寫＋詩詞嵌入＋歷史錨定 | [demo](./jinyong-style/examples/demo.md) |
-| [shakespeare-zhusheng](./shakespeare-zhusheng/) | 改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感＋獨白(≥30%) | [demo](./shakespeare-zhusheng/examples/demo.md) |
+| [shakespeare-style](./shakespeare-style/) | 改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感＋獨白(≥30%) | [demo](./shakespeare-style/examples/demo.md) |
 
 ## 安裝方式
 

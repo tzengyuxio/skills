@@ -1,24 +1,27 @@
 # Skills — Chinese Register & Style Transformation Toolkit
 
-A systematic skill collection targeting the **registers, styles, regional varieties, and historical layers of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
+A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Covers four axes of Chinese-language variation:
+Currently 22 skills across 7 categories:
 
-- **Human writing ↔ AI writing tics** ([humanize](./humanize/))
-- **Natural Chinese ↔ Europeanized translationese** ([dewesternise](./dewesternise/) / [westernise](./westernise/))
-- **Standard Mandarin ↔ regional varieties** ([taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/) / [singapore-mandarin](./singapore-mandarin/))
-- **Modern Chinese ↔ historical Literary Chinese** ([wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/), spanning ~2500 years)
-
-Plus three Chinese-English hybrid tools: [chinglish](./chinglish/), [singlish](./singlish/), [hanjify](./hanjify/).
+| Category | Count | Skills |
+|---|---|---|
+| AI writing style | 1 | humanize (remove AI tics) |
+| Translation accent | 2 | dewesternise / westernise |
+| Chinese-English hybrid | 3 | chinglish / singlish / hanjify |
+| Regional Chinese | 3 | taiwan / hongkong / singapore |
+| Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
+| Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
+| Literary genre | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style |
 
 > [中文版](./README.md)
 
 ## Highlights
 
-- **Controllable intensity spectrum**: most skills offer **Light / Medium / Heavy** levels — no one-size-fits-all output
-- **Systematic checklists**: each skill has 20-30 explicit rules, every one tagged with firmness and minimum intensity (e.g. `[Hard, Medium+]`) — reproducible and traceable
+- **Controllable intensity spectrum**: translation-accent and regional-variety skills offer **Light / Medium / Heavy** levels (other categories produce a single targeted output, no intensity tiers)
+- **Systematic checklists**: each skill has 20-30 explicit rules, every one tagged with firmness and (where applicable) minimum intensity — reproducible and traceable
 - **Linguistic rigor**: each skill demarcates its linguistic scope, cites relevant research (邵敬敏, Jerry Norman, 胡適, etc.), grounds rules in real corpora, and **rejects caricature** — language varieties are treated as legitimate systems, not targets of mockery
-- **Inverse pairs and composability**: `dewesternise` ↔ `westernise` are inverse operations; skills can be chained (e.g. `dewesternise` → `taiwan-mandarin`)
+- **Inverse pairs and composability**: two duality pairs — `dewesternise` ↔ `westernise`, and `gulong-style` ↔ `jinyong-style` (terse-with-aphorism vs chapter-form-with-named-moves); skills can be chained (e.g. `dewesternise` → `taiwan-mandarin`)
 - **Public demos separated from local tests**: each skill's [`examples/`](./examples/) folder holds clean showcases; the shared [`examples/source-texts/`](./examples/source-texts/) corpus lets you compare skills side-by-side
 
 ## Available Skills
@@ -77,6 +80,19 @@ Rewrite modern Chinese into different historical literary styles, each with a 20
 | [wenyan-hanwei](./wenyan-hanwei/) | Han-Wei Historical Narrative (漢魏史傳體) | Shiji, Hanshu, Records of the Three Kingdoms |
 | [wenyan-guwen](./wenyan-guwen/) | Tang-Song Classical Essay (唐宋古文體) | Han Yu, Su Shi, Ouyang Xiu |
 | [wenyan-huaben](./wenyan-huaben/) | Vernacular Fiction (話本小說體) | Water Margin, Romance of the Three Kingdoms, Dream of the Red Chamber |
+
+### Literary Genre Rewriting
+
+Rewrite text into specific literary genres — not just stylistic tweaks, but reorganizing narrative structure, character roles, and rhetorical economy. Room is left for future genres (fables, fairy tales, mythology, mystery, fantasy, etc.).
+
+| Skill | Function |
+|-------|----------|
+| [koanify](./koanify/) | Rewrite into a narrative-style Zen koan — Hakuin's "Is that so?" tradition, 100–400 chars, white-vernacular with light classical particles, one of eight closure techniques |
+| [liaozhai-tale](./liaozhai-tale/) | Rewrite into a 聊齋 classical short tale — Pu Songling tradition, 200–800 chars in pure 文言, one element transposed into the supernatural register (fox spirit / ghost / etc.) |
+| [qiongyao-style](./qiongyao-style/) | Rewrite into Mid-Era Qiongyao romance — 《在水一方》《一簾幽夢》 tradition, 300–800 chars literary modern vernacular, mandatory love axis with structural obstacle, ache-preserving ending |
+| [gulong-style](./gulong-style/) | Rewrite into Mid-late Gulong wuxia — post-1969《多情劍客無情劍》 mature period, 200–600 chars with extreme short-sentence rhythm, embedded aphorisms, mandatory contrast tension, no battle process |
+| [jinyong-style](./jinyong-style/) | Rewrite into Mid-Era Jinyong wuxia — 1957–1969 five major works (Condor / Return / Heaven Sword / Demi-Gods / Smiling), 400–1200 chars chapter-form long sentences, named moves + classical poetry inlay + historical anchoring |
+| [shakespeare-style](./shakespeare-style/) | Rewrite into Zhu-Shenghao-style Chinese translation of Shakespearean tragedy — four great tragedies (Hamlet/Lear/Othello/Macbeth), 300–1000 chars half-classical-half-vernacular dramatic register, dense metaphors + expressive rhythm + monologues (≥30%) |
 
 ## Installation
 

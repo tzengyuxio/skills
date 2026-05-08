@@ -1,4 +1,4 @@
-# Gulong-wuxia — 示範
+# Gulong-style — 示範
 
 展示 `gulong-style` 如何把現代文章改寫成中後期古龍武俠敘事，以及好的古龍腔
 長什麼樣子。

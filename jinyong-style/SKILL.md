@@ -14,7 +14,7 @@ argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# Jinyong-wuxia — 改寫成中期黃金期金庸武俠
+# Jinyong-style — 改寫成中期黃金期金庸武俠
 
 把任何文章改寫成中期金庸流派的武俠敘事——章回史傳氣、招式詳寫、詩詞嵌入、
 家國情義，讀完讓人覺得江湖與歷史是一體的。

@@ -13,7 +13,7 @@ argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# Gulong-wuxia — 改寫成中後期古龍武俠
+# Gulong-style — 改寫成中後期古龍武俠
 
 把任何文章改寫成中後期古龍流派的武俠敘事——極短句節奏、警句嵌入、對比張力，
 讀完讓人停一拍，覺得江湖很遠，又覺得就在身邊。

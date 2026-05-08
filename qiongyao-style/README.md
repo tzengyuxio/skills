@@ -1,4 +1,4 @@
-# Qiongyao-romance — 改寫成中期瓊瑤體愛情敘事
+# Qiongyao-style — 改寫成中期瓊瑤體愛情敘事
 
 把任何文章改寫成中期瓊瑤(《在水一方》《一簾幽夢》《幾度夕陽紅》)流派的
 愛情敘事——白話文藝、必有愛情軸與阻礙、中度詩詞引用、結尾保留痛感。
@@ -28,17 +28,6 @@
 | **修辭** | 感嘆、反問、頂真、博喻密度高 |
 | **意象** | 雨、海、簾、夢、星、書信、月 |
 | **結尾** | 痛感收尾(未滿、錯過、訣別)，不抹平 |
-
-## 與 humanize 互為逆操作(重要)
-
-`humanize` 拿掉的 AI 文風 pattern——浮誇 / 三連排比 / 感嘆句 / 否定平行
-結構——正是中期瓊瑤要刻意保留與強化的。但這些 pattern **僅在愛情敘事的
-脈絡下才不顯違和**：
-
-- ✅ 用 `qiongyao-style` 改寫一段愛情故事 → 自然
-- ❌ 用 `qiongyao-style` 改寫一段技術文件 → 違和、像 AI 文風
-
-**不要在愛情敘事以外的場景使用本 skill**。
 
 ## 風格參考
 
@@ -158,7 +147,7 @@ cp -r qiongyao-style ~/.claude/skills/qiongyao-style
 | Skill | 體裁 | 情感取向 | 必備元素 |
 |---|---|---|---|
 | **qiongyao-style**(本) | 中期瓊瑤愛情敘事 | 高度濃烈 | 愛情 + 阻礙 |
-| `humanize` | 去 AI 文風 | 反濃情 | (本 skill 的逆操作) |
+| `humanize` | 去 AI 文風 | 中性 | (一般寫作用此移除浮誇) |
 | `koanify` | 敘事公案 | 留白冷靜 | 留白八式 |
 | `liaozhai-tale` | 聊齋志怪 | 冷靜寫實 | 異化某元素 |
 
@@ -174,7 +163,7 @@ cp -r qiongyao-style ~/.claude/skills/qiongyao-style
 - 初版：21 項 checklist(Hard 13 + Soft 8)、9 步 workflow、阻礙詞典、
   4 則示範(自編風格目標 + 木匠雕神像對照 + 差不多先生改寫 + weather-rain 改寫)
 - 設計取材自中期瓊瑤代表作(《在水一方》《一簾幽夢》《幾度夕陽紅》等)
-- 與 humanize 互為逆操作的關係明確標出
+- 設計取材自中期瓊瑤代表作的「未滿之愛」傳統
 
 ## 參考資料
 
@@ -185,6 +174,6 @@ cp -r qiongyao-style ~/.claude/skills/qiongyao-style
 
 ## 相關技能
 
-- [humanize](../humanize/) — 本 skill 的**逆操作**(去除濃情與 AI 文風)
+- [humanize](../humanize/) — 去 AI 文風(一般寫作用此移除浮誇修辭)
 - [koanify](../koanify/) — 敘事公案(冷靜留白，情感取向截然不同)
 - [liaozhai-tale](../liaozhai-tale/) — 聊齋志怪(同樣是體裁轉換，但走文言志怪路線)
