@@ -78,6 +78,14 @@
 | [wenyan-guwen](./wenyan-guwen/) | 唐宋古文體 | 韓愈、蘇軾、歐陽修 | [demo](./wenyan-guwen/examples/demo.md) |
 | [wenyan-huaben](./wenyan-huaben/) | 話本小說體 | 水滸傳、三國演義、紅樓夢 | [demo](./wenyan-huaben/examples/demo.md) |
 
+### 文學體裁改寫
+
+將文章改寫為特定文學體裁——不只是文體微調，而是連敘事結構、角色設定、留白手法都重新組織。預留擴充給其他文學體裁（寓言、童話、武俠、神話等）。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [koanify](./koanify/) | 把任何文章改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，150–400 字白話偏雅，留白八式擇一，純敘事不附解讀 | [demo](./koanify/examples/demo.md) |
+
 ## 安裝方式
 
 ### 請 AI 幫你安裝
