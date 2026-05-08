@@ -89,6 +89,7 @@
 | [qiongyao-romance](./qiongyao-romance/) | 把任何文章改寫為中期瓊瑤體愛情敘事——《在水一方》《一簾幽夢》流派，300–800 字白話文藝，必有愛情軸與阻礙，中度詩詞嵌入，痛感收尾。與 humanize 互為逆操作 | [demo](./qiongyao-romance/examples/demo.md) |
 | [gulong-wuxia](./gulong-wuxia/) | 把任何文章改寫為中後期古龍武俠——1969《多情劍客無情劍》之後的成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力（殺手/殺手、生/死、動/靜），不寫武打過程。與 [jinyong-wuxia](./jinyong-wuxia/) 互為對偶 | [demo](./gulong-wuxia/examples/demo.md) |
 | [jinyong-wuxia](./jinyong-wuxia/) | 把任何文章改寫為中期黃金期金庸武俠——1957–1969《射鵰》《神鵰》《倚天》《天龍》《笑傲》流派，400–1200 字章回式長句，必有招式詳寫＋詩詞嵌入＋歷史錨定（朝代＋地名），必有家國情義／正邪軸。與 [gulong-wuxia](./gulong-wuxia/) 互為對偶 | [demo](./jinyong-wuxia/examples/demo.md) |
+| [shakespeare-zhusheng](./shakespeare-zhusheng/) | 把任何文章改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇（Hamlet/Lear/Othello/Macbeth）流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感外露＋必有獨白(≥30%)，悲劇張力軸（野心/嫉妒/復仇/瘋狂/命運擇一）。戲劇格式 ≥500 字必加，<500 字可散文化譯出 | [demo](./shakespeare-zhusheng/examples/demo.md) |
 
 ## 安裝方式
 
