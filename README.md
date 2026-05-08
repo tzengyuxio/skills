@@ -1,24 +1,27 @@
 # Skills — 中文語體轉換工具集
 
-針對**中文語體、風格、地域變體、歷時風貌**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
+針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-涵蓋四條中文語體軸：
+目前收錄 22 個 skill，分為 7 個分類：
 
-- **人類書寫 ↔ AI 寫作痕跡**（[humanize](./humanize/)）
-- **自然中文 ↔ 歐化翻譯腔**（[dewesternise](./dewesternise/) / [westernise](./westernise/)）
-- **標準華語 ↔ 地域變體**（[taiwan-mandarin](./taiwan-mandarin/) / [hongkong-chinese](./hongkong-chinese/) / [singapore-mandarin](./singapore-mandarin/)）
-- **現代中文 ↔ 歷代文言**（[wenyan-xianqin](./wenyan-xianqin/) / [hanwei](./wenyan-hanwei/) / [guwen](./wenyan-guwen/) / [huaben](./wenyan-huaben/)，跨約 2500 年）
-
-外加三個中英混搭工具：[chinglish](./chinglish/)、[singlish](./singlish/)、[hanjify](./hanjify/)。
+| 分類 | skill 數 | 範圍 |
+|---|---|---|
+| AI 寫作風格處理 | 1 | humanize（去 AI 痕跡） |
+| 翻譯腔處理 | 2 | dewesternise / westernise |
+| 中英語言混搭 | 3 | chinglish / singlish / hanjify |
+| 地域中文變體 | 3 | taiwan / hongkong / singapore |
+| 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
+| 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
+| 文學體裁改寫 | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-zhusheng |
 
 > [English version](./README_EN.md)
 
 ## 特色
 
-- **強度光譜可控**：多數 skill 提供**輕／中／重**三段強度，使用者依目標 register 選擇；不是一刀切的單一輸出
-- **系統化 checklist**：每個 skill 都有 20-30 項明確規則，每項標記軟硬程度與啟用強度（如 `[Hard, Medium+]`），可重現、可追溯
+- **強度光譜可控**：歐化處理與地域變體類 skill 提供**輕／中／重**三段強度，依目標 register 選擇（其餘類別為單一目標輸出，不分強度）
+- **系統化 checklist**：每個 skill 都有 20-30 項明確規則，每項標記軟硬程度與（適用時）啟用強度，可重現、可追溯
 - **語言學嚴謹**：明確劃定各 skill 的語言學範疇、引用相關研究（邵敬敏、Jerry Norman、胡適等）、以真實語料為範本、**排除 caricature**——把語言變體當真實系統對待，不當嘲諷對象
-- **逆操作對偶、可組合**：`dewesternise` ↔ `westernise` 互為反向；skills 可串接使用（如 `dewesternise` → `taiwan-mandarin`）
+- **逆操作對偶、可組合**：兩組對偶 skill：`dewesternise` ↔ `westernise`、`gulong-style` ↔ `jinyong-style`（短句留白派 vs 章回招式派）；skills 可串接使用（如 `dewesternise` → `taiwan-mandarin`）
 - **公開示範與本地實驗分離**：各 skill 的 [`examples/`](./examples/) 收錄乾淨展示，共用 [`examples/source-texts/`](./examples/source-texts/) 源文庫讓各 skill 可橫向比較
 
 ## 可用技能
@@ -80,16 +83,16 @@
 
 ### 文學體裁改寫
 
-將文章改寫為特定文學體裁——不只是文體微調，而是連敘事結構、角色設定、留白手法都重新組織。預留擴充給其他文學體裁（寓言、童話、武俠、神話等）。
+將文章改寫為特定文學體裁——不只是文體微調，而是連敘事結構、角色設定、留白手法都重新組織。預留擴充給其他文學體裁（寓言、童話、神話、推理、奇幻等）。
 
 | 技能 | 功能 | 範例 |
 |------|------|------|
-| [koanify](./koanify/) | 把任何文章改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，100–400 字白話偏雅，留白八式擇一，純敘事不附解讀 | [demo](./koanify/examples/demo.md) |
-| [liaozhai-tale](./liaozhai-tale/) | 把任何文章改寫為聊齋體文言短篇——蒲松齡流派，200–800 字純文言，必有「異化」元素（狐／鬼／妖／精／神／異獸／物精），條件附「異史氏曰」評語 | [demo](./liaozhai-tale/examples/demo.md) |
-| [qiongyao-romance](./qiongyao-romance/) | 把任何文章改寫為中期瓊瑤體愛情敘事——《在水一方》《一簾幽夢》流派，300–800 字白話文藝，必有愛情軸與阻礙，中度詩詞嵌入，痛感收尾。與 humanize 互為逆操作 | [demo](./qiongyao-romance/examples/demo.md) |
-| [gulong-wuxia](./gulong-wuxia/) | 把任何文章改寫為中後期古龍武俠——1969《多情劍客無情劍》之後的成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力（殺手/殺手、生/死、動/靜），不寫武打過程。與 [jinyong-wuxia](./jinyong-wuxia/) 互為對偶 | [demo](./gulong-wuxia/examples/demo.md) |
-| [jinyong-wuxia](./jinyong-wuxia/) | 把任何文章改寫為中期黃金期金庸武俠——1957–1969《射鵰》《神鵰》《倚天》《天龍》《笑傲》流派，400–1200 字章回式長句，必有招式詳寫＋詩詞嵌入＋歷史錨定（朝代＋地名），必有家國情義／正邪軸。與 [gulong-wuxia](./gulong-wuxia/) 互為對偶 | [demo](./jinyong-wuxia/examples/demo.md) |
-| [shakespeare-zhusheng](./shakespeare-zhusheng/) | 把任何文章改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇（Hamlet/Lear/Othello/Macbeth）流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感外露＋必有獨白(≥30%)，悲劇張力軸（野心/嫉妒/復仇/瘋狂/命運擇一）。戲劇格式 ≥500 字必加，<500 字可散文化譯出 | [demo](./shakespeare-zhusheng/examples/demo.md) |
+| [koanify](./koanify/) | 改寫為敘事禪宗公案——白隱「是這樣嗎?」流派，100–400 字白話偏雅，留白八式擇一 | [demo](./koanify/examples/demo.md) |
+| [liaozhai-tale](./liaozhai-tale/) | 改寫為聊齋體文言短篇——蒲松齡流派，200–800 字純文言，必有「異化」元素（狐／鬼／妖／精等） | [demo](./liaozhai-tale/examples/demo.md) |
+| [qiongyao-style](./qiongyao-style/) | 改寫為中期瓊瑤體愛情敘事——《在水一方》《一簾幽夢》流派，300–800 字白話文藝，必有愛情軸與阻礙，痛感收尾 | [demo](./qiongyao-style/examples/demo.md) |
+| [gulong-style](./gulong-style/) | 改寫為中後期古龍武俠——1969《多情劍客無情劍》後成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力，不寫武打過程 | [demo](./gulong-style/examples/demo.md) |
+| [jinyong-style](./jinyong-style/) | 改寫為中期黃金期金庸武俠——1957–1969 五大代表作（射鵰/神鵰/倚天/天龍/笑傲），400–1200 字章回式長句，必有招式詳寫＋詩詞嵌入＋歷史錨定 | [demo](./jinyong-style/examples/demo.md) |
+| [shakespeare-zhusheng](./shakespeare-zhusheng/) | 改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感＋獨白(≥30%) | [demo](./shakespeare-zhusheng/examples/demo.md) |
 
 ## 安裝方式
 

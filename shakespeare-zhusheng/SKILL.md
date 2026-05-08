@@ -326,8 +326,8 @@ allowed-tools: Read, Write, Edit, Glob
 | 寫梁實秋式譯本腔（較精準淺白）| （日後可開 `shakespeare-liangshiqiu`）|
 | 寫敘事公案（東方禪宗）| `koanify` |
 | 寫志怪短篇（東方文言）| `liaozhai-tale` |
-| 寫瓊瑤體愛情敘事 | `qiongyao-romance` |
-| 寫古龍／金庸武俠 | `gulong-wuxia` / `jinyong-wuxia` |
+| 寫瓊瑤體愛情敘事 | `qiongyao-style` |
+| 寫古龍／金庸武俠 | `gulong-style` / `jinyong-style` |
 | 加翻譯腔（歐化中文）| `westernise`（兩者**都**有翻譯感但美學目標不同：westernise 追求 caricature 式的彆扭翻譯腔；本 skill 是「戲劇詩意 + 翻譯感」並存）|
 
 如果使用者要的是**英文莎翁原作風**或**現代恐怖戲劇**，告訴使用者本 skill

@@ -14,7 +14,7 @@
 | **中期痴情派(1970s–1990s)** | 《在水一方》《一簾幽夢》《海鷗飛處》《卻上心頭》《彩雲飛》 | 古典化、詩詞引用、夢境與現實交錯 |
 | 晚期歡愉派(2000s) | 《還珠格格》《情深深雨濛濛》 | 戲劇化、多角關係、留意噯咳咳語勢 |
 
-**`qiongyao-romance` 鎖定中期痴情派**——這是瓊瑤體辨識度最高的時期，
+**`qiongyao-style` 鎖定中期痴情派**——這是瓊瑤體辨識度最高的時期，
 也是「瓊瑤式」一詞的原型。
 
 ## 中期瓊瑤的標誌性結構
@@ -35,8 +35,8 @@
 結構——正是中期瓊瑤要刻意保留與強化的。但這些 pattern **僅在愛情敘事的
 脈絡下才不顯違和**：
 
-- ✅ 用 `qiongyao-romance` 改寫一段愛情故事 → 自然
-- ❌ 用 `qiongyao-romance` 改寫一段技術文件 → 違和、像 AI 文風
+- ✅ 用 `qiongyao-style` 改寫一段愛情故事 → 自然
+- ❌ 用 `qiongyao-style` 改寫一段技術文件 → 違和、像 AI 文風
 
 **不要在愛情敘事以外的場景使用本 skill**。
 
@@ -88,7 +88,7 @@
 ```bash
 git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
   && mkdir -p ~/.claude/skills \
-  && cp -r /tmp/tz-skills/qiongyao-romance ~/.claude/skills/ \
+  && cp -r /tmp/tz-skills/qiongyao-style ~/.claude/skills/ \
   && rm -rf /tmp/tz-skills
 ```
 
@@ -96,24 +96,24 @@ git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
 
 ```
 /plugin marketplace add tzengyuxio/skills
-/plugin install qiongyao-romance@tzengyuxio-skills
+/plugin install qiongyao-style@tzengyuxio-skills
 ```
 
 手動安裝：
 
 ```bash
-cp -r qiongyao-romance ~/.claude/skills/qiongyao-romance
+cp -r qiongyao-style ~/.claude/skills/qiongyao-style
 ```
 
 ## 使用方式
 
 ```
-/qiongyao-romance path/to/article.md
+/qiongyao-style path/to/article.md
 ```
 
 也可以直接貼一段文字進來，或剛寫完一份文件後無參數呼叫。
 
-**觸發詞：** `/qiongyao-romance`、「改寫成瓊瑤」「寫成瓊瑤體」「做一則瓊瑤」
+**觸發詞：** `/qiongyao-style`、「改寫成瓊瑤」「寫成瓊瑤體」「做一則瓊瑤」
 「瓊瑤式愛情」「rewrite as Qiongyao romance」「turn into Chiung Yao style」
 
 ## 運作流程
@@ -157,7 +157,7 @@ cp -r qiongyao-romance ~/.claude/skills/qiongyao-romance
 
 | Skill | 體裁 | 情感取向 | 必備元素 |
 |---|---|---|---|
-| **qiongyao-romance**(本) | 中期瓊瑤愛情敘事 | 高度濃烈 | 愛情 + 阻礙 |
+| **qiongyao-style**(本) | 中期瓊瑤愛情敘事 | 高度濃烈 | 愛情 + 阻礙 |
 | `humanize` | 去 AI 文風 | 反濃情 | (本 skill 的逆操作) |
 | `koanify` | 敘事公案 | 留白冷靜 | 留白八式 |
 | `liaozhai-tale` | 聊齋志怪 | 冷靜寫實 | 異化某元素 |

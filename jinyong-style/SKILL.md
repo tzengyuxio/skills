@@ -1,14 +1,14 @@
 ---
-name: jinyong-wuxia
+name: jinyong-style
 description: >
   Transform any article into Mid-Era Jinyong (中期黃金期金庸 1957–1969,
   《射鵰》《神鵰》《倚天》《天龍》《笑傲》流派) wuxia narrative —
   Traditional Chinese, 400–1200 characters with 章回式長句 (avg ≥18 chars),
   mandatory martial-art moves with names, embedded classical poetry, and
   historical anchoring (specific dynasty + place). Designed as the duality
-  counterpart of `gulong-wuxia` (短句留白派) — for that style use
-  gulong-wuxia. Excludes 《鹿鼎記》 (late-period anti-wuxia variant).
-  Primarily user-invoked via "/jinyong-wuxia"; also triggers on
+  counterpart of `gulong-style` (短句留白派) — for that style use
+  gulong-style. Excludes 《鹿鼎記》 (late-period anti-wuxia variant).
+  Primarily user-invoked via "/jinyong-style"; also triggers on
   "改寫成金庸", "金庸體", "金庸式武俠", "rewrite as Jinyong wuxia".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
@@ -26,7 +26,7 @@ allowed-tools: Read, Write, Edit, Glob
 ## 一句話靈魂
 
 **章回史傳氣 + 招式詳寫 + 詩詞嵌入**——三者構成金庸體指紋，缺一就不是金庸。
-其餘 checklist 都在服務這三條。本 skill 與 `gulong-wuxia` 互為精準對偶
+其餘 checklist 都在服務這三條。本 skill 與 `gulong-style` 互為精準對偶
 （短句留白派 vs 章回招式派）。
 
 ## Arguments
@@ -176,7 +176,7 @@ allowed-tools: Read, Write, Edit, Glob
 |---|---|---|
 | V-01 | Hard | **半文白章回語感**——多文言虛詞（乃／遂／卻／既／已／忽／竟），白話為基底但古意較重 |
 | V-02 | Hard | **詳實鋪陳**——景物、人物外貌、招式過程都須具體描寫。凝鍊是古龍的，鋪陳是金庸的 |
-| V-03 | Hard | **武打過程詳寫**——招數、對打回合、勝負理由要交代。與 `gulong-wuxia` V-03「不寫過程」精準對偶 |
+| V-03 | Hard | **武打過程詳寫**——招數、對打回合、勝負理由要交代。與 `gulong-style` V-03「不寫過程」精準對偶 |
 | V-04 | Soft | **章回套語點綴**（卻說／話說／不料／原來／但見／只見／果然／畢竟）|
 | V-05 | Soft | **敘事者可有議論性旁白**（類似史傳「太史公曰」之筆），但篇末才用，不可頻繁 |
 
@@ -301,25 +301,25 @@ allowed-tools: Read, Write, Edit, Glob
 
 | 想做的事 | 用哪個 skill |
 |---|---|
-| 把文章改寫為中期金庸武俠（本 skill 目標）| **jinyong-wuxia** |
-| 寫古龍式短句留白派 | `gulong-wuxia`（本 skill 的對偶）|
+| 把文章改寫為中期金庸武俠（本 skill 目標）| **jinyong-style** |
+| 寫古龍式短句留白派 | `gulong-style`（本 skill 的對偶）|
 | 寫晚期金庸《鹿鼎》式反武俠 | （不在本 skill 範圍；可考慮 `jinyong-late` 但 caricature 風險高）|
 | 寫敘事公案 | `koanify` |
 | 寫志怪短篇 | `liaozhai-tale` |
-| 寫瓊瑤體愛情敘事 | `qiongyao-romance` |
+| 寫瓊瑤體愛情敘事 | `qiongyao-style` |
 | 改寫為文言文 | `wenyan-guwen` / `wenyan-hanwei` 等 |
 | 寫早期傳統武俠（平江不肖生、還珠樓主）| （尚未製作）|
 | 寫網文修真／玄幻 | （尚未製作；屬於更現代的網文體系）|
 
 如果使用者要的是**古龍式短句**或**寫殺手寫孤獨**，告訴使用者本 skill 是
-**金庸式章回招式派**，建議改用 `gulong-wuxia`。
+**金庸式章回招式派**，建議改用 `gulong-style`。
 
 ## Important Notes
 
 - 本 skill 是**體裁轉換工具**，不是「把句子加長加文言」工具。原文的核心
   張力必須被保留，以章回武俠的形式重新承載
-- **對偶設計**：本 skill 與 `gulong-wuxia` 互為對偶——金庸的章回招式派
-  vs 古龍的短句留白派。21 條 checklist 的每一條，gulong-wuxia 都有反向
+- **對偶設計**：本 skill 與 `gulong-style` 互為對偶——金庸的章回招式派
+  vs 古龍的短句留白派。21 條 checklist 的每一條，gulong-style 都有反向
   對應條款
 - **不要寫成古文觀止**——半文白是金庸的平衡點，純文言反而失去金庸感
 - **保留歷史厚度**——朝代與地名是金庸的錨。沒有歷史錨定的金庸體是金庸

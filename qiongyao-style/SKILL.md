@@ -1,5 +1,5 @@
 ---
-name: qiongyao-romance
+name: qiongyao-style
 description: >
   Transform any article into a Mid-Era Qiongyao (中期瓊瑤,《在水一方》
   《一簾幽夢》流派) romance — 300–800 character modern-vernacular romance
@@ -8,7 +8,7 @@ description: >
   preserves the ache. **Inverse of `humanize`**: the grandiose framing,
   tricolons, and exclamations that humanize removes are deliberately retained
   here — but **only within romance narrative**, never for general writing.
-  Primarily user-invoked via "/qiongyao-romance"; also triggers on
+  Primarily user-invoked via "/qiongyao-style"; also triggers on
   "改寫成瓊瑤", "寫成瓊瑤體", "瓊瑤式愛情", "rewrite as Qiongyao romance".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
@@ -276,7 +276,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 | 想做的事 | 用哪個 skill |
 |---|---|
-| 把文章改寫為中期瓊瑤體愛情敘事(本 skill 目標) | **qiongyao-romance** |
+| 把文章改寫為中期瓊瑤體愛情敘事(本 skill 目標) | **qiongyao-style** |
 | 寫敘事公案(冷靜留白，無愛情強制) | `koanify` |
 | 寫志怪短篇(必有異類) | `liaozhai-tale` |
 | 去除 AI 文風(逆操作：**拿掉**浮誇與三疊) | `humanize` |

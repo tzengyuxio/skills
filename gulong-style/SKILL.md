@@ -1,13 +1,13 @@
 ---
-name: gulong-wuxia
+name: gulong-style
 description: >
   Transform any article into Mid-Era Gulong (中後期古龍《多情劍客無情劍》
   1969 之後) wuxia narrative — Traditional Chinese, 200–600 characters
   with extreme short-sentence rhythm (avg ≤12 chars), embedded aphorisms,
   mandatory contrast tension (殺手 vs 殺手 / 生 vs 死 / 動 vs 靜 / 年輕
   vs 年老), no battle process. Designed as the duality counterpart of the
-  future `jinyong-wuxia` (章回招式派) — for that style use jinyong-wuxia
-  when it lands. Primarily user-invoked via "/gulong-wuxia"; also triggers
+  future `jinyong-style` (章回招式派) — for that style use jinyong-style
+  when it lands. Primarily user-invoked via "/gulong-style"; also triggers
   on "改寫成古龍", "古龍體", "古龍式武俠", "rewrite as Gulong wuxia".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
@@ -283,25 +283,25 @@ allowed-tools: Read, Write, Edit, Glob
 
 | 想做的事 | 用哪個 skill |
 |---|---|
-| 把文章改寫為中後期古龍武俠(本 skill 目標) | **gulong-wuxia** |
-| 寫金庸式章回武俠(招式詳寫、史傳氣) | `jinyong-wuxia`(尚未製作；本 skill 的對偶) |
+| 把文章改寫為中後期古龍武俠(本 skill 目標) | **gulong-style** |
+| 寫金庸式章回武俠(招式詳寫、史傳氣) | `jinyong-style`(尚未製作；本 skill 的對偶) |
 | 寫敘事公案(冷靜留白，無江湖框架) | `koanify` |
 | 寫志怪短篇(必有異類) | `liaozhai-tale` |
-| 寫瓊瑤體愛情敘事 | `qiongyao-romance` |
+| 寫瓊瑤體愛情敘事 | `qiongyao-style` |
 | 改寫為文言文 | `wenyan-guwen` / `wenyan-hanwei` 等 |
 | 寫早期傳統武俠(平江不肖生、還珠樓主) | (尚未製作) |
 | 寫網文修真 / 玄幻體 | (尚未製作；屬於更現代的網文體系) |
 
 如果使用者要的是**金庸式詳寫招式**或**章回對仗**，告訴使用者本 skill 是
-**中後期古龍**(短句留白派)，建議改用 `jinyong-wuxia`(尚未製作)，或繼續
+**中後期古龍**(短句留白派)，建議改用 `jinyong-style`(尚未製作)，或繼續
 用本 skill 但要接受結果偏古龍而非金庸。
 
 ## Important Notes
 
 - 本 skill 是**體裁轉換工具**，不是「把句子切短」工具。原文的核心張力必須
   被保留，以江湖敘事的形式重新承載
-- **對偶設計**：本 skill 與將來的 `jinyong-wuxia` 互為對偶——古龍的短句
-  留白 vs 金庸的章回招式。21 條 checklist 的每一條，jinyong-wuxia 都會有
+- **對偶設計**：本 skill 與將來的 `jinyong-style` 互為對偶——古龍的短句
+  留白 vs 金庸的章回招式。21 條 checklist 的每一條，jinyong-style 都會有
   反向對應條款
 - **不要寫成空洞短句**——濃度來自對立與警句，不是把長句機械斷開
 - **保留鋒利的細節**(刀、酒、風、雪、笑)，不要磨平成抽象的「他若有所思」

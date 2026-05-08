@@ -20,7 +20,7 @@
 | 《歡樂英雄》 | 1971 | 朋友群像、笑的悲傷 |
 | 《絕代雙驕》 | 1968 | 雙生對偶、命運糾結 |
 
-`gulong-wuxia` 鎖定這個時期的共同 DNA：**極短句節奏 + 警句嵌入 + 對比張力**。
+`gulong-style` 鎖定這個時期的共同 DNA：**極短句節奏 + 警句嵌入 + 對比張力**。
 
 ## 風格參考
 
@@ -32,7 +32,7 @@
 
 ## 不會做的事
 
-- 不寫金庸式詳寫招式(那是 `jinyong-wuxia` 的領域，本 skill 的對偶)
+- 不寫金庸式詳寫招式(那是 `jinyong-style` 的領域，本 skill 的對偶)
 - 不寫平江不肖生 / 還珠樓主式的傳統武俠
 - 不在結尾加「他終於明白⋯⋯」(古龍最大的禁忌)
 - 不把警句獨立成段(會變網路文青摘錄體)
@@ -66,11 +66,11 @@
 - 已經是武俠小說的源文(改寫意義不大)
 - 純技術文件、程式碼說明(沒有可承載的江湖場景)
 
-## 與 jinyong-wuxia 的對偶設計
+## 與 jinyong-style 的對偶設計
 
-`gulong-wuxia` 設計時刻意預留了與將來 `jinyong-wuxia` 的對偶軸線：
+`gulong-style` 設計時刻意預留了與將來 `jinyong-style` 的對偶軸線：
 
-| 軸線 | gulong-wuxia | jinyong-wuxia |
+| 軸線 | gulong-style | jinyong-style |
 |---|---|---|
 | 句長 | 極短句、單句成段 | 章回式長複句 |
 | 結構 | 散文化詩意、節奏跳躍 | 章回對仗回目、線性史傳 |
@@ -90,7 +90,7 @@
 ```bash
 git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
   && mkdir -p ~/.claude/skills \
-  && cp -r /tmp/tz-skills/gulong-wuxia ~/.claude/skills/ \
+  && cp -r /tmp/tz-skills/gulong-style ~/.claude/skills/ \
   && rm -rf /tmp/tz-skills
 ```
 
@@ -98,24 +98,24 @@ git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
 
 ```
 /plugin marketplace add tzengyuxio/skills
-/plugin install gulong-wuxia@tzengyuxio-skills
+/plugin install gulong-style@tzengyuxio-skills
 ```
 
 手動安裝：
 
 ```bash
-cp -r gulong-wuxia ~/.claude/skills/gulong-wuxia
+cp -r gulong-style ~/.claude/skills/gulong-style
 ```
 
 ## 使用方式
 
 ```
-/gulong-wuxia path/to/article.md
+/gulong-style path/to/article.md
 ```
 
 也可以直接貼一段文字進來，或剛寫完一份文件後無參數呼叫。
 
-**觸發詞：** `/gulong-wuxia`、「改寫成古龍」「古龍體」「古龍式武俠」
+**觸發詞：** `/gulong-style`、「改寫成古龍」「古龍體」「古龍式武俠」
 「rewrite as Gulong wuxia」
 
 ## 運作流程
@@ -164,7 +164,7 @@ cp -r gulong-wuxia ~/.claude/skills/gulong-wuxia
   傳改寫)
 - 設計取材自中後期古龍代表作系列(《多情劍客無情劍》《天涯·明月·刀》《楚
   留香傳奇》《陸小鳳傳奇》《邊城浪子》《七種武器》《歡樂英雄》《絕代雙驕》)
-- 與將來的 `jinyong-wuxia` 互為對偶 skill，已預留 8 條對偶軸線
+- 與將來的 `jinyong-style` 互為對偶 skill，已預留 8 條對偶軸線
 
 ## 參考資料
 
@@ -176,13 +176,13 @@ cp -r gulong-wuxia ~/.claude/skills/gulong-wuxia
 
 ## 相關技能
 
-- [jinyong-wuxia](../jinyong-wuxia/) — 改寫為金庸式章回武俠(本 skill 的
+- [jinyong-style](../jinyong-style/) — 改寫為金庸式章回武俠(本 skill 的
   對偶；尚未製作)
 - [koanify](../koanify/) — 改寫為敘事禪宗公案(同樣的留白派 DNA，但禪宗
   出世 vs 江湖入世)
 - [liaozhai-tale](../liaozhai-tale/) — 改寫為聊齋體文言短篇(同樣文學體裁
   改寫，但必有異化)
-- [qiongyao-romance](../qiongyao-romance/) — 改寫為瓊瑤式愛情敘事(同樣
+- [qiongyao-style](../qiongyao-style/) — 改寫為瓊瑤式愛情敘事(同樣
   文學體裁改寫，但必有愛情軸與痛感收尾)
 - [humanize](../humanize/) — 去 AI 文風(語感層的腔調轉換，與本 skill
   互補)

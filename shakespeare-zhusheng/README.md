@@ -212,9 +212,9 @@ cp -r shakespeare-zhusheng ~/.claude/skills/shakespeare-zhusheng
   禪宗 vs 西方戲劇）
 - [liaozhai-tale](../liaozhai-tale/) — 改寫為聊齋體文言短篇（同樣文學體裁
   改寫，但東方志怪 vs 西方悲劇）
-- [qiongyao-romance](../qiongyao-romance/) — 改寫為瓊瑤式愛情敘事（同樣
+- [qiongyao-style](../qiongyao-style/) — 改寫為瓊瑤式愛情敘事（同樣
   文學體裁改寫，但現代愛情 vs 古典悲劇）
-- [gulong-wuxia](../gulong-wuxia/) — 改寫為中後期古龍武俠（同樣文學體裁
+- [gulong-style](../gulong-style/) — 改寫為中後期古龍武俠（同樣文學體裁
   改寫，但短句留白 vs 長段獨白）
-- [jinyong-wuxia](../jinyong-wuxia/) — 改寫為金庸式章回武俠（同樣文學體
+- [jinyong-style](../jinyong-style/) — 改寫為金庸式章回武俠（同樣文學體
   裁改寫，但東方家國 vs 西方命運）

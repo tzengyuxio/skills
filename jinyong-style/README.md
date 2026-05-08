@@ -18,7 +18,7 @@
 | 《天龍八部》 | 1963–66 | 佛理與悲劇、群像對位、喬峰命運 |
 | 《笑傲江湖》 | 1967–69 | 江湖政治寓言、令狐冲、獨孤九劍 |
 
-`jinyong-wuxia` 鎖定這個時期的共同 DNA：**章回史傳氣 + 招式詳寫 + 詩詞
+`jinyong-style` 鎖定這個時期的共同 DNA：**章回史傳氣 + 招式詳寫 + 詩詞
 嵌入**。
 
 ## 風格參考
@@ -34,7 +34,7 @@
 
 ## 不會做的事
 
-- 不寫古龍式短句留白（那是 `gulong-wuxia` 的領域，本 skill 的對偶）
+- 不寫古龍式短句留白（那是 `gulong-style` 的領域，本 skill 的對偶）
 - 不寫晚期《鹿鼎記》式戲謔反武俠
 - 不寫平江不肖生／還珠樓主式的早期傳統武俠
 - 不留白突兀結尾（金庸需要起承轉合「合」段）
@@ -70,12 +70,12 @@
 - 已經是武俠小說的源文（改寫意義不大）
 - 純技術文件、程式碼說明（沒有可承載的歷史場景）
 
-## 與 gulong-wuxia 的對偶設計
+## 與 gulong-style 的對偶設計
 
-`jinyong-wuxia` 與 `gulong-wuxia` 互為精準對偶——`gulong-wuxia` 的 Hard
+`jinyong-style` 與 `gulong-style` 互為精準對偶——`gulong-style` 的 Hard
 規則禁止的，這裡多半是 Hard 規則要求的：
 
-| 軸線 | gulong-wuxia | jinyong-wuxia |
+| 軸線 | gulong-style | jinyong-style |
 |---|---|---|
 | 句長 | 極短句、單句成段（≤12 字）| 章回式長複句（平均 ≥18 字）|
 | 結構 | 散文化詩意、節奏跳躍 | 章回對仗、線性史傳起承轉合 |
@@ -95,7 +95,7 @@
 ```bash
 git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
   && mkdir -p ~/.claude/skills \
-  && cp -r /tmp/tz-skills/jinyong-wuxia ~/.claude/skills/ \
+  && cp -r /tmp/tz-skills/jinyong-style ~/.claude/skills/ \
   && rm -rf /tmp/tz-skills
 ```
 
@@ -103,24 +103,24 @@ git clone --depth 1 https://github.com/tzengyuxio/skills.git /tmp/tz-skills \
 
 ```
 /plugin marketplace add tzengyuxio/skills
-/plugin install jinyong-wuxia@tzengyuxio-skills
+/plugin install jinyong-style@tzengyuxio-skills
 ```
 
 手動安裝：
 
 ```bash
-cp -r jinyong-wuxia ~/.claude/skills/jinyong-wuxia
+cp -r jinyong-style ~/.claude/skills/jinyong-style
 ```
 
 ## 使用方式
 
 ```
-/jinyong-wuxia path/to/article.md
+/jinyong-style path/to/article.md
 ```
 
 也可以直接貼一段文字進來，或剛寫完一份文件後無參數呼叫。
 
-**觸發詞：** `/jinyong-wuxia`、「改寫成金庸」「金庸體」「金庸式武俠」
+**觸發詞：** `/jinyong-style`、「改寫成金庸」「金庸體」「金庸式武俠」
 「rewrite as Jinyong wuxia」
 
 ## 運作流程
@@ -164,7 +164,7 @@ cp -r jinyong-wuxia ~/.claude/skills/jinyong-wuxia
 完整的 Before / After 對照（含改寫要點標記）請見
 [examples/demo.md](./examples/demo.md)。
 
-特別推薦看 demo 的「**與 gulong-wuxia 的對偶速覽**」段——同一源文（差不多
+特別推薦看 demo 的「**與 gulong-style 的對偶速覽**」段——同一源文（差不多
 先生／木匠雕神像）在兩個 skill 下產出的結尾差異，最能說明對偶設計的精髓。
 
 ## Changelog
@@ -175,7 +175,7 @@ cp -r jinyong-wuxia ~/.claude/skills/jinyong-wuxia
   4 則示範（武當習劍 + 襄陽承志 + 木匠雕神像對照 + 差不多先生改寫）
 - 設計取材自中期金庸黃金期五大代表作（《射鵰》《神鵰》《倚天》《天龍》
   《笑傲》）
-- 與 `gulong-wuxia` 互為精準對偶，所有對偶軸線雙向呼應
+- 與 `gulong-style` 互為精準對偶，所有對偶軸線雙向呼應
 
 ## 參考資料
 
@@ -188,13 +188,13 @@ cp -r jinyong-wuxia ~/.claude/skills/jinyong-wuxia
 
 ## 相關技能
 
-- [gulong-wuxia](../gulong-wuxia/) — 改寫為中後期古龍武俠（**本 skill
+- [gulong-style](../gulong-style/) — 改寫為中後期古龍武俠（**本 skill
   的對偶**——短句留白派）
 - [koanify](../koanify/) — 改寫為敘事禪宗公案（同樣文學體裁改寫，但禪宗
   出世 vs 江湖入世）
 - [liaozhai-tale](../liaozhai-tale/) — 改寫為聊齋體文言短篇（同樣文學體裁
   改寫，但必有異化）
-- [qiongyao-romance](../qiongyao-romance/) — 改寫為瓊瑤式愛情敘事（同樣
+- [qiongyao-style](../qiongyao-style/) — 改寫為瓊瑤式愛情敘事（同樣
   文學體裁改寫，但必有愛情軸與痛感收尾）
 - [wenyan-huaben](../wenyan-huaben/) — 改寫為話本小說體（同樣半文白語感，
   但話本體更接近說書腔，不寫詳細武打）
