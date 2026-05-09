@@ -2,7 +2,7 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 40 個 skill，分為 9 個分類：
+目前收錄 43 個 skill，分為 10 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
@@ -12,7 +12,8 @@
 | 地域中文變體 | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| 文學體裁改寫 | 11 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style |
+| 文學體裁改寫 | 12 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style / sherlock-holmes-style |
+| 古典詩詞 | 2 | tang-poem-style / song-ci-style |
 | 詮釋型改寫（lens） | 2 | psychoanalytic-lens / postmodern-lens |
 | 網路文體 | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
@@ -107,6 +108,16 @@
 | [bagu-essay](./bagu-essay/) | 改寫為明清八股文——破題承題起講入手＋起股中股後股束股八段齊備，四股兩兩對仗，代聖人立言禁第一人稱，附王鏊〈百姓足君孰與不足〉參照樣本 | [demo](./bagu-essay/examples/demo.md) |
 | [hemingway-style](./hemingway-style/) | 改寫為海明威體中譯版——冰山理論七分情緒水下，短句＋動詞主導＋具體名詞，重複錨定（同詞／同句構／同動作），歐化翻譯腔為 feature 非違規 | [demo](./hemingway-style/examples/demo.md) |
 | [lu-xun-style](./lu-xun-style/) | 改寫為魯迅體——冷峻反諷的早期白話，文白夾雜＋標誌虛詞密集（然而／便／罷了／未免／實在／想來）＋第一人稱「我」＋反諷距離（不嘲弄不認同）；定位為文體致敬而非立場模仿，反諷對象限抽象普世（國民性／看客／苟且） | [demo](./lu-xun-style/examples/demo.md) |
+| [sherlock-holmes-style](./sherlock-holmes-style/) | 改寫為朱生豪式中譯維多利亞偵探小說腔——Conan Doyle《福爾摩斯探案》中譯本流派，第一人稱華生回憶體＋福爾摩斯演繹獨白（我親愛的華生）＋案件三幕（委託登門→現場勘察→演繹揭曉）＋維多利亞物件密度（煤氣燈／懷錶／菸斗／馬車／哈德森太太／蘇格蘭場）；世界觀層必走西洋通名禁中華具體位移；中譯翻譯腔為 feature；輕／中／重三段強度 | [demo](./sherlock-holmes-style/examples/demo.md) |
+
+### 古典詩詞
+
+將文章壓縮、淘洗、煉成中國古典格律詩詞。鎖定平仄、押韻、對仗等硬格律，意境靠古典意象搬移承載。預留擴充給其他韻文體裁（宋詞、樂府、歌行、元曲等）。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [tang-poem-style](./tang-poem-style/) | 改寫為唐詩——五言絕句／七言絕句／五言律詩／七言律詩四種規格擇一，平水韻一韻到底＋平仄循譜（含平起仄起兩式）＋律詩中二聯對仗（頷聯／頸聯詞性結構平仄三層對）；古典意象搬移（電車→車馬／鑰匙→玉鎖）；起承轉合＋末句不直白說教；六首唐詩參照樣本（王維／李白／杜牧／李商隱／杜甫×2） | [demo](./tang-poem-style/examples/demo.md) |
+| [song-ci-style](./song-ci-style/) | 改寫為宋詞——五個經典詞牌擇一（水調歌頭 95 字／念奴嬌 100 字／虞美人 56 字／如夢令 33 字／西江月 50 字），字數＋句長序列＋押韻位置＋平仄譜＋平仄韻交替類型完全合譜；豪放派 vs 婉約派擇一不可混（[豪放派]／[婉約派] 標籤必出）；現代詞彙零違規（電腦／咖啡／捷運轉古典等價物）；五首參照樣本（蘇軾×2／李煜／李清照／辛棄疾） | [demo](./song-ci-style/examples/demo.md) |
 
 ### 詮釋型改寫（lens）
 

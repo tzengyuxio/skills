@@ -2,7 +2,7 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 40 skills across 9 categories:
+Currently 43 skills across 10 categories:
 
 | Category | Count | Skills |
 |---|---|---|
@@ -12,7 +12,8 @@ Currently 40 skills across 9 categories:
 | Regional Chinese | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| Literary genre | 11 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style |
+| Literary genre | 12 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style / sherlock-holmes-style |
+| Classical Poetry | 2 | tang-poem-style / song-ci-style |
 | Interpretive lens | 2 | psychoanalytic-lens / postmodern-lens |
 | Internet vernacular | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
@@ -107,6 +108,16 @@ Rewrite text into specific literary genres — not just stylistic tweaks, but re
 | [bagu-essay](./bagu-essay/) | Rewrite into Ming-Qing eight-legged essay — mandatory eight sections (破題/承題/起講/入手/起股/中股/後股/束股), four "stocks" in strict couplets, "speak in the voice of the sage" forbids first person, includes Wang Ao's《百姓足君孰與不足》as reference sample |
 | [hemingway-style](./hemingway-style/) | Rewrite into Hemingway-style Chinese translation — iceberg theory (seven-eighths under water), short sentences + verb-driven + concrete nouns, repetition anchoring (same word / structure / action), Europeanized translation flavor is a feature, not a violation |
 | [lu-xun-style](./lu-xun-style/) | Rewrite into Lu Xun voice — chilly-ironic early-vernacular Chinese: Wenyan-Baihua mixing + signature particles (然而/便/罷了/未免/實在/想來) + first-person 「我」 + ironic distance (neither mocking nor endorsing); positioned as stylistic homage rather than political mimicry, with irony targets restricted to abstract universals (national character / bystanders / petty self-preservation) |
+| [sherlock-holmes-style](./sherlock-holmes-style/) | Rewrite into Zhu-Shenghao-style Chinese translation of Victorian detective fiction (Conan Doyle's Sherlock Holmes canon) — first-person Watson recollection + Holmes deductive monologue ("My dear Watson") + three-act case structure (client arrives → scene investigation → deductive reveal) + Victorian object density (gas lamp / pocket watch / pipe / hansom cab / Mrs. Hudson / Scotland Yard); world-building must use Western proper nouns (no Chinese-setting transposition); Chinese translation accent is a feature; Light/Medium/Heavy intensity tiers |
+
+### Classical Poetry
+
+Compress, distill, and refine prose into Chinese classical regulated verse. Locks in hard prosody (tonal patterns, rhyme groups, parallelism); imagery is carried by classical-image transposition. Room is left for future verse forms (yuefu, gexing, Yuan qu, additional ci tunes, etc.).
+
+| Skill | Function |
+|-------|----------|
+| [tang-poem-style](./tang-poem-style/) | Rewrite into a Tang-style regulated poem — pick one of four canonical formats (五絕 5-char quatrain / 七絕 7-char quatrain / 五律 5-char regulated / 七律 7-char regulated); single-rhyme-group throughout per 平水韻 + tonal patterns 平仄譜 (both 平起 and 仄起 variants documented) + mandatory parallelism in middle two couplets (頷聯/頸聯) for 律詩, three-layer matching (part-of-speech / structure / tone); classical-image transposition (modern object → Tang equivalent: tram → carriage / key → jade lock); 起承轉合 four-part progression + closing line forbids didactic preaching; six Tang-poem reference samples (Wang Wei / Li Bai / Du Mu / Li Shangyin / Du Fu × 2) |
+| [song-ci-style](./song-ci-style/) | Rewrite into a Song-dynasty 詞 (ci) — pick one of five canonical 詞牌 (tune-titles): 水調歌頭 (95 chars, long-medium) / 念奴嬌 (100 chars, all-仄韻) / 虞美人 (56 chars, alternating 平/仄韻) / 如夢令 (33 chars, single-strain 小令 with 二字疊句) / 西江月 (50 chars, 平仄通叶); strict character count + line-length sequence + rhyme positions + tonal pattern (平仄譜) all on-spec; faction tag [豪放派] vs [婉約派] declared and enforced; modern vocabulary (computer / coffee / metro) categorically banned, mapped to classical equivalents; five reference samples (Su Shi × 2 / Li Yu / Li Qingzhao / Xin Qiji) |
 
 ### Interpretive Rewriting (Lens)
 
