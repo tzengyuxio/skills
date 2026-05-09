@@ -2,14 +2,14 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 32 skills across 9 categories:
+Currently 36 skills across 9 categories:
 
 | Category | Count | Skills |
 |---|---|---|
 | AI writing style | 1 | humanize (remove AI tics) |
 | Translation accent | 2 | dewesternise / westernise |
 | Chinese-English hybrid | 4 | chinglish / singlish / hanjify / jingjing-style |
-| Regional Chinese | 3 | taiwan / hongkong / singapore |
+| Regional Chinese | 7 | taiwan / hongkong / singapore / dongbei / shanghainese / sichuan / written-hokkien |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | Literary genre | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
@@ -63,6 +63,10 @@ Transform text into regional sociolects / written registers of contemporary Chin
 | [taiwan-mandarin](./taiwan-mandarin/) | Transform text into Taiwan Mandarin — Hokkien/Japanese loanwords, phonological respellings (偶/粉/素/降), BBS-era 注音文, and sentence-final particles (啦/喔/齁/耶) | [demo](./taiwan-mandarin/examples/demo.md) |
 | [hongkong-chinese](./hongkong-chinese/) | Transform text into Hong Kong Chinese — HK-specific terms (巴士/的士/雪櫃), transliterations (荷里活/梳化/三文治), English code-mixing, AB/BA word-order flips; Heavy mode extends to full written Cantonese (係/唔/嘅/咗/佢/呢/嗰) | [demo](./hongkong-chinese/examples/demo.md) |
 | [singapore-mandarin](./singapore-mandarin/) | Transform text into Singapore Mandarin (Huayu) — SG administrative vocabulary (組屋/德士/樂齡/客工), Hokkien borrowings (幾時/不懂/做工/怕輸), Malay loanwords (甘榜/巴剎/atas/bodoh), post-verbal 先 placement, 千-based number units; the Mandarin counterpart to singlish | [demo](./singapore-mandarin/examples/demo.md) |
+| [dongbei-mandarin](./dongbei-mandarin/) | Transform text into Northeastern Mandarin (東北話) — three-province speech rhythm (Heilongjiang/Jilin/Liaoning) with marker words 賊/嘎哈/咋整/老鐵/妥妥的; rooted in Zhao Benshen sketches, Errenzhuan, Douyin laotie streamers; Light/Medium/Heavy intensity tiers | [demo](./dongbei-mandarin/examples/demo.md) |
+| [shanghainese](./shanghainese/) | Transform text into Shanghainese / Wu Chinese — pronoun swap (儂/阿拉/伊), negation (弗/勿/覅), sentence-final particles (呃/嘞/伐), Haipai vocabulary (結棍/霞氣/嗲/戇/淘漿糊); Jin Yucheng's《繁花》-style register; Light/Medium/Heavy intensity tiers | [demo](./shanghainese/examples/demo.md) |
+| [sichuan-mandarin](./sichuan-mandarin/) | Transform text into Sichuan / Chongqing Mandarin — Southwestern Mandarin Chengyu cluster, jianghu attitude + heavy 兒化 + dense sentence-final particles (嘛/噻/嘞/哈); marker words 巴適/安逸/莫得/搞快點/龜兒; channels《Let the Bullets Fly》《Chongqing Hot Pot》; Light/Medium/Heavy intensity tiers | [demo](./sichuan-mandarin/examples/demo.md) |
+| [written-hokkien](./written-hokkien/) | Transform text into written Taiwanese Hokkien — syntax follows Hokkien (not Chinese translation), uses native characters (阮/咱/怹/ê/beh/攏/毋/莫); two intensity tiers: Light (pure Hanzi, MOE-recommended 700 chars) / Heavy (Han-Romaji mix with Tâi-lô); rooted in Lai Ho / Cheng Ching-wen / Asia Babuja literary tradition | [demo](./written-hokkien/examples/demo.md) |
 
 ### Applied Writing Registers (應用文類)
 

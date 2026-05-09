@@ -2,14 +2,14 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 32 個 skill，分為 9 個分類：
+目前收錄 36 個 skill，分為 9 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
 | AI 寫作風格處理 | 1 | humanize（去 AI 痕跡） |
 | 翻譯腔處理 | 2 | dewesternise / westernise |
 | 中英語言混搭 | 4 | chinglish / singlish / hanjify / jingjing-style |
-| 地域中文變體 | 3 | taiwan / hongkong / singapore |
+| 地域中文變體 | 7 | taiwan / hongkong / singapore / dongbei / shanghainese / sichuan / written-hokkien |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | 文學體裁改寫 | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
@@ -63,6 +63,10 @@
 | [taiwan-mandarin](./taiwan-mandarin/) | 將文字轉為台灣國語——融合台語/日語借詞、擬音字（偶/粉/素/降）、注音文、語尾助詞（啦/喔/齁/耶） | [demo](./taiwan-mandarin/examples/demo.md) |
 | [hongkong-chinese](./hongkong-chinese/) | 將文字轉為港式中文——港式詞彙（巴士/的士/雪櫃）、港式音譯（荷里活/梳化/三文治）、中英夾雜、詞序倒置；Heavy 模式可涵蓋完整粵語書面化（係/唔/嘅/咗/佢/呢/嗰） | [demo](./hongkong-chinese/examples/demo.md) |
 | [singapore-mandarin](./singapore-mandarin/) | 將文字轉為新加坡華語——SG 行政生活詞（組屋/德士/樂齡/客工）、閩南語借詞（幾時/不懂/做工/怕輸）、馬來語借詞（甘榜/巴剎/atas/bodoh）、先後置句式、千-單位數字；與 singlish 共構 SG 雙胞胎 | [demo](./singapore-mandarin/examples/demo.md) |
+| [dongbei-mandarin](./dongbei-mandarin/) | 將文字轉為東北話——東北官話三省（黑吉遼）口語節奏，賊／嘎哈／咋整／老鐵／妥妥的標誌詞，趙本山＋二人轉＋抖音老鐵語料；輕／中／重三段強度 | [demo](./dongbei-mandarin/examples/demo.md) |
+| [shanghainese](./shanghainese/) | 將文字轉為上海話／吳語——人稱替換（儂／阿拉／伊）＋否定詞（弗／勿／覅）＋句末助詞（呃／嘞／伐）＋海派標誌詞（結棍／霞氣／嗲／戇／淘漿糊）；金宇澄《繁花》風格；輕／中／重三段強度 | [demo](./shanghainese/examples/demo.md) |
+| [sichuan-mandarin](./sichuan-mandarin/) | 將文字轉為四川話／川渝風格——西南官話成渝片，川渝江湖氣＋兒化重＋句末助詞密集（嘛／噻／嘞／哈），標誌詞巴適／安逸／莫得／搞快點／龜兒；《讓子彈飛》《火鍋英雄》風格；輕／中／重三段強度 | [demo](./sichuan-mandarin/examples/demo.md) |
+| [written-hokkien](./written-hokkien/) | 將文字轉為台語／閩南語書面化——句法走台語（不是中文翻譯），本字使用（阮／咱／怹／ê／beh／攏／毋／莫）；兩段強度：Light 純漢字（教育部 700 字）／ Heavy 漢羅混寫（本字漢字＋台羅）；鄭清文／賴和／陳明仁文學傳統 | [demo](./written-hokkien/examples/demo.md) |
 
 ### 應用文類
 
