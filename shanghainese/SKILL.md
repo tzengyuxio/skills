@@ -446,9 +446,35 @@ If the user doesn't specify, use **Medium**.
 
 ### Meta (M)
 
-- **M-01 [Hard]** 標點：CJK 句內全形，不夾入半形句號逗號。
+- **M-01 [Hard]** **全形標點零違規**——CJK 字之間 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以下方自檢指令驗證通過才算合格。
 - **M-02 [Hard]** 不混入粵語字（嘅 / 咗 / 佢 / 嗰）；上海話與粵語是不同語族。
 - **M-03 [Soft]** Heavy 模式可以呈現《繁花》式不分行對白，但 Medium / Light 維持一般段落格式。
+
+#### M-01 自檢指令
+
+寫完後必跑（指令名留作機械驗證，不可省略）：
+
+```bash
+python3 -c "
+import re, sys
+text = open(sys.argv[1]).read()
+bad = re.findall(r'[^\x00-\x7f][,;:?!][^\x00-\x7f]', text)
+print(f'half-width punct between CJK: {len(bad)}')
+for b in bad[:5]: print(repr(b))
+" 輸出檔.md
+```
+
+結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形於 CJK 字之間，逐字替換後重跑，直到歸零才算交付。
+
+---
+
+## Anti-patterns（常見失敗模式）
+
+寫完一稿、自檢之前，先掃一眼這條最容易踩的坑：
+
+1. **半形標點混入** — 輸出時把 `,;:?!` 打成 ASCII 半形而非全形 `，；：？！`。
+   常見原因是 IME 切換失誤或從英文 prompt 複製字串。M-01 已明文要求全形；
+   寫完務必跑 M-01 自檢指令，計數歸零才算交付。
 
 ---
 

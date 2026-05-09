@@ -489,9 +489,7 @@ Mainland 官方標準是簡體字。但本 skill **預設跟隨輸入字符集**
   默轉換引號
 
 ### Meta / 靈魂條款
-- **M-01** [Hard, Light+] CJK 標點全形；blockquote CJK 段落單行不換行；全
-  形標點與 CJK 之間零空格；例外只給 code block / frontmatter / URL / 副
-  檔名 / 純英文段（yyds / B 站 / emo 等英縮在中文段內保留半形）
+- **M-01** [Hard, Light+] **全形標點零違規**——CJK 字之間 ASCII 半形 `, ; : ? !` 計數須為 0；blockquote CJK 段落單行不換行；全形標點與 CJK 之間零空格；例外只給 code block / frontmatter / URL / 副檔名 / 純英文段（yyds / B 站 / emo 等英縮在中文段內保留半形）。以 Step 5/8 自檢指令驗證通過才算合格
 - **M-02** [Hard, Light+] **PRC 普通話日常 / 媒體文體**：詞彙以大陸現代
   用法為準（視頻 / 質量 / 出租車 / 公交 / 軟件 / 地鐵）+ 網路用語適度嵌
   入（隨強度變化）+ 句法走標準普通話（不台化、不港化、不文言）。Light
@@ -534,9 +532,31 @@ Mainland 官方標準是簡體字。但本 skill **預設跟隨輸入字符集**
 7. **依強度加平台文體**：Medium 加 S2 微博體；Heavy 加 S3 抖音體 + S4
    B 站彈幕。Light 可選 S5 知乎體。
 8. **標點清理**：對照 M-01 與 S-06——全形標點、blockquote 不換行、半
-   形空格只在英文 / 縮寫旁、引號跟隨輸入不靜默轉換。
+   形空格只在英文 / 縮寫旁、引號跟隨輸入不靜默轉換。**寫完後必跑自檢指令**：
+
+   ```bash
+   python3 -c "
+   import re, sys
+   text = open(sys.argv[1]).read()
+   bad = re.findall(r'[^\x00-\x7f][,;:?!][^\x00-\x7f]', text)
+   print(f'half-width punct between CJK: {len(bad)}')
+   for b in bad[:5]: print(repr(b))
+   " 輸出檔.md
+   ```
+
+   結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形於 CJK 字之間，逐字替換後重跑，直到歸零才算交付。
 9. **朗讀檢查節奏**：心中默讀一遍——能不能想像一個微博博主、一個小
    紅書達人、一個 B 站 UP 主這樣寫？卡到的地方退回去調節奏。
+
+---
+
+## Anti-patterns（常見失敗模式）
+
+寫完一稿、自檢之前，先掃一眼這條最容易踩的坑：
+
+1. **半形標點混入** — 輸出時把 `,;:?!` 打成 ASCII 半形而非全形 `，；：？！`。
+   常見原因是 IME 切換失誤或從英文 prompt 複製字串。Light+ 強度的 M-01 與
+   S-06 都明文要求全形；寫完務必跑 Step 5/8 自檢指令，計數歸零才算交付。
 
 ---
 

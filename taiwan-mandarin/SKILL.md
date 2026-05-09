@@ -484,6 +484,37 @@ Extend punctuation for emotional color.
 - ？？？ 多重問號 — 困惑、不敢置信
 - ⋯⋯⋯⋯ 省略號加長 — 無言、欲言又止
 
+### Meta Patterns（後設規則）
+
+#### M1. 全形標點零違規 [Hard, Light+]
+
+CJK 文本中所有標點一律全形。**ASCII 半形 `, ; : ? !` 在 CJK 字之間出現一律是 bug**，必須換成全形 `，；：？！`。對照表：
+
+| 半形（禁） | 全形（用） | Unicode |
+|---|---|---|
+| `,` | `，` | U+FF0C |
+| `;` | `；` | U+FF1B |
+| `:` | `：` | U+FF1A |
+| `?` | `？` | U+FF1F |
+| `!` | `！` | U+FF01 |
+| `(` `)` | `（` `）` | U+FF08 / U+FF09 |
+
+破折號用兩個全形「—」連寫成「——」；引號用「」/『』；句號用「。」；全形標點與 CJK 之間零空格。S4 的 ！！！／？？？／～～～ 仍是全形重複，不是半形。
+
+**寫完後必跑自檢指令**（指令名留作機械驗證，不可省略）：
+
+```bash
+python3 -c "
+import re, sys
+text = open(sys.argv[1]).read()
+bad = re.findall(r'[^\x00-\x7f][,;:?!][^\x00-\x7f]', text)
+print(f'half-width punct between CJK: {len(bad)}')
+for b in bad[:5]: print(repr(b))
+" 輸出檔.md
+```
+
+結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形於 CJK 字之間，逐字替換後重跑，直到歸零才算交付。
+
 ---
 
 ## Step 3: Produce Taiwan Mandarin Output
@@ -531,6 +562,16 @@ If the user doesn't specify, use **Medium**.
 3. **List applied patterns:** Note which major pattern groups (G/P/V/S) were most
    active and why.
 4. **Loanword glossary:** List any loanwords used (台語/日語) with brief meanings.
+
+---
+
+## Anti-patterns（常見失敗模式）
+
+寫完一稿、自檢之前，先掃一眼這條最容易踩的坑：
+
+1. **半形標點混入** — 輸出時把 `,;:?!` 打成 ASCII 半形而非全形 `，；：？！`。
+   常見原因是 IME 切換失誤或從英文 prompt 複製字串。M1 已明文要求全形；
+   寫完務必跑 M1 自檢指令，計數歸零才算交付。
 
 ---
 

@@ -194,8 +194,9 @@ allowed-tools: Read, Write, Edit, Glob
 | M-02 | Hard | **克制**——一篇文章不要把所有概念用完。留白比說滿更接近本 skill 精神 |
 | M-03 | Hard | **不亢奮**——禁止「這正是⋯⋯的絕佳體現」「不正是⋯⋯嗎」這類論證口吻 |
 | M-04 | Soft | 結尾**不收線**——精神分析不結束於「症狀消解」。最後一句允許懸而未決，事實上理想結尾就該如此 |
+| M-05 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以 Step 8 自檢指令驗證通過才算合格 |
 
-**總計**:22 條（Hard 15 + Soft 7）。
+**總計**:23 條（Hard 16 + Soft 7）。
 
 ## Step 7: Verify the Three Core Clauses（核心三條複查）
 
@@ -211,11 +212,35 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 8: Punctuation & Spacing Cleanup
 
-- 中文用全形標點（，。；：「」『』——⋯⋯）
+- **全形標點（鐵律）**：CJK 文本中所有標點一律全形。**ASCII 半形 `, ; : ? !` 在 CJK 字之間出現一律是 bug**，必須換成全形 `，；：？！`。對照表：
+
+  | 半形（禁） | 全形（用） | Unicode |
+  |---|---|---|
+  | `,` | `，` | U+FF0C |
+  | `;` | `；` | U+FF1B |
+  | `:` | `：` | U+FF1A |
+  | `?` | `？` | U+FF1F |
+  | `!` | `！` | U+FF01 |
+  | `(` `)` | `（` `）` | U+FF08 / U+FF09 |
+
 - 數字與英文與中文之間留半形空格（視專案慣例）
 - 破折號用「——」（兩字）而非「—」（一字）或「-」
 - 刪節號用「⋯⋯」（兩個）而非「。。。」（三點）
 - 引號優先「」，引號內用『』
+
+- **寫完後必跑自檢指令**（指令名留作機械驗證，不可省略）：
+
+  ```bash
+  python3 -c "
+  import re, sys
+  text = open(sys.argv[1]).read()
+  bad = re.findall(r'[^\x00-\x7f][,;:?!][^\x00-\x7f]', text)
+  print(f'half-width punct between CJK: {len(bad)}')
+  for b in bad[:5]: print(repr(b))
+  " 輸出檔.md
+  ```
+
+  結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形，回到輸出檔逐字替換後重跑，直到歸零才算交付。
 
 ## Step 9: Read Aloud Check
 
@@ -236,7 +261,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Forbidden in Output
 
-寫完一稿、自檢之前先掃一眼這 6 條最容易踩的坑：
+寫完一稿、自檢之前先掃一眼這 8 條最容易踩的坑：
 
 1. **招牌標題** ❌ —「精神分析解讀：XXX」「拉康視角下的 XXX」「佛洛伊德
    讀 XXX」這類給文章貼大字標籤的標題，絕對禁止
@@ -252,6 +277,9 @@ allowed-tools: Read, Write, Edit, Glob
 7. **流派混血** ❌ — 在 Freud / Lacan 框架裡突然冒出「陰影」「原型」
    「集體無意識」「阿尼瑪」這類 Jung 詞；或反之。Freud↔Lacan 可銜接
    (Lacan 自稱回到 Freud),Jung 必須整篇另走
+8. **半形標點混入** ❌ — 輸出時把 `,;:?!` 打成 ASCII 半形而非全形 `，；：？！`。
+   常見原因是 IME 切換失誤或從英文 prompt 複製字串。寫完務必跑 Step 8 自檢
+   指令，計數歸零才算交付（違反 M-05）
 
 ---
 

@@ -391,6 +391,35 @@ mocking imitation, not tone-deaf cultural appropriation. Treat 粵語 as a
 language with its own literary tradition （黃霑、林夕 歌詞；金庸 / 倪匡 早期港
 報連載；周星馳 對白；連登 / Apple Daily 文體）.
 
+#### M6. 全形標點零違規 [Hard, Light+]
+
+CJK 段所有標點一律全形。**ASCII 半形 `, ; : ? !` 在 CJK 字之間出現一律是 bug**，必須換成全形 `，；：？！`。對照表：
+
+| 半形（禁，當夾在 CJK 字之間時） | 全形（用） | Unicode |
+|---|---|---|
+| `,` | `，` | U+FF0C |
+| `;` | `；` | U+FF1B |
+| `:` | `：` | U+FF1A |
+| `?` | `？` | U+FF1F |
+| `!` | `！` | U+FF01 |
+| `(` `)` | `（` `）` | U+FF08 / U+FF09 |
+
+破折號用兩個全形「—」連寫成「——」；引號用「」/『』；句號用「。」；全形標點與 CJK 之間零空格。**例外**：英文插入照英文慣例（Step 8 標點清理已說明）；自檢規則只檢「CJK 字相鄰的 ASCII 半形標點」，不誤抓英文段內。
+
+**寫完後必跑自檢指令**（指令名留作機械驗證，不可省略）：
+
+```bash
+python3 -c "
+import re, sys
+text = open(sys.argv[1]).read()
+bad = re.findall(r'[一-鿿㐀-䶿][,;:?!][一-鿿㐀-䶿]', text)
+print(f'half-width punct between CJK: {len(bad)}')
+for b in bad[:5]: print(repr(b))
+" 輸出檔.md
+```
+
+結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形於 CJK 字之間，逐字替換後重跑，直到歸零才算交付。
+
 ---
 
 ## Step 3: Choose Intensity & Produce Output
@@ -430,6 +459,17 @@ If the user does not specify, default to **Medium**.
 3. **靈魂條款達標檢核**：列出 G1（核心虛詞）、G2 / G3 / G4（粵語語序）、
    G5（句末助詞）三組是否都至少出現一處。
 4. **詞彙表**：列出本篇出現的核心粵字、句末助詞、文化詞，附普通話對應。
+
+---
+
+## Anti-patterns（常見失敗模式）
+
+寫完一稿、自檢之前，先掃一眼這條最容易踩的坑：
+
+1. **半形標點混入 CJK 字之間** — 把粵語句的逗號 / 句號 / 問號等打成 ASCII
+   半形而非全形。常見原因是 IME 切換失誤或從英文 prompt 複製字串。英文插入
+   段的標點不算違規。M6 已明文要求全形；寫完務必跑 M6 自檢指令，計數歸零才
+   算交付。
 
 ---
 

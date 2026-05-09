@@ -437,8 +437,7 @@ If the user doesn't specify, use **Medium**.
 - **S-06** [Soft, Medium+] 標點貼合短句節奏（不寫超長複句）
 
 ### Meta / 靈魂條款
-- **M-01** [Hard, Light+] CJK 標點全形；blockquote CJK 段落單行不換行；全形標點與
-  CJK 之間零空格
+- **M-01** [Hard, Light+] **全形標點零違規**——CJK 字之間 ASCII 半形 `, ; : ? !` 計數須為 0；blockquote CJK 段落單行不換行；全形標點與 CJK 之間零空格。以 Step 5 自檢指令驗證通過才算合格
 - **M-02** [Hard, C-class] **東北口語節奏感**：必含 ≥ 3 處東北標誌詞（賊 / 嘎哈
   / 咋整 / 整 / 老鐵 / 啥的 / 妥妥的 / 杠杠的）+ 直爽強調語感（短促 + 階梯式
   推進）+ 口語化句末助詞（唄 / 哈 / 啊 / 嗯哪）。Light 每 5-6 句 1-2 處；
@@ -464,9 +463,31 @@ If the user doesn't specify, use **Medium**.
 5. **改造句式**：把長複句切成短句（S2），加反問（G5、S3），加開場詞（S5）。
 6. **加語助詞與口頭禪**：依 S1 / V5 鑲嵌，一句一個，不堆疊。
 7. **檢查標誌詞密度**：對照 M-02 的強度規範，密度過低補；過高刪。
-8. **標點清理**：對照 M-01 與 S-06，全形標點、blockquote 不換行、短句節奏。
+8. **標點清理**：對照 M-01 與 S-06，全形標點、blockquote 不換行、短句節奏。**寫完後必跑自檢指令**：
+
+   ```bash
+   python3 -c "
+   import re, sys
+   text = open(sys.argv[1]).read()
+   bad = re.findall(r'[^\x00-\x7f][,;:?!][^\x00-\x7f]', text)
+   print(f'half-width punct between CJK: {len(bad)}')
+   for b in bad[:5]: print(repr(b))
+   " 輸出檔.md
+   ```
+
+   結果必須為 `0`。非 0 表示輸出時混入了 ASCII 半形於 CJK 字之間，逐字替換後重跑，直到歸零才算交付。
 9. **朗讀檢查節奏**：心中默讀一遍——能不能想像一個東北人這樣說？卡到的地方
    退回去調節奏。
+
+---
+
+## Anti-patterns（常見失敗模式）
+
+寫完一稿、自檢之前，先掃一眼這條最容易踩的坑：
+
+1. **半形標點混入** — 輸出時把 `,;:?!` 打成 ASCII 半形而非全形 `，；：？！`。
+   常見原因是 IME 切換失誤或從英文 prompt 複製字串。M-01 已明文要求全形；
+   寫完務必跑 Step 5 自檢指令，計數歸零才算交付。
 
 ---
 
