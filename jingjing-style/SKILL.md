@@ -9,8 +9,8 @@ description: >
   Heavy 每句 1–2 處)。Useful for stylistic experiments, satire of code-switching
   habits, creative writing, and language education.
   Triggers on "/jingjing-style"、「改寫成晶晶體」、「中英夾雜風格」、
-  「台灣名媛體」、「晶晶體化」、「李晶晶式」、"jingjing", "rewrite as jingjing",
-  "make it jingjing".
+  「名媛體」、「台灣名媛體」、「晶晶體化」、「李晶晶式」、"jingjing",
+  "rewrite as jingjing", "make it jingjing".
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

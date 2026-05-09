@@ -49,7 +49,7 @@ life style」這類句法，被民眾戲稱為「晶晶體」並沿用至今。
 
 ## 三段強度
 
-`jingjing-style` 採用 westernise / taiwan-mandarin 同樣的三段強度設計：
+`jingjing-style` 提供三段強度設計：
 
 | Level | 密度 | 效果 |
 |---|---|---|
