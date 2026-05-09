@@ -2,7 +2,7 @@
 name: shakespeare-style
 description: >
   Transform any article into Mid-20th-century Zhu-Shenghao-style Chinese
-  translation of Shakespearean tragedy (朱生豪式中譯莎劇腔) — Traditional
+  translation of Shakespearean tragedy （朱生豪式中譯莎劇腔） — Traditional
   Chinese, 300–1000 characters, half-classical-half-vernacular voice with
   dense metaphors (natural imagery + abstract concepts), expressive
   exclamatory rhythm, and a tragic-conflict spine. Primarily targets the

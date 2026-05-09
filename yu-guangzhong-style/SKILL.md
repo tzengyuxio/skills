@@ -3,15 +3,15 @@ name: yu-guangzhong-style
 description: >
   Transform any article into 余光中體散文 — a Mid-to-Late 20th-century essayist
   voice fusing 文白交織 (classical-modern interweave), 長句鋪排 (sustained
-  long sentences 30–60 chars), 三排／四排／五排排比, 古典詩詞典故化用
+  long sentences 30–60 chars), 三排／四排／五排排比，古典詩詞典故化用
   (Du Fu / Li Bai / Su Shi blended into modern prose, not quoted), 地理縱深
   (long rivers / coastlines / mountains as image anchors rooted in Yu's
-  actual biography — 嘉陵江／重慶、台灣海峽／鼓浪嶼、香港沙田、高雄西子灣),
+  actual biography — 嘉陵江／重慶、台灣海峽／鼓浪嶼、香港沙田、高雄西子灣），
   鄉愁母題 (in this place yearning for that
-  place; in this hour yearning for that hour), 反句陶醉 (「不是 X 而是 Y」
-  「並非 X，亦非 Y，實乃 Z」), 學者自嘲腔 with 雙語比較癖 (occasional
+  place; in this hour yearning for that hour), 反句陶醉（「不是 X 而是 Y」
+  「並非 X，亦非 Y，實乃 Z」），學者自嘲腔 with 雙語比較癖 (occasional
   English word-comparison revealing the author's English-department
-  background), and 文言虛詞偶用 (蓋／乃／者／之). Output is Traditional
+  background), and 文言虛詞偶用（蓋／乃／者／之）。 Output is Traditional
   Chinese prose (not poetry, not verse), abrasive yet lyrical, masculine
   and grand rather than soft and feminine. Primarily user-invoked via
   "/yu-guangzhong-style"; also triggers on "余光中體", "余派散文",
@@ -57,10 +57,9 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## 參照樣本（余光中原文短引）
 
-《聽聽那冷雨》(1974) 開篇片段（短引示意，僅供風格座標參考）：
+《聽聽那冷雨》（1974) 開篇片段（短引示意，僅供風格座標參考）：
 
-> 驚蟄一過，春寒加劇。先是料料峭峭，繼而雨季開始，時而淋淋漓漓，時而淅
-> 淅瀝瀝，天潮潮地濕濕……
+> 驚蟄一過，春寒加劇。先是料料峭峭，繼而雨季開始，時而淋淋漓漓，時而淅淅瀝瀝，天潮潮地濕濕……
 
 特徵分析：
 - **疊字密度**：料料峭峭／淋淋漓漓／淅淅瀝瀝／潮潮濕濕——一句之內四組疊字
@@ -69,8 +68,7 @@ allowed-tools: Read, Write, Edit, Glob
   中／而今聽雨僧廬下」**三段式人生**化進現代香港的雨季，**不引號不註釋**
 - **節奏**：短句（「驚蟄一過，春寒加劇」）後接層遞長句
 
-> 註：余光中作品仍在版權保護期內，本 skill 僅作 1–2 句短引，餘以
-> paraphrase 描述。任何輸出**不得抄襲余光中原句**，學的是手法不是字句。
+> 註：余光中作品仍在版權保護期內，本 skill 僅作 1–2 句短引，餘以 paraphrase 描述。任何輸出**不得抄襲余光中原句**，學的是手法不是字句。
 
 ## Arguments
 
@@ -109,13 +107,7 @@ allowed-tools: Read, Write, Edit, Glob
 | **海島／海岸（1949 / 1985–2017）** | 廈門大學、鼓浪嶼（1949 半年）、台灣海峽、高雄（1985 之後）、西子灣（中山大學）、澎湖、淡水 | 渡海鄉愁、島嶼存在、潮汐意象 |
 | **港城／沙田時期（1974–1985）** | 香港、沙田、香港中文大學、獅子山、吐露港、馬鞍山、八仙嶺、九龍、新界 | 殖民邊地、漂泊知識分子、雙語身分 |
 
-> **錯置檢查**：
-> - 「鼓浪嶼」屬廈門（福建），不在台灣海峽東岸；它是余 1949 年念廈大時的
->   半年地理記憶
-> - 「香山」是北京或廣東中山名稱，**不是**沙田周邊地名；沙田/中大周邊用
->   獅子山、吐露港、馬鞍山、八仙嶺
-> - 「沙田時期」= 香港中文大學 1974–1985；「西子灣時期」= 中山大學
->   1985–2017，不可混用
+> **錯置檢查**： - 「鼓浪嶼」屬廈門（福建），不在台灣海峽東岸；它是余 1949 年念廈大時的半年地理記憶 - 「香山」是北京或廣東中山名稱，**不是**沙田周邊地名；沙田/中大周邊用獅子山、吐露港、馬鞍山、八仙嶺 - 「沙田時期」= 香港中文大學 1974–1985；「西子灣時期」= 中山大學 1985–2017，不可混用
 
 選定後在筆記裡寫下：「主錨 = X，副錨 = Y，落差 = 在 A 地懷 B 地」。
 
@@ -151,10 +143,7 @@ allowed-tools: Read, Write, Edit, Glob
 範例：「**雨在屋頂上，雨在簷下，雨在江上，雨在我十九歲的記憶裡**。」
 （四排，地點＋時間遞進）
 
-> **余的真排示範**：《聽聽那冷雨》「先是料料峭峭，繼而雨季開始，時而淋淋
-> 漓漓，時而淅淅瀝瀝」——四個時間副詞 + 四組疊字，**結構對稱、時序遞進**，
-> 這是余的招牌手法。寫的時候自問：「拿掉任何一排，氣勢就斷了嗎？」斷了
-> 才是真排。
+> **余的真排示範**：《聽聽那冷雨》「先是料料峭峭，繼而雨季開始，時而淋淋漓漓，時而淅淅瀝瀝」——四個時間副詞 + 四組疊字，**結構對稱、時序遞進**，這是余的招牌手法。寫的時候自問：「拿掉任何一排，氣勢就斷了嗎？」斷了才是真排。
 
 ### 典故化用點
 
@@ -168,11 +157,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 判準：把古典詩句的**核心意象**抽出來，**鑲嵌進現代描寫**，使古今讀來無縫。
 
-> **余的典故化用招牌動作**：余在《聽聽那冷雨》裡並不寫「正如蔣捷所說
-> 『少年聽雨歌樓上』」，而是把蔣捷的「少年／壯年／白頭聽雨」**三段結構
-> 整個拆下**，套進台北、香港、廈門、巴黎四地的雨季——讀者讀完才驚覺這
-> 整篇散文其實是**一首宋詞的擴寫**。這是「化用」最高境界：典故是骨，現
-> 代場景是肉，骨肉一體不見針線。
+> **余的典故化用招牌動作**：余在《聽聽那冷雨》裡並不寫「正如蔣捷所說『少年聽雨歌樓上』」，而是把蔣捷的「少年／壯年／白頭聽雨」**三段結構整個拆下**，套進台北、香港、廈門、巴黎四地的雨季——讀者讀完才驚覺這整篇散文其實是**一首宋詞的擴寫**。這是「化用」最高境界：典故是骨，現代場景是肉，骨肉一體不見針線。
 
 ### 節奏曲線
 
