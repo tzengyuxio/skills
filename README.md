@@ -2,7 +2,7 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 22 個 skill，分為 7 個分類：
+目前收錄 27 個 skill，分為 8 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
@@ -12,7 +12,8 @@
 | 地域中文變體 | 3 | taiwan / hongkong / singapore |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| 文學體裁改寫 | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style |
+| 文學體裁改寫 | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
+| 詮釋型改寫（lens） | 1 | psychoanalytic-lens |
 
 > [English version](./README_EN.md)
 
@@ -93,6 +94,18 @@
 | [gulong-style](./gulong-style/) | 改寫為中後期古龍武俠——1969《多情劍客無情劍》後成熟期，200–600 字極短句節奏，警句嵌入，必有對比張力，不寫武打過程 | [demo](./gulong-style/examples/demo.md) |
 | [jinyong-style](./jinyong-style/) | 改寫為中期黃金期金庸武俠——1957–1969 五大代表作（射鵰/神鵰/倚天/天龍/笑傲），400–1200 字章回式長句，必有招式詳寫＋詩詞嵌入＋歷史錨定 | [demo](./jinyong-style/examples/demo.md) |
 | [shakespeare-style](./shakespeare-style/) | 改寫為朱生豪式中譯莎劇悲劇腔——四大悲劇流派，300–1000 字半文白戲劇腔，譬喻密度＋戲劇性情感＋獨白(≥30%) | [demo](./shakespeare-style/examples/demo.md) |
+| [eileen-chang-style](./eileen-chang-style/) | 改寫為張愛玲體——蒼涼基調必現，月光／鏡子／絲綢／舊上海公寓意象群，女性凝視＋細節暴力＋反高潮收尾，情感壓住不爆破 | [demo](./eileen-chang-style/examples/demo.md) |
+| [yu-guangzhong-style](./yu-guangzhong-style/) | 改寫為余光中體散文——文白交織必現，長句鋪排＋真排比＋古典詩詞化用，地理錨點以余實際生平足跡為準（重慶／廈門／沙田／西子灣） | [demo](./yu-guangzhong-style/examples/demo.md) |
+| [bagu-essay](./bagu-essay/) | 改寫為明清八股文——破題承題起講入手＋起股中股後股束股八段齊備，四股兩兩對仗，代聖人立言禁第一人稱，附王鏊〈百姓足君孰與不足〉參照樣本 | [demo](./bagu-essay/examples/demo.md) |
+| [hemingway-style](./hemingway-style/) | 改寫為海明威體中譯版——冰山理論七分情緒水下，短句＋動詞主導＋具體名詞，重複錨定（同詞／同句構／同動作），歐化翻譯腔為 feature 非違規 | [demo](./hemingway-style/examples/demo.md) |
+
+### 詮釋型改寫（lens）
+
+不改變語言表面，而是改變詮釋框架——事件不變，意義重組。改寫文章內部對動機與意義的敘述，讓敘事本身用該理論的眼光看待自己。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [psychoanalytic-lens](./psychoanalytic-lens/) | 以精神分析（Freud／Lacan）重寫敘事——保留事件，改寫主敘述為其象徵性根源；流派可選不可混（[F]/[L] 標註）；核心三條款：事件保留／概念自然發生／替代敘述義務 | [demo](./psychoanalytic-lens/examples/demo.md) |
 
 ## 安裝方式
 

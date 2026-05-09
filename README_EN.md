@@ -2,7 +2,7 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 22 skills across 7 categories:
+Currently 27 skills across 8 categories:
 
 | Category | Count | Skills |
 |---|---|---|
@@ -12,7 +12,8 @@ Currently 22 skills across 7 categories:
 | Regional Chinese | 3 | taiwan / hongkong / singapore |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| Literary genre | 6 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style |
+| Literary genre | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
+| Interpretive lens | 1 | psychoanalytic-lens |
 
 > [中文版](./README.md)
 
@@ -93,6 +94,18 @@ Rewrite text into specific literary genres — not just stylistic tweaks, but re
 | [gulong-style](./gulong-style/) | Rewrite into Mid-late Gulong wuxia — post-1969《多情劍客無情劍》 mature period, 200–600 chars with extreme short-sentence rhythm, embedded aphorisms, mandatory contrast tension, no battle process |
 | [jinyong-style](./jinyong-style/) | Rewrite into Mid-Era Jinyong wuxia — 1957–1969 five major works (Condor / Return / Heaven Sword / Demi-Gods / Smiling), 400–1200 chars chapter-form long sentences, named moves + classical poetry inlay + historical anchoring |
 | [shakespeare-style](./shakespeare-style/) | Rewrite into Zhu-Shenghao-style Chinese translation of Shakespearean tragedy — four great tragedies (Hamlet/Lear/Othello/Macbeth), 300–1000 chars half-classical-half-vernacular dramatic register, dense metaphors + expressive rhythm + monologues (≥30%) |
+| [eileen-chang-style](./eileen-chang-style/) | Rewrite into Eileen Chang style — mandatory desolate undertow, signature image cluster (moon / mirror / silk / old-Shanghai apartments), female gaze + detail-as-violence + anti-climactic ending; emotion held under, never burst |
+| [yu-guangzhong-style](./yu-guangzhong-style/) | Rewrite into Yu Guangzhong essay style — mandatory classical-vernacular interlock, long-sentence cascade + true parallelism + classical-poem incorporation, geographical anchors restricted to Yu's actual biographical footprints (Chongqing / Xiamen / Shatin / Sizihwan) |
+| [bagu-essay](./bagu-essay/) | Rewrite into Ming-Qing eight-legged essay — mandatory eight sections (破題/承題/起講/入手/起股/中股/後股/束股), four "stocks" in strict couplets, "speak in the voice of the sage" forbids first person, includes Wang Ao's《百姓足君孰與不足》as reference sample |
+| [hemingway-style](./hemingway-style/) | Rewrite into Hemingway-style Chinese translation — iceberg theory (seven-eighths under water), short sentences + verb-driven + concrete nouns, repetition anchoring (same word / structure / action), Europeanized translation flavor is a feature, not a violation |
+
+### Interpretive Rewriting (Lens)
+
+A different axis from style skills — events stay; interpretation is rewritten. The skill rewrites the narrative's own framing of motive and meaning, so the text reads as if it were always seeing itself through that theoretical lens.
+
+| Skill | Function |
+|-------|----------|
+| [psychoanalytic-lens](./psychoanalytic-lens/) | Rewrite narrative through Freudian/Lacanian psychoanalysis — preserves events, replaces surface motivations with their symbolic roots; strict school selection (no [F]/[L] cocktail mixing); three core clauses: event preservation / concepts arise naturally / substitute-narration mandate |
 
 ## Installation
 
