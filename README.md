@@ -2,18 +2,18 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 36 個 skill，分為 9 個分類：
+目前收錄 40 個 skill，分為 9 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
 | AI 寫作風格處理 | 1 | humanize（去 AI 痕跡） |
 | 翻譯腔處理 | 2 | dewesternise / westernise |
 | 中英語言混搭 | 4 | chinglish / singlish / hanjify / jingjing-style |
-| 地域中文變體 | 7 | taiwan / hongkong / singapore / dongbei / shanghainese / sichuan / written-hokkien |
+| 地域中文變體 | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| 文學體裁改寫 | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
-| 詮釋型改寫（lens） | 1 | psychoanalytic-lens |
+| 文學體裁改寫 | 11 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style |
+| 詮釋型改寫（lens） | 2 | psychoanalytic-lens / postmodern-lens |
 | 網路文體 | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
 > [English version](./README_EN.md)
@@ -67,6 +67,8 @@
 | [shanghainese](./shanghainese/) | 將文字轉為上海話／吳語——人稱替換（儂／阿拉／伊）＋否定詞（弗／勿／覅）＋句末助詞（呃／嘞／伐）＋海派標誌詞（結棍／霞氣／嗲／戇／淘漿糊）；金宇澄《繁花》風格；輕／中／重三段強度 | [demo](./shanghainese/examples/demo.md) |
 | [sichuan-mandarin](./sichuan-mandarin/) | 將文字轉為四川話／川渝風格——西南官話成渝片，川渝江湖氣＋兒化重＋句末助詞密集（嘛／噻／嘞／哈），標誌詞巴適／安逸／莫得／搞快點／龜兒；《讓子彈飛》《火鍋英雄》風格；輕／中／重三段強度 | [demo](./sichuan-mandarin/examples/demo.md) |
 | [written-hokkien](./written-hokkien/) | 將文字轉為台語／閩南語書面化——句法走台語（不是中文翻譯），本字使用（阮／咱／怹／ê／beh／攏／毋／莫）；兩段強度：Light 純漢字（教育部 700 字）／ Heavy 漢羅混寫（本字漢字＋台羅）；鄭清文／賴和／陳明仁文學傳統 | [demo](./written-hokkien/examples/demo.md) |
+| [mainland-mandarin](./mainland-mandarin/) | 將文字轉為中國大陸普通話日常／媒體文體——大陸用法詞彙（視頻／質量／出租車／公交／軟件）＋網路用語（內卷／躺平／yyds／破防／絕絕子／家人們）＋微博／抖音／B 站／小紅書文體；與 prc-bureaucratese（公文）區隔；輕／中／重三段強度 | [demo](./mainland-mandarin/examples/demo.md) |
+| [written-cantonese](./written-cantonese/) | 將文字轉為完整粵語書面語（syntax 也粵語化）——核心虛詞（係／唔／嘅／咗／佢／喺）＋句末助詞（喎／啦／㗎／咩）＋粵語語序（副詞後置／動補後置／雙賓語）；TVB／Apple Daily／LIHKG 連登；輕／中／重三段強度 | [demo](./written-cantonese/examples/demo.md) |
 
 ### 應用文類
 
@@ -104,6 +106,7 @@
 | [yu-guangzhong-style](./yu-guangzhong-style/) | 改寫為余光中體散文——文白交織必現，長句鋪排＋真排比＋古典詩詞化用，地理錨點以余實際生平足跡為準（重慶／廈門／沙田／西子灣） | [demo](./yu-guangzhong-style/examples/demo.md) |
 | [bagu-essay](./bagu-essay/) | 改寫為明清八股文——破題承題起講入手＋起股中股後股束股八段齊備，四股兩兩對仗，代聖人立言禁第一人稱，附王鏊〈百姓足君孰與不足〉參照樣本 | [demo](./bagu-essay/examples/demo.md) |
 | [hemingway-style](./hemingway-style/) | 改寫為海明威體中譯版——冰山理論七分情緒水下，短句＋動詞主導＋具體名詞，重複錨定（同詞／同句構／同動作），歐化翻譯腔為 feature 非違規 | [demo](./hemingway-style/examples/demo.md) |
+| [lu-xun-style](./lu-xun-style/) | 改寫為魯迅體——冷峻反諷的早期白話，文白夾雜＋標誌虛詞密集（然而／便／罷了／未免／實在／想來）＋第一人稱「我」＋反諷距離（不嘲弄不認同）；定位為文體致敬而非立場模仿，反諷對象限抽象普世（國民性／看客／苟且） | [demo](./lu-xun-style/examples/demo.md) |
 
 ### 詮釋型改寫（lens）
 
@@ -112,6 +115,7 @@
 | 技能 | 功能 | 範例 |
 |------|------|------|
 | [psychoanalytic-lens](./psychoanalytic-lens/) | 以精神分析（Freud／Lacan）重寫敘事——保留事件，改寫主敘述為其象徵性根源；流派可選不可混（[F]/[L] 標註）；核心三條款：事件保留／概念自然發生／替代敘述義務 | [demo](./psychoanalytic-lens/examples/demo.md) |
+| [postmodern-lens](./postmodern-lens/) | 以後現代理論（Lyotard／Derrida／Foucault／Baudrillard／Jameson／Barthes／Kristeva）重寫敘事——元敘事懷疑必現（敘述者插話質疑、競爭版本、把「應該怎麼講」寫進敘述）；流派可組（[D]+[B]、[F]+[J]、[L]+[Bd]）不可全堆；不寫「德希達會說」式 cite 句 | [demo](./postmodern-lens/examples/demo.md) |
 
 ### 網路文體
 

@@ -2,18 +2,18 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 36 skills across 9 categories:
+Currently 40 skills across 9 categories:
 
 | Category | Count | Skills |
 |---|---|---|
 | AI writing style | 1 | humanize (remove AI tics) |
 | Translation accent | 2 | dewesternise / westernise |
 | Chinese-English hybrid | 4 | chinglish / singlish / hanjify / jingjing-style |
-| Regional Chinese | 7 | taiwan / hongkong / singapore / dongbei / shanghainese / sichuan / written-hokkien |
+| Regional Chinese | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
-| Literary genre | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
-| Interpretive lens | 1 | psychoanalytic-lens |
+| Literary genre | 11 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style |
+| Interpretive lens | 2 | psychoanalytic-lens / postmodern-lens |
 | Internet vernacular | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
 > [中文版](./README.md)
@@ -67,6 +67,8 @@ Transform text into regional sociolects / written registers of contemporary Chin
 | [shanghainese](./shanghainese/) | Transform text into Shanghainese / Wu Chinese — pronoun swap (儂/阿拉/伊), negation (弗/勿/覅), sentence-final particles (呃/嘞/伐), Haipai vocabulary (結棍/霞氣/嗲/戇/淘漿糊); Jin Yucheng's《繁花》-style register; Light/Medium/Heavy intensity tiers | [demo](./shanghainese/examples/demo.md) |
 | [sichuan-mandarin](./sichuan-mandarin/) | Transform text into Sichuan / Chongqing Mandarin — Southwestern Mandarin Chengyu cluster, jianghu attitude + heavy 兒化 + dense sentence-final particles (嘛/噻/嘞/哈); marker words 巴適/安逸/莫得/搞快點/龜兒; channels《Let the Bullets Fly》《Chongqing Hot Pot》; Light/Medium/Heavy intensity tiers | [demo](./sichuan-mandarin/examples/demo.md) |
 | [written-hokkien](./written-hokkien/) | Transform text into written Taiwanese Hokkien — syntax follows Hokkien (not Chinese translation), uses native characters (阮/咱/怹/ê/beh/攏/毋/莫); two intensity tiers: Light (pure Hanzi, MOE-recommended 700 chars) / Heavy (Han-Romaji mix with Tâi-lô); rooted in Lai Ho / Cheng Ching-wen / Asia Babuja literary tradition | [demo](./written-hokkien/examples/demo.md) |
+| [mainland-mandarin](./mainland-mandarin/) | Transform text into PRC mainland Mandarin (everyday / media register) — mainland-specific vocabulary (視頻/質量/出租車/公交/軟件) + internet slang (內卷/躺平/yyds/破防/絕絕子/家人們) + Weibo/Douyin/Bilibili/Xiaohongshu register; explicitly distinct from prc-bureaucratese (party-state register); Light/Medium/Heavy intensity tiers | [demo](./mainland-mandarin/examples/demo.md) |
+| [written-cantonese](./written-cantonese/) | Transform text into full written Cantonese (syntax also Cantonese-ized) — core function words (係/唔/嘅/咗/佢/喺) + sentence-final particles (喎/啦/㗎/咩) + Cantonese word order (postposed adverbs / postposed verb-complements / direct-before-indirect double objects); rooted in TVB / Apple Daily / LIHKG; Light/Medium/Heavy intensity tiers | [demo](./written-cantonese/examples/demo.md) |
 
 ### Applied Writing Registers (應用文類)
 
@@ -104,6 +106,7 @@ Rewrite text into specific literary genres — not just stylistic tweaks, but re
 | [yu-guangzhong-style](./yu-guangzhong-style/) | Rewrite into Yu Guangzhong essay style — mandatory classical-vernacular interlock, long-sentence cascade + true parallelism + classical-poem incorporation, geographical anchors restricted to Yu's actual biographical footprints (Chongqing / Xiamen / Shatin / Sizihwan) |
 | [bagu-essay](./bagu-essay/) | Rewrite into Ming-Qing eight-legged essay — mandatory eight sections (破題/承題/起講/入手/起股/中股/後股/束股), four "stocks" in strict couplets, "speak in the voice of the sage" forbids first person, includes Wang Ao's《百姓足君孰與不足》as reference sample |
 | [hemingway-style](./hemingway-style/) | Rewrite into Hemingway-style Chinese translation — iceberg theory (seven-eighths under water), short sentences + verb-driven + concrete nouns, repetition anchoring (same word / structure / action), Europeanized translation flavor is a feature, not a violation |
+| [lu-xun-style](./lu-xun-style/) | Rewrite into Lu Xun voice — chilly-ironic early-vernacular Chinese: Wenyan-Baihua mixing + signature particles (然而/便/罷了/未免/實在/想來) + first-person 「我」 + ironic distance (neither mocking nor endorsing); positioned as stylistic homage rather than political mimicry, with irony targets restricted to abstract universals (national character / bystanders / petty self-preservation) |
 
 ### Interpretive Rewriting (Lens)
 
@@ -112,6 +115,7 @@ A different axis from style skills — events stay; interpretation is rewritten.
 | Skill | Function |
 |-------|----------|
 | [psychoanalytic-lens](./psychoanalytic-lens/) | Rewrite narrative through Freudian/Lacanian psychoanalysis — preserves events, replaces surface motivations with their symbolic roots; strict school selection (no [F]/[L] cocktail mixing); three core clauses: event preservation / concepts arise naturally / substitute-narration mandate |
+| [postmodern-lens](./postmodern-lens/) | Rewrite narrative through postmodern theory (Lyotard / Derrida / Foucault / Baudrillard / Jameson / Barthes / Kristeva) — mandatory metanarrative-doubt (narrator interjects to question its own narration / competing versions / writing the "how should this be told" into the narration itself); compatible school pairings ([D]+[B], [F]+[J], [L]+[Bd]) but no five-school pile-up; forbids "Derrida would say" cite-style sentences | [demo](./postmodern-lens/examples/demo.md) |
 
 ### Internet Vernacular
 
