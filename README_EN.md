@@ -2,18 +2,19 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 27 skills across 8 categories:
+Currently 32 skills across 9 categories:
 
 | Category | Count | Skills |
 |---|---|---|
 | AI writing style | 1 | humanize (remove AI tics) |
 | Translation accent | 2 | dewesternise / westernise |
-| Chinese-English hybrid | 3 | chinglish / singlish / hanjify |
+| Chinese-English hybrid | 4 | chinglish / singlish / hanjify / jingjing-style |
 | Regional Chinese | 3 | taiwan / hongkong / singapore |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | Literary genre | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
 | Interpretive lens | 1 | psychoanalytic-lens |
+| Internet vernacular | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
 > [中文版](./README.md)
 
@@ -51,6 +52,7 @@ English varieties and writing system transformations — convert text into Chine
 | [chinglish](./chinglish/) | Transform Chinese or English into Chinglish — systematic L1-transfer patterns from Chinese grammar |
 | [singlish](./singlish/) | Transform any text into Singlish — Singaporean English creole blending Hokkien, Malay, Cantonese, and Tamil |
 | [hanjify](./hanjify/) | Transform English into Hanjified English — Hanzi carries meaning, English grammar stays intact (okurigana-style morphology) |
+| [jingjing-style](./jingjing-style/) | Transform text into Jingjing-style — Chinese base sprinkled with unnecessary simple English words (amazing/busy/hot/fashion); the show-off vibe comes from "could've used Chinese, chose English"; a Taiwanese media-celebrity vernacular emerging in 2016; Light/Medium/Heavy intensity tiers |
 
 ### Regional Chinese Varieties
 
@@ -106,6 +108,17 @@ A different axis from style skills — events stay; interpretation is rewritten.
 | Skill | Function |
 |-------|----------|
 | [psychoanalytic-lens](./psychoanalytic-lens/) | Rewrite narrative through Freudian/Lacanian psychoanalysis — preserves events, replaces surface motivations with their symbolic roots; strict school selection (no [F]/[L] cocktail mixing); three core clauses: event preservation / concepts arise naturally / substitute-narration mandate |
+
+### Internet Vernacular
+
+Subculture/meme styles amplified by recent social media: tautological echo, melodramatic headlines, complaint-as-flex, pseudo-academic gibberish. Each skill systematizes the meme's syntax into a checklist.
+
+| Skill | Function |
+|-------|----------|
+| [feihua-literature](./feihua-literature/) | Rewrite into "feihua literature" (廢話文學, nonsense talk) — zero information density, three formulas (synonym substitution / self-contradiction / Q-keyword echo) at least two firing; Lu Xun's "one is a jujube tree, and the other is also a jujube tree" as literary precedent; viral on Weibo/Douyin in 2021 |
+| [zhiyin-style](./zhiyin-style/) | Rewrite into Zhiyin-magazine style (知音體) — melodramatic headline (≥10 chars with stacked exclamations) + three-act tragic narrative (fated start / suffering middle / cathartic end) + density of tear/blood/love/fate keywords; the iconic Chinese magazine emotional-narrative style since 1985 |
+| [versailles-literature](./versailles-literature/) | Rewrite into Versailles literature (凡爾賽文學) — humblebrag completely buried under complaint (false depreciation / self Q&A / third-party praise); originated from Weibo @小奶球 in 2020, popularized by 蒙淇淇77; academically defined as Chinese-social-media humblebrag genre |
+| [concrete-42](./concrete-42/) | Rewrite into "spaghetti should be mixed with Type-42 concrete" style — pseudo-professional patter + cross-domain noun collage + serious-faced incoherence; satirizes evasion / jargon-stuffing / non-answers; originated from 卧龍鳳雛 (Bilibili) 2024 |
 
 ## Installation
 

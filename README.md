@@ -2,18 +2,19 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 27 個 skill，分為 8 個分類：
+目前收錄 32 個 skill，分為 9 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
 | AI 寫作風格處理 | 1 | humanize（去 AI 痕跡） |
 | 翻譯腔處理 | 2 | dewesternise / westernise |
-| 中英語言混搭 | 3 | chinglish / singlish / hanjify |
+| 中英語言混搭 | 4 | chinglish / singlish / hanjify / jingjing-style |
 | 地域中文變體 | 3 | taiwan / hongkong / singapore |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | 文學體裁改寫 | 10 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style |
 | 詮釋型改寫（lens） | 1 | psychoanalytic-lens |
+| 網路文體 | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
 > [English version](./README_EN.md)
 
@@ -51,6 +52,7 @@
 | [chinglish](./chinglish/) | 將中文或英文轉為中式英語（Chinglish）——重現母語干擾下的系統性變異 | [demo](./chinglish/examples/demo.md) |
 | [singlish](./singlish/) | 將任何文字轉為新加坡式英語（Singlish）——融合閩南語、馬來語的克里奧爾語言 | [demo](./singlish/examples/demo.md) |
 | [hanjify](./hanjify/) | 將英文轉換為漢字化英語——漢字承載語意，保留英語文法（送假名風格形態學） | [demo](./hanjify/examples/demo.md) |
+| [jingjing-style](./jingjing-style/) | 將文字轉為晶晶體——中文基底夾不必要的簡單英文字（amazing/busy/hot/fashion），炫耀感從「明明可中譯卻用英文」中產生；2016 起的台灣媒體名媛口語現象；輕／中／重三段強度 | [demo](./jingjing-style/examples/demo.md) |
 
 ### 地域中文變體
 
@@ -106,6 +108,17 @@
 | 技能 | 功能 | 範例 |
 |------|------|------|
 | [psychoanalytic-lens](./psychoanalytic-lens/) | 以精神分析（Freud／Lacan）重寫敘事——保留事件，改寫主敘述為其象徵性根源；流派可選不可混（[F]/[L] 標註）；核心三條款：事件保留／概念自然發生／替代敘述義務 | [demo](./psychoanalytic-lens/examples/demo.md) |
+
+### 網路文體
+
+近年由社群媒體放大的次文化／流行文體，含同義反覆、煽情標題、抱怨式炫耀、偽專業胡言亂語等。每個 skill 將梗的句法與套路系統化為 checklist。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [feihua-literature](./feihua-literature/) | 改寫為廢話文學——零信息密度，三大公式（同義替換／首尾矛盾／問答轉換）至少二發；魯迅〈秋夜〉「一棵是棗樹另一棵也是棗樹」是文學史錨點；2021 微博抖音爆紅 | [demo](./feihua-literature/examples/demo.md) |
+| [zhiyin-style](./zhiyin-style/) | 改寫為知音體——煽情標題（≥10 字含三疊感嘆）+ 三段式情感悲劇（命運開端／苦難中段／升華收尾）+ 淚血情命義字眼密度；《知音》雜誌 1985 起的中國雜誌煽情敘事體現象 | [demo](./zhiyin-style/examples/demo.md) |
+| [versailles-literature](./versailles-literature/) | 改寫為凡爾賽文學——抱怨包裝的炫耀（先抑後揚／自問自答／第三人稱借讚），抱怨完全淹沒炫耀；2020 微博@小奶球+蒙淇淇 77 引爆；學術定位為中文社群網站 humblebrag | [demo](./versailles-literature/examples/demo.md) |
+| [concrete-42](./concrete-42/) | 改寫為「義大利麵就應該拌 42 號混凝土」體——偽專業話術＋跨領域名詞拼貼＋邏輯不通卻一本正經；諷刺答非所問／術語堆砌／模糊規避；卧龍鳳雛 2024 起源 | [demo](./concrete-42/examples/demo.md) |
 
 ## 安裝方式
 
