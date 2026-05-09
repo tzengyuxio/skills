@@ -6,7 +6,7 @@ description: >
   Features Wu pronouns （儂/阿拉/伊/伊拉）, Wu negation （弗/勿/覅）, sentence-final
   particles （呃/嘞/伐/哦呦）, Wu adverbs （蠻/老/嘎）, signature lexicon
   （結棍/霞氣/嗲/戇/洋盤/淘漿糊/軋鬧猛/噶三胡）, cultural vocabulary
-  （弄堂/石庫門/阿婆/爺叔/小囡）, and海派 register （派頭/有腔調）. Three
+  （弄堂/石庫門/阿婆/爺叔/小囡）, and 海派 register（派頭/有腔調）. Three
   intensity levels from light Wu-flavored Mandarin (sprinkled markers) up to
   heavy 滬語書寫 (in the manner of 金宇澄《繁花》).
   Useful for creative writing, cultural appreciation, language education, or
@@ -87,7 +87,7 @@ what fits naturally.
 
 A passage that misses any of these four is **not Shanghainese** — re-edit
 until all four conditions are met. (Exception: for very short input < 30 字
-or single-line dialogue, conditions 3 may be relaxed to "at least 1
+or single-line dialogue, condition 3 may be relaxed to "at least 1
 signature item.")
 
 ---
@@ -409,7 +409,7 @@ If the user doesn't specify, use **Medium**.
    Shanghainese.
 3. **List applied patterns:** Note which major pattern groups (G/V/S) were
    most active.
-4. **Glossary:** List 標誌詞 / 文化詞 / 外來語 used, with普通話 equivalents.
+4. **Glossary:** List 標誌詞 / 文化詞 / 外來語 used, with 普通話 equivalents.
 
 ---
 

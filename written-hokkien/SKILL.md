@@ -35,7 +35,7 @@ This skill covers **two intensities**, distinguished primarily by the
   function words and lexemes that resist standard Hanzi (such as **ê**,
   **beh**, **kah**, **siánn**, **leh**) are written in 台羅 (the 教育部
   臺灣台語羅馬字拼音方案， 2006). This is the preferred form in much
-  contemporary 台文文學（陳明仁《路樹下 ê t³-peh-á》, 李勤岸 詩集，胡長松，
+  contemporary 台文文學（賴和、鄭清文、陳明仁《路樹下 ê tó͘-peh-á》, 李勤岸 詩集，胡長松，
   陳雷）.
 
 In both intensities the **syntax must be Taiwanese**, not transliterated
@@ -315,6 +315,24 @@ Light 模式以「矣 / 啦 / 咧 / 喔」漢字書寫；Heavy 模式可寫成�
 - 羅馬字段落視同英文：與相鄰漢字間以**半形空格**分隔
 - 例：「阮 beh 食」三段以空格分；不寫「阮beh食」
 - 台羅內部連字以連字號 -（hyphen），如 chia̍h-pn̄g（食飯）、a-kong（阿公）
+- **標點規則**：羅馬字後接全形 CJK 標點（，。：？！）時，**不需要**額外
+  半形空格——CJK 標點本身已視覺隔開。例：`Lí kám 知影？`、`阮 beh 走 ah，
+  毋通等矣`。羅馬字後若接半形標點（英文文段），才用標準英文空格慣例。
+
+#### W5. 強度一致性 [Hard, Light+]
+
+同一篇文段內**不可混用** Light 與 Heavy 兩種強度。整篇要嘛純漢字、要嘛
+漢羅；中途切換會讓讀者錯亂、也讓書寫系統失去信號功能。例外：兩個 demo
+並陳的對照（範例三那種「Light 與 Heavy 並陳」）屬於**示範用途**，每段內
+仍各自一致。
+
+#### W6. 文白讀的處理 [Soft, Light+]
+
+台語每個漢字常有「文讀」（書面音）與「白讀」（口語音）兩種讀法，例如
+「生」可讀 seng（文）或 seⁿ（白）、「人」可讀 jîn（文）或 lâng（白）。
+本 skill 為書面化工具，只決定**字怎麼寫**，不規範讀音；但寫作者需自知
+所選漢字在台語朗讀時對應的是文讀還是白讀，避免訓用字選擇與口語讀法
+脫節（如該寫白讀詞「人 lâng」卻訓用文讀字「民」，會讓口語朗讀變調）。
 
 ---
 

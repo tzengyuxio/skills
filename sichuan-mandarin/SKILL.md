@@ -508,8 +508,20 @@ If the user doesn't specify, use **Medium**.
   cultural purposes.
 - 四川話 is a **legitimate Mandarin variety** （西南官話 成渝片） covering
   Sichuan, Chongqing, and adjacent areas of Yunnan, Guizhou, Hubei, Shaanxi —
-  one of the largest Mandarin sub-dialects by speaker count. Treat it with
-  linguistic respect.
+  ~120 million speakers, one of the largest Mandarin sub-dialects. Treat it
+  with linguistic respect.
+- **Linguistic background.** Phonology: 入聲 collapsed into 陽平 (the
+  innovative trait that distinguishes 西南官話 from northern Mandarin); 兒
+  化 limited to 4 韻尾 ([ɚ][iɚ][uɚ][yɚ]) vs Beijing's 26; 平翹 distinction
+  largely absent. Lexicon: a substantial layer of words are local
+  (巴適/搞快點/莫得) rather than just pronunciation variants of standard
+  Mandarin.
+- **重慶 vs 成都 micro-difference.** Both belong to 成渝片 and are mutually
+  intelligible, but the registers differ slightly: Chongqing leans harder
+  / sharper / more 江湖, Chengdu softer / more leisurely / more 茶館-style.
+  Particles 嘛/噻 are more frequent in Chengdu; 老子/龜兒 land more
+  naturally in Chongqing-flavored speech. The skill does not enforce a
+  split — choose register by content, not by city tag.
 - **Avoid stereotype.** Do NOT lean on "lazy / mahjong-addicted / hotpot-
   obsessed" tropes when characterizing speakers or scenarios. The dialect's
   lexicon includes 火鍋 / 茶館 / 川劇 because those are real cultural anchors,
@@ -521,6 +533,10 @@ If the user doesn't specify, use **Medium**.
 - **「莫得」 ≠ random 沒.** 莫 is the negator; 莫得 specifically means 沒有
   (don't have). 莫得辦法 = no way out, 莫法 = abbreviated form. Use the
   right one.
+- **High-frequency markers also include**: 要得 (good / ok / agreed —
+  the signature Sichuan affirmative), 嘎嘎 (meat, child-talk), 扯把子
+  (chat / gossip / bullshit). Add these to the active vocabulary in
+  Medium/Heavy outputs.
 - **「兒」化 is restricted.** Only 4 韻尾 in 四川話 vs. 26 in northern
   Mandarin. Add 兒 to place names, small objects, playful adjectives, kinship
   terms — not to abstract nouns or actions.
