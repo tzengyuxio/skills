@@ -2,7 +2,7 @@
 
 針對**中文語體、風格、地域變體、歷時風貌、文學體裁**的系統性轉換技能集，為 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 及相容 AI 編程助手打造。
 
-目前收錄 43 個 skill，分為 10 個分類：
+目前收錄 46 個 skill，分為 12 個分類：
 
 | 分類 | skill 數 | 範圍 |
 |---|---|---|
@@ -10,10 +10,12 @@
 | 翻譯腔處理 | 2 | dewesternise / westernise |
 | 中英語言混搭 | 4 | chinglish / singlish / hanjify / jingjing-style |
 | 地域中文變體 | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
+| 本土網路體 | 1 | ptt-bbs-style |
 | 應用文類 | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | 文言文改寫 | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | 文學體裁改寫 | 12 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style / sherlock-holmes-style |
-| 古典詩詞 | 2 | tang-poem-style / song-ci-style |
+| 古典詩詞 | 3 | tang-poem-style / song-ci-style / haiku-style |
+| 新詩格律 | 1 | chinese-sonnet-style |
 | 詮釋型改寫（lens） | 2 | psychoanalytic-lens / postmodern-lens |
 | 網路文體 | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
@@ -71,6 +73,14 @@
 | [mainland-mandarin](./mainland-mandarin/) | 將文字轉為中國大陸普通話日常／媒體文體——大陸用法詞彙（視頻／質量／出租車／公交／軟件）＋網路用語（內卷／躺平／yyds／破防／絕絕子／家人們）＋微博／抖音／B 站／小紅書文體；與 prc-bureaucratese（公文）區隔；輕／中／重三段強度 | [demo](./mainland-mandarin/examples/demo.md) |
 | [written-cantonese](./written-cantonese/) | 將文字轉為完整粵語書面語（syntax 也粵語化）——核心虛詞（係／唔／嘅／咗／佢／喺）＋句末助詞（喎／啦／㗎／咩）＋粵語語序（副詞後置／動補後置／雙賓語）；TVB／Apple Daily／LIHKG 連登；輕／中／重三段強度 | [demo](./written-cantonese/examples/demo.md) |
 
+### 本土網路體
+
+特定華語社群的線上平台慣用文體——把該平台特有的**版面格式、貼文結構、社群推噓互動**系統化為可重現的轉換工具。預留擴充給其他平台（巴哈姆特哈拉版／Dcard／LIHKG 連登／微博／百度貼吧／小紅書貼文體等）。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [ptt-bbs-style](./ptt-bbs-style/) | 改寫為台灣 PTT 鄉民體 BBS 貼文——標題分類標籤（[問卦]／[新聞]／[爆卦]／[心得]／[討論]／[請益]／[黑特]／[Re:] 等 12 個）＋自介起手式（肥宅我／弟弟我／妹妹我／魯蛇我／是這樣的）＋鄉民詞庫（484／笑死／ㄎㄎ／中肯／RR／齁／喇）＋求支援結尾（求解／在線等）＋推噓→ 推文堆疊（5–15 條混合，泛化暱稱）；明文格式致敬非真實 PTT 內容，禁點名真實 ID／公眾人物／族群歧視 | [demo](./ptt-bbs-style/examples/demo.md) |
+
 ### 應用文類
 
 中文特定應用文體的制度化風格轉換。目前收錄兩種公文體，預留擴充給其他應用文類型（書信、啟事、契約、會議紀錄、自傳等）。
@@ -118,6 +128,15 @@
 |------|------|------|
 | [tang-poem-style](./tang-poem-style/) | 改寫為唐詩——五言絕句／七言絕句／五言律詩／七言律詩四種規格擇一，平水韻一韻到底＋平仄循譜（含平起仄起兩式）＋律詩中二聯對仗（頷聯／頸聯詞性結構平仄三層對）；古典意象搬移（電車→車馬／鑰匙→玉鎖）；起承轉合＋末句不直白說教；六首唐詩參照樣本（王維／李白／杜牧／李商隱／杜甫×2） | [demo](./tang-poem-style/examples/demo.md) |
 | [song-ci-style](./song-ci-style/) | 改寫為宋詞——五個經典詞牌擇一（水調歌頭 95 字／念奴嬌 100 字／虞美人 56 字／如夢令 33 字／西江月 50 字），字數＋句長序列＋押韻位置＋平仄譜＋平仄韻交替類型完全合譜；豪放派 vs 婉約派擇一不可混（[豪放派]／[婉約派] 標籤必出）；現代詞彙零違規（電腦／咖啡／捷運轉古典等價物）；五首參照樣本（蘇軾×2／李煜／李清照／辛棄疾） | [demo](./song-ci-style/examples/demo.md) |
+| [haiku-style](./haiku-style/) | 改寫為日本俳句中譯版——三元素必現（季語春夏秋冬各 8-10 個／切字「啊」「呀」「吧」「了」「——」對應「や」「かな」「けり」／意象並置不因果）；兩派譯法擇一（意境派 4-9 字彈性／嚴格派 5-7-5 嚴守）；三輸出模式 Light 單首／Medium 雙首／Heavy 連作 3-7 首＋俳文 prose 串聯（《奧之細道》紀行體）；四首俳人原作參照樣本（松尾芭蕉〈古池〉〈夏草〉／與謝蕪村〈春の海〉／小林一茶〈雀之子〉） | [demo](./haiku-style/examples/demo.md) |
+
+### 新詩格律
+
+將現代散文壓縮為依西方格律改造的中文新詩。鎖定固定行數、頓挫節奏、押韻方案、轉折點等硬結構，但採同部寬韻，避開中文無 stress meter 的根本錯位。預留擴充給其他西方格律新詩體裁（villanelle、sestina、pantoum 等）。
+
+| 技能 | 功能 | 範例 |
+|------|------|------|
+| [chinese-sonnet-style](./chinese-sonnet-style/) | 改寫為中文十四行詩——馮至《十四行集》(1942) 為標竿,Petrarchan 義式 8+6（押 ABBAABBA CDECDE 或 CDCDCD，volta 第 9 行）／Shakespearean 英式 4+4+4+2（押 ABAB CDCD EFEF GG，volta 第 9 或第 13 行）兩種結構二擇一；嚴格 14 行＋每行 10-12 字＋每行 4-5 頓（聞一多／卞之琳所宗）；同部寬韻但結構位置咬死；具體意象 ≥4 個禁全篇抽象抒情；四首參照樣本（馮至〈第一首〉〈第十六首〉〈第二十二首〉＋莎士比亞 Sonnet 18 中譯） | [demo](./chinese-sonnet-style/examples/demo.md) |
 
 ### 詮釋型改寫（lens）
 

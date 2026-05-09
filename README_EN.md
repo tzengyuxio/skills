@@ -2,7 +2,7 @@
 
 A systematic skill collection targeting the **registers, styles, regional varieties, historical layers, and literary genres of Chinese text**, built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and compatible AI coding agents.
 
-Currently 43 skills across 10 categories:
+Currently 46 skills across 12 categories:
 
 | Category | Count | Skills |
 |---|---|---|
@@ -10,10 +10,12 @@ Currently 43 skills across 10 categories:
 | Translation accent | 2 | dewesternise / westernise |
 | Chinese-English hybrid | 4 | chinglish / singlish / hanjify / jingjing-style |
 | Regional Chinese | 9 | taiwan / hongkong / singapore / mainland / dongbei / shanghainese / sichuan / written-hokkien / written-cantonese |
+| Local internet vernacular | 1 | ptt-bbs-style |
 | Applied writing | 2 | prc-bureaucratese / roc-bureaucratese-classic |
 | Classical Chinese | 4 | wenyan-xianqin / hanwei / guwen / huaben |
 | Literary genre | 12 | koanify / liaozhai-tale / qiongyao-style / gulong-style / jinyong-style / shakespeare-style / eileen-chang-style / yu-guangzhong-style / bagu-essay / hemingway-style / lu-xun-style / sherlock-holmes-style |
-| Classical Poetry | 2 | tang-poem-style / song-ci-style |
+| Classical Poetry | 3 | tang-poem-style / song-ci-style / haiku-style |
+| Modern Verse Meter | 1 | chinese-sonnet-style |
 | Interpretive lens | 2 | psychoanalytic-lens / postmodern-lens |
 | Internet vernacular | 4 | feihua-literature / zhiyin-style / versailles-literature / concrete-42 |
 
@@ -71,6 +73,14 @@ Transform text into regional sociolects / written registers of contemporary Chin
 | [mainland-mandarin](./mainland-mandarin/) | Transform text into PRC mainland Mandarin (everyday / media register) — mainland-specific vocabulary (視頻/質量/出租車/公交/軟件) + internet slang (內卷/躺平/yyds/破防/絕絕子/家人們) + Weibo/Douyin/Bilibili/Xiaohongshu register; explicitly distinct from prc-bureaucratese (party-state register); Light/Medium/Heavy intensity tiers | [demo](./mainland-mandarin/examples/demo.md) |
 | [written-cantonese](./written-cantonese/) | Transform text into full written Cantonese (syntax also Cantonese-ized) — core function words (係/唔/嘅/咗/佢/喺) + sentence-final particles (喎/啦/㗎/咩) + Cantonese word order (postposed adverbs / postposed verb-complements / direct-before-indirect double objects); rooted in TVB / Apple Daily / LIHKG; Light/Medium/Heavy intensity tiers | [demo](./written-cantonese/examples/demo.md) |
 
+### Local Internet Vernacular (本土網路體)
+
+Platform-specific online registers from a particular Chinese-speaking community — systematizing each platform's signature **post format, body structure, and reaction-stack interaction** into reproducible transformation tools. Distinct from the meme-based "Internet Vernacular" category below; here the deliverable is a fully formatted post that imitates a specific platform's UI conventions. Room reserved for future platforms (Bahamut, Dcard, LIHKG, Weibo, Baidu Tieba, Xiaohongshu, etc.).
+
+| Skill | Function | Example |
+|-------|----------|---------|
+| [ptt-bbs-style](./ptt-bbs-style/) | Rewrite into Taiwan PTT 鄉民體 BBS post — title category tag ([問卦]/[新聞]/[爆卦]/[心得]/[討論]/[請益]/[黑特]/[Re:] etc., 12 tags) + self-intro opener (肥宅我/弟弟我/妹妹我/魯蛇我/是這樣的) + 鄉民 vocabulary (484/笑死/ㄎㄎ/中肯/RR/齁/喇) + ask-for-support closing (求解/在線等) + 推/噓/→ reaction stack (5–15 mixed lines with anonymized fake IDs); explicitly format-homage rather than real-PTT-content generator, real PTT IDs / public figures / group slurs forbidden | [demo](./ptt-bbs-style/examples/demo.md) |
+
 ### Applied Writing Registers (應用文類)
 
 Institutional/register-specific transformation tools for Chinese applied-writing genres. Currently two bureaucratese skills; the category leaves room for future additions (letters, notices, contracts, meeting minutes, autobiographies, etc.).
@@ -118,6 +128,15 @@ Compress, distill, and refine prose into Chinese classical regulated verse. Lock
 |-------|----------|
 | [tang-poem-style](./tang-poem-style/) | Rewrite into a Tang-style regulated poem — pick one of four canonical formats (五絕 5-char quatrain / 七絕 7-char quatrain / 五律 5-char regulated / 七律 7-char regulated); single-rhyme-group throughout per 平水韻 + tonal patterns 平仄譜 (both 平起 and 仄起 variants documented) + mandatory parallelism in middle two couplets (頷聯/頸聯) for 律詩, three-layer matching (part-of-speech / structure / tone); classical-image transposition (modern object → Tang equivalent: tram → carriage / key → jade lock); 起承轉合 four-part progression + closing line forbids didactic preaching; six Tang-poem reference samples (Wang Wei / Li Bai / Du Mu / Li Shangyin / Du Fu × 2) |
 | [song-ci-style](./song-ci-style/) | Rewrite into a Song-dynasty 詞 (ci) — pick one of five canonical 詞牌 (tune-titles): 水調歌頭 (95 chars, long-medium) / 念奴嬌 (100 chars, all-仄韻) / 虞美人 (56 chars, alternating 平/仄韻) / 如夢令 (33 chars, single-strain 小令 with 二字疊句) / 西江月 (50 chars, 平仄通叶); strict character count + line-length sequence + rhyme positions + tonal pattern (平仄譜) all on-spec; faction tag [豪放派] vs [婉約派] declared and enforced; modern vocabulary (computer / coffee / metro) categorically banned, mapped to classical equivalents; five reference samples (Su Shi × 2 / Li Yu / Li Qingzhao / Xin Qiji) |
+| [haiku-style](./haiku-style/) | Rewrite into a Japanese haiku in Chinese translation — mandatory three pillars (kigo seasonal word from 8–10-each spring/summer/autumn/winter inventories / kireji rendered as 「啊」「呀」「吧」「了」「——」 substituting Japanese や／かな／けり / image juxtaposition without causation); two translation schools (意境派 林文月／鄭清茂 with flexible 4–9 characters per line vs 嚴格派 鄭民欽 holding rigid 5-7-5); three output modes (Light single haiku / Medium paired haiku / Heavy 3–7-haiku 連作 with 俳文 prose interleaving in the《奧之細道》manner); four canonical reference samples (Bashō《古池》《夏草》/ Buson《春の海》/ Issa《雀之子》) |
+
+### Modern Verse Meter
+
+Compress modern prose into Chinese new-poetry forms refitted from Western metrical traditions. Locks in hard structure (line count, foot/dun rhythm, rhyme scheme, volta) but uses loose same-group rhyme to sidestep the structural mismatch with stress-based meter. Room is left for future Western-derived forms (villanelle, sestina, pantoum, etc.).
+
+| Skill | Function |
+|-------|----------|
+| [chinese-sonnet-style](./chinese-sonnet-style/) | Rewrite into a Chinese sonnet — modelled after Feng Zhi's《十四行集》(1942), with formal scaffolding from two canonical Western forms: Petrarchan (8+6, rhyme ABBAABBA CDECDE or CDCDCD, volta at line 9) or Shakespearean (4+4+4+2, rhyme ABAB CDCD EFEF GG, volta at line 9 or 13); strict 14 lines + each line 10–12 chars + each line 4–5 dun (the 頓 measure system advocated by Wen Yiduo and Bian Zhilin); same-group loose rhyme allowed but the structural rhyme positions are locked; ≥4 concrete images mandatory, no all-abstract emotional vocabulary; four reference samples (Feng Zhi's first / sixteenth / twenty-second sonnets + Shakespeare's Sonnet 18 in Chinese translation) |
 
 ### Interpretive Rewriting (Lens)
 
