@@ -72,14 +72,26 @@ allowed-tools: Read, Write, Edit, Glob      # 必，通常這四個；有 WebFet
 
 ### Checklist 命名
 
-每個 skill 的 Hard checklist 採 **C / S / V / M** 四類:
+**文體 skill**(literary author / 中文古典體式 / 應用與結構文類 / 影視口播 /
+網路文體 / 詮釋 lens 等)採 **C / S / V / M** 四類:
 - **C (Concrete)**:具體意象、物件、稱謂、地名等可數對象
 - **S (Surface)**:句法、標點、字數、格律等表層形式
 - **V (Voice)**:敘述視角、語氣、派別、聲腔特徵
 - **M (Meta)**:結構、收束、不變條件、自檢規範
 
-**M 類最末條必為「全形標點零違規」+ 對應 Step 的自檢指令** —— 三件套(Hard rule +
-機械自檢 + Anti-pattern)是所有純 CJK 輸出 skill 的鐵律。
+**操作 / 地域變體 / 跨語混搭 skill** 用領域對應字母，語意上更精準，不強制改為 C/S/V/M:
+- `humanize`:**C** (Content)/ **S** (Structure)/ **V** (Vocabulary)/ **M** (Meta)
+  — 注意這裡的 C 是 Content patterns,**與文體 skill 的 C (Concrete) 同字母不同義**
+- `dewesternise` / `westernise`:**G** (Grammar)/ **V** (Vocabulary)/ **S** (Structure)
+- 地域變體(taiwan-mandarin / dongbei-mandarin 等):**G** (Grammar)/ **P** (Particles)
+  / **L** (Lexicon)/ **S** (Structure)等，各依該語言變體實際軸線
+
+**M 類(或語意對等類)最末條必為「全形標點零違規」+ 對應 Step 的自檢指令** —— 三件套
+(Hard rule + 機械自檢 + Anti-pattern)是所有純 CJK 輸出 skill 的鐵律。
+
+**新製作的 skill 入哪套?** 依 skill 「鎖死什麼變數」(見根 `README.md` 的 8 分類框架):
+- 鎖死作家聲腔 / 體裁 / 詩詞格律 / 結構模板 / 媒介 / meme 句法 → C/S/V/M
+- 鎖死語言變體 / 兩語接觸 / 對文本做特定處理 → 領域對應字母
 
 ## examples/demo.md 規範
 
