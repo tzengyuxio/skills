@@ -12,6 +12,7 @@ description: >
   Triggers on "/written-hokkien", "改寫成台語", "改寫成閩南語", "改成台文",
   "寫成漢羅", "translate to taiwanese hokkien", "make it hokkien written",
   "台文書面化", "台語書面化", "漢羅混寫", "台羅", "POJ".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

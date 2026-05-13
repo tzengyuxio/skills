@@ -8,6 +8,7 @@ description: >
   and a heavy lexicon of 淚／血／情／命／義 charged words. Triggers on
   "/zhiyin-style", "改寫成知音體", "雜誌情感故事體", "煽情報導體",
   "知音體", "煽情標題", "苦命", "千里", "血淚".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

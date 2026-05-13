@@ -8,6 +8,7 @@ description: >
   Works on markdown files or inline text.
   Triggers on "/wenyan-guwen", "寫成古文", "寫成文言文", "用文言文寫", "古文體",
   "唐宋風格", "韓愈體", "蘇軾體", "classical Chinese prose", "Tang-Song style".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

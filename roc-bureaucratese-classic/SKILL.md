@@ -15,6 +15,7 @@ description: >
   Triggers on "/roc-bureaucratese-classic", "寫成民國公文體", "改成中華民國公文",
   "舊式公文化", "民國公文化", "make it roc official style", "ROC classic
   bureaucratese", "仰即/著即 公文體".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

@@ -9,6 +9,7 @@ description: >
   Works on markdown files or inline text.
   Triggers on "/wenyan-xianqin", "先秦體", "諸子體", "論語體", "莊子體",
   "Pre-Qin style".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

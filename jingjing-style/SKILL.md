@@ -11,6 +11,7 @@ description: >
   Triggers on "/jingjing-style"、「改寫成晶晶體」、「中英夾雜風格」、
   「名媛體」、「台灣名媛體」、「晶晶體化」、「李晶晶式」、"jingjing",
   "rewrite as jingjing", "make it jingjing".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

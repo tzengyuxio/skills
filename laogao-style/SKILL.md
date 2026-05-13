@@ -7,7 +7,7 @@ argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# laogao-style — 改寫成老高與小茉(Mr & Mrs Gao)風格神秘解說體
+# Laogao-style — 改寫成老高與小茉(Mr & Mrs Gao)風格神秘解說體
 
 把任何文章改寫成「老高與小茉」(Mr & Mrs Gao)這類華語 YouTube 上自
 2010 年代後期定型的「神秘 / 都市傳說 / 失落古文明 / 未解之謎」口播風

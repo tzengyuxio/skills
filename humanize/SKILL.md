@@ -12,6 +12,7 @@ description: >
   Triggers on "/humanize", "make it sound human", "remove AI tone", "去 AI 味",
   "寫得更像人", "降低 AI 感" — but if the user says "翻譯腔" / "太歐化" / "去歐化",
   route to `dewesternise` first.
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

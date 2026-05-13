@@ -14,6 +14,7 @@ description: >
   comparison, or teaching rhetorical analysis.
   Triggers on "/prc-bureaucratese", "寫成公文體", "改成中共公文體", "黨政公文化",
   "黨八股化", "make it chinese official style", "PRC official style", "官樣文章".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

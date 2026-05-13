@@ -12,6 +12,7 @@ description: >
   Triggers on "/sichuan-mandarin", "寫成四川話", "川話化", "翻成川話", "重慶話",
   "translate to sichuan mandarin", "make it sichuan", "巴適", "龜兒", "西南官話",
   "火鍋英雄風", "讓子彈飛口吻".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

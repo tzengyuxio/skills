@@ -14,6 +14,7 @@ description: >
   Triggers on "/dongbei-mandarin", "寫成東北話", "東北話", "東北腔", "大碴子味",
   "二人轉腔", "趙本山體", "make it dongbei", "Northeast Chinese style", "賊 X",
   "嘎哈", "咋整", "老鐵".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

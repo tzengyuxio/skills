@@ -8,6 +8,7 @@ description: >
   Works on markdown files or inline text.
   Triggers on "/dewesternise", "去歐化", "太歐化了", "翻譯腔", "remove Europeanized patterns",
   "去翻譯腔", "改掉西化", "西化中文".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

@@ -9,6 +9,7 @@ description: >
   like in practice. Works on markdown files or inline text.
   Triggers on "/westernise", "加翻譯腔", "加歐化", "寫成翻譯腔", "讓它聽起來像翻譯",
   "add translation accent", "Europeanize".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

@@ -8,6 +8,7 @@ description: >
   carries satire or moral tone. Primarily user-invoked via "/liaozhai-tale";
   also triggers on "改寫成聊齋", "寫成聊齋體", "蒲松齡體", "志怪短篇",
   "rewrite as a Pu Songling tale".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---

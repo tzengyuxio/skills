@@ -24,7 +24,7 @@ argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# yizhi-style — 改寫成中文譯製腔(1950–90s 上譯/長譯配音語體)
+# Yizhi-style — 改寫成中文譯製腔(1950–90s 上譯/長譯配音語體)
 
 把任何文章改寫成上海電影譯製廠、長春電影製片廠等老牌譯製機構 1950–
 1990 年代為外國電影做中文配音時形成的那種獨特語體——字正腔圓的舞台

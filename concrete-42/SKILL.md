@@ -16,7 +16,7 @@ license: PolyForm Noncommercial 1.0.0
 allowed-tools: Read, Write, Edit, Glob
 ---
 
-# concrete-42 — 改寫成「義大利麵就應該拌 42 號混凝土」體
+# Concrete-42 — 改寫成「義大利麵就應該拌 42 號混凝土」體
 
 把任何文章改寫成偽專業話術——句式像論文摘要、政府報告或經濟分析，但內容
 是跨領域具體名詞的隨機拼貼，配上偽因果連接詞，讀完讓人疑惑「他在說什麼？

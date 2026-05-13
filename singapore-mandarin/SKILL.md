@@ -14,6 +14,7 @@ description: >
   Triggers on "/singapore-mandarin", "寫成新加坡華語", "新加坡華語化", "翻成新加坡華語",
   "translate to singapore mandarin", "make it singapore mandarin", "新加坡中文",
   "SG 華語", "Huayu".
+license: PolyForm Noncommercial 1.0.0
 argument-hint: [file-path]
 allowed-tools: Read, Write, Edit, Glob
 ---
