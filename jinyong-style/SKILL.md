@@ -11,7 +11,7 @@ description: >
   Primarily user-invoked via "/jinyong-style"; also triggers on
   "改寫成金庸", "金庸體", "金庸式武俠", "rewrite as Jinyong wuxia".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

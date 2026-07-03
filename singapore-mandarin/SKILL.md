@@ -15,7 +15,7 @@ description: >
   "translate to singapore mandarin", "make it singapore mandarin", "新加坡中文",
   "SG 華語", "Huayu".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

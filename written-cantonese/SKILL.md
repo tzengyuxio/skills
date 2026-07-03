@@ -15,7 +15,7 @@ description: >
   "寫成粵語", "寫成連登體", "translate to written cantonese", "make it cantonese
   written", "粵語書面化", "廣東話書面化", "連登", "LIHKG", "周星馳粵語對白".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

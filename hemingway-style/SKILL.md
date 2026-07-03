@@ -12,7 +12,7 @@ description: >
   also triggers on "改寫成海明威", "海明威體", "海明威腔", "冰山理論寫作",
   "極簡敘事", "rewrite as Hemingway style", "Hemingway iceberg".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

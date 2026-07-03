@@ -13,7 +13,7 @@ description: >
   "演繹推理小說腔", "中譯維多利亞偵探", "貝克街 221B",
   "rewrite as Sherlock Holmes", "Holmes-style detective fiction".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

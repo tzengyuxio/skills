@@ -18,7 +18,7 @@ description: >
   寫俳句、改成俳句、5-7-5、季語、切字、松尾芭蕉、奧之細道、日本詩、俳句連作、
   haikai、寫成日本詩. Primarily user-invoked via "/haiku-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

@@ -17,7 +17,7 @@ description: >
   mentioning 魯迅／雜文／阿 Q／狂人日記／早期白話／冷峻反諷 with a Chinese
   rewrite intent. Primarily user-invoked via "/lu-xun-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

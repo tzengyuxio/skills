@@ -12,7 +12,7 @@ description: >
   「名媛體」、「台灣名媛體」、「晶晶體化」、「李晶晶式」、"jingjing",
   "rewrite as jingjing", "make it jingjing".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

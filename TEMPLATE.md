@@ -32,7 +32,7 @@ description: >                              # 必，英文,3-8 行(過長會被 
   <one-line: when this skill activates / what triggers it>.
   Triggers on "/<skill>", "<phrase 1>", "<phrase 2>", ...
 license: PolyForm Noncommercial 1.0.0       # 必，所有 skill 統一
-argument-hint: [file-path]                  # 必，標示參數
+argument-hint: "[file-path]"                # 必，標示參數
 allowed-tools: Read, Write, Edit, Glob      # 必，通常這四個；有 WebFetch 時加上
 ---
 ```

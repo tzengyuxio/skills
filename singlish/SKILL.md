@@ -10,7 +10,7 @@ description: >
   Triggers on "/singlish", "寫成新加坡英語", "translate to singlish", "make it singlish",
   "singlish this", "新加坡式英文", "write in singlish".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

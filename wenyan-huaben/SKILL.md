@@ -10,7 +10,7 @@ description: >
   Triggers on "/wenyan-huaben", "話本體", "說書體", "水滸傳風格",
   "三國演義體", "章回小說", "vernacular fiction", "storyteller style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

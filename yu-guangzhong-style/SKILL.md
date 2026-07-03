@@ -19,7 +19,7 @@ description: >
   "Yu Guangzhong essay", or any request mentioning 余光中 / 散文家 /
   鄉愁 / 文白交織 / 長句排比 / 地理意象 even if not exact wording.
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

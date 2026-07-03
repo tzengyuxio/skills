@@ -13,7 +13,7 @@ description: >
   user-invoked via "/shakespeare-style"; also triggers on "改寫成莎劇",
   "莎翁腔", "朱生豪式", "rewrite as Shakespearean tragedy".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

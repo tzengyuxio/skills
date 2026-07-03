@@ -18,7 +18,7 @@ description: >
   sonnet with a Chinese rewrite intent. Primarily user-invoked via
   "/chinese-sonnet-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 
