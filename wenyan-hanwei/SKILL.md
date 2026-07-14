@@ -10,7 +10,7 @@ description: >
   Triggers on "/wenyan-hanwei", "史傳體", "史記風格", "漢書體", "三國志體",
   "historical narrative", "biographical prose", "Han-Wei style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

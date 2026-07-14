@@ -3,7 +3,7 @@ name: laogao-style
 description: >
   Use this skill to rewrite articles, stories, or any text into the Chinese YouTube mystery-narration genre — the "未解之謎 / 都市傳說 / 失落古文明 / 神秘解說" voiceover style popularized by 老高與小茉 and similar channels. Trigger broadly whenever the user wants text reshaped to sound like a Chinese mystery/conspiracy/lost-civilization YouTube video: 老高體、老高與小茉風格、laogao style、Mr & Mrs Gao style、雙人解說 (narrator + reactor)、單人解說口播、未解之謎口播、都市傳說旁白、YouTube 神秘解說腔。Also trigger when the request mentions signature surface markers: 【震撼】【深挖】【神人】【顛覆認知】等情緒中括號標題、「巧合的是」「無獨有偶」「至今無法解釋」「你能想到嗎」、「大家好我是 XXX」開場、「訂閱按讚開小鈴鐺」結尾、賣關子節奏、跨文明跳躍關聯 (亞特蘭提斯/瑪雅/三星堆/諾查丹瑪斯). Trigger even when the source is academic, science-pop, or historical (金字塔、三星堆、考古、歷史) — converting serious content into this mystery style is the core use case. Also user-invoked via /laogao-style. Do NOT trigger for: TED talks, 廢話文學、知音 sob-story, travel vlogs, sincere academic writing, or genuine conspiracy/pseudoscience generation.
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

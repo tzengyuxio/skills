@@ -12,7 +12,7 @@ description: >
   Triggers on "/hanjify", "hanjify this", "convert to hanzi", "英語漢字化", "漢字化",
   "hanjify english", "english to hanzi", "write this in kanji", "英文漢字化".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

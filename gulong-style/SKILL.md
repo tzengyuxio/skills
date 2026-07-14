@@ -10,7 +10,7 @@ description: >
   when it lands. Primarily user-invoked via "/gulong-style"; also triggers
   on "改寫成古龍", "古龍體", "古龍式武俠", "rewrite as Gulong wuxia".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

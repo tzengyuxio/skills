@@ -11,7 +11,7 @@ description: >
   「義大利麵」「42 號混凝土」「答非所問」「偽專業」「術語堆砌」「改寫成
   42 號混凝土體」「偽專業話術」「答非所問風格」「義大利麵體」「rewrite as
   concrete-42」.
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 license: PolyForm Noncommercial 1.0.0
 allowed-tools: Read, Write, Edit, Glob
 ---

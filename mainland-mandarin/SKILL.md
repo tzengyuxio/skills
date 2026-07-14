@@ -18,7 +18,7 @@ description: >
   "B 站體", "make it mainland mandarin", "PRC mandarin", "中國風中文",
   "內卷", "躺平", "yyds", "家人們誰懂啊".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

@@ -11,7 +11,7 @@ description: >
   Triggers on "/chinglish", "寫成中式英文", "翻成中式英語", "Chinglish化", "translate to chinglish",
   "make it chinglish", "chinglish this", "中式英文".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

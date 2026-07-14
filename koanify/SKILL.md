@@ -8,7 +8,7 @@ description: >
   趙州狗子). Primarily user-invoked via "/koanify"; also triggers on explicit
   phrases like "改寫成公案", "做一則公案", "rewrite as a Zen koan".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

@@ -11,7 +11,7 @@ description: >
   "she is showing off." Triggers on "/versailles-literature", "改寫成
   凡爾賽", "凡爾賽文學", "假裝抱怨真炫耀", "蒙淇淇體", "rewrite as
   Versailles literature", "humblebrag this", "Versailles flex".
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 license: PolyForm Noncommercial 1.0.0
 allowed-tools: Read, Write, Edit, Glob
 ---

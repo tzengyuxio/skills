@@ -19,7 +19,7 @@ description: >
   成律詩、tang poem、Chinese regulated verse、quatrain、jueju、lüshi.
   Primarily user-invoked via "/tang-poem-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

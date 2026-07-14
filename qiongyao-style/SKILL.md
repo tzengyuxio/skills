@@ -11,7 +11,7 @@ description: >
   via "/qiongyao-style"; also triggers on "改寫成瓊瑤", "寫成瓊瑤體",
   "瓊瑤式愛情", "rewrite as Qiongyao romance".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

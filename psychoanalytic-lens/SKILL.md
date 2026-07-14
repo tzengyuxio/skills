@@ -13,7 +13,7 @@ description: >
   structure / the gaze of the Other becomes the thread of meaning, even if
   the request wording isn't an exact match.
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

@@ -13,7 +13,7 @@ description: >
   Primarily user-invoked via "/bagu-essay"; also triggers on "改寫成八股文",
   "八股文改寫", "經義文", "明清制藝", "破題承題", "起股中股後股束股",
   "代聖人立言", "科舉文", "Eight-legged essay", "rewrite as bagu".
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 license: PolyForm Noncommercial 1.0.0
 allowed-tools: Read, Write, Edit, Glob
 ---

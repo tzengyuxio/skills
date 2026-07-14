@@ -13,7 +13,7 @@ description: >
   Triggers on "/hongkong-chinese", "寫成港式中文", "港式中文化", "翻成港式中文",
   "translate to hong kong chinese", "make it hong kong style", "港式書面語", "港味".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

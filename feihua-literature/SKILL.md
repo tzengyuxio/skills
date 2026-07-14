@@ -12,7 +12,7 @@ description: >
   「同義反覆」、「套套邏輯」、「聽君一席話如聽一席話」、「nonsense
   rewrite」、「tautology talk」.
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

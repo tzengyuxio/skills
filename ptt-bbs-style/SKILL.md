@@ -19,7 +19,7 @@ description: >
   推文／噓文／肥宅／BBS with a Chinese rewrite intent. Primarily
   user-invoked via "/ptt-bbs-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

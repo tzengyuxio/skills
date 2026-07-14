@@ -11,7 +11,7 @@ description: >
   Triggers on "/taiwan-mandarin", "寫成台灣國語", "台灣國語化", "翻成台灣國語",
   "translate to taiwan mandarin", "make it taiwan mandarin", "台灣腔", "台式中文".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

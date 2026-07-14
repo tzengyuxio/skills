@@ -16,7 +16,7 @@ description: >
   or any request mentioning 宋詞 / 詞牌 / 填詞 with a rewrite intent. Primarily
   user-invoked via "/song-ci-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

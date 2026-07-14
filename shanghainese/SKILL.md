@@ -15,7 +15,7 @@ description: >
   "translate to shanghainese", "make it shanghainese", "上海話", "滬語",
   "吳語", "儂", "阿拉", "海派", "周立波", "繁花".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

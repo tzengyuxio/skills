@@ -12,7 +12,7 @@ description: >
   女性凝視 with a Chinese rewrite intent — even if the wording is not exact.
   Primarily user-invoked via "/eileen-chang-style".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 

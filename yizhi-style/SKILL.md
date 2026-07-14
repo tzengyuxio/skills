@@ -20,7 +20,7 @@ description: >
   "中文配音腔", "rewrite as Chinese dubbing style", "yizhi style",
   "translationese dubbing", "上譯配音", "長譯配音".
 license: PolyForm Noncommercial 1.0.0
-argument-hint: [file-path]
+argument-hint: "[file-path]"
 allowed-tools: Read, Write, Edit, Glob
 ---
 
