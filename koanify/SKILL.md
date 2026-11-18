@@ -24,7 +24,7 @@ allowed-tools: Read, Write, Edit, Glob
 ## 一句話靈魂
 
 **留白八式擇一，結尾戛然而止**——若收尾不是 Step 5 八式之一，就不是敘事
-公案。其餘 20 條 checklist 都在服務這一條。
+公案。其餘 21 條 checklist 都在服務這一條。
 
 ## Arguments
 
@@ -115,7 +115,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 [Soft] 違反需有理由(寫在筆記裡)，否則一併修。
 
 ### Checklist: Content(內容主題)

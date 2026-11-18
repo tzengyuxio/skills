@@ -122,7 +122,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 [Soft] 違反需有理由(寫在筆記裡)，否則一併修。
 
 ### Checklist: Content(內容主題)
@@ -340,7 +340,7 @@ allowed-tools: Read, Write, Edit, Glob
 - 本 skill 是**體裁轉換工具**，不是「把句子切短」工具。原文的核心張力必須
   被保留，以江湖敘事的形式重新承載
 - **對偶設計**：本 skill 與將來的 `jinyong-style` 互為對偶——古龍的短句
-  留白 vs 金庸的章回招式。21 條 checklist 的每一條，jinyong-style 都會有
+  留白 vs 金庸的章回招式。22 條 checklist 的每一條，jinyong-style 都會有
   反向對應條款
 - **不要寫成空洞短句**——濃度來自對立與警句，不是把長句機械斷開
 - **保留鋒利的細節**(刀、酒、風、雪、笑)，不要磨平成抽象的「他若有所思」

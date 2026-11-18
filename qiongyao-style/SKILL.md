@@ -116,7 +116,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 8: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 7 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 7 重寫該段**。
 
 ### Checklist: Content(內容)
 

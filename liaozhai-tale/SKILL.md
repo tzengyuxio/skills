@@ -25,7 +25,7 @@ allowed-tools: Read, Write, Edit, Glob
 ## 一句話靈魂
 
 **必有「異化」元素**(C-02)——人／事／物擇一變狐鬼妖精神異獸物精，缺異化
-就不是聊齋。其餘 20 條 checklist 都在服務這一條。
+就不是聊齋。其餘 21 條 checklist 都在服務這一條。
 
 ## Arguments
 
@@ -111,7 +111,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 
 ### Checklist: Content(內容)
 

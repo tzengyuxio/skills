@@ -33,7 +33,7 @@ allowed-tools: Read, Write, Edit, Glob
 ## 一句話靈魂
 
 **譬喻密度 + 文白夾雜 + 戲劇性情感外露**——三者構成朱生豪腔指紋，缺一就
-不是莎劇譯腔。其餘 18 條 checklist 都在服務這三條。
+不是莎劇譯腔。其餘 19 條 checklist 都在服務這三條。
 
 戲劇格式（角色名前綴 + 舞台說明）為 Soft 規則（≥500 字才必加），但**戲
 劇性情感**（呼告、感嘆、反問、誓言）是 Hard——即使散文化譯出，仍需保留
@@ -144,7 +144,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 
 ### Checklist: Content（內容）
 

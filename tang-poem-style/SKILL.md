@@ -489,7 +489,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 10: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回前面對應的
+逐條對照下面的 19 條 checklist。**任一條 [Hard] 違反就回前面對應的
 步驟重寫**。
 
 ### Checklist: Concrete（意象）
@@ -531,7 +531,7 @@ allowed-tools: Read, Write, Edit, Glob
 | M-03 | Hard | 詩題自擬（≤ 5 字較佳，可至 7 字）；不留空標題 |
 | M-04 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；以 Step 9 自檢指令驗證通過才算合格 |
 
-**總計**：21 條（Hard 16 + Soft 5）。
+**總計**：19 條（Hard 14 + Soft 5）。
 
 ## Step 11: Find the Weakest Line and Rewrite
 

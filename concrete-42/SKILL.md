@@ -139,7 +139,7 @@ concrete-42 體指紋，缺一就不是 concrete-42。每段須至少 3 個跨�
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 
 ### Checklist: Content（內容）
 
@@ -183,7 +183,7 @@ concrete-42 體指紋，缺一就不是 concrete-42。每段須至少 3 個跨�
 | M-06 | Soft | 結尾可用「綜上所述」「由此可見」「不可否認」開頭，但結論本身須脫節 |
 | M-07 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以 Step 9 自檢指令驗證通過才算合格 |
 
-**總計**：22 條（Hard 17 + Soft 5）。
+**總計**：22 條（Hard 18 + Soft 4）。
 
 ## Step 8: Find the Weakest Paragraph and Rewrite
 

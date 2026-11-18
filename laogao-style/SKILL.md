@@ -465,7 +465,7 @@ for b in bad[:5]: print(repr(b))
 
 ## Step 11: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回前面對應的
+逐條對照下面的 23 條 checklist。**任一條 [Hard] 違反就回前面對應的
 步驟重寫該段**。
 
 ### Checklist: Concrete(標題 / 開場 / reactor / 結尾)
