@@ -2,7 +2,7 @@
 name: wenyan-guwen
 description: >
   Rewrite modern Chinese text into Tang-Song classical prose style (唐宋古文體),
-  emulating the essay voice of 韓愈, 柳宗元, 歐陽修, and 蘇軾. Applies a 20-item
+  emulating the essay voice of 韓愈, 柳宗元, 歐陽修, and 蘇軾. Applies a 22-item
   checklist covering classical function words, single-character verbs, thesis-driven
   structure, varied rhythm, literary allusion, and register markers.
   Works on markdown files or inline text.
