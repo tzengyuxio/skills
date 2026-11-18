@@ -190,7 +190,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 
 ### Checklist: Content（內容）
 
@@ -234,7 +234,7 @@ allowed-tools: Read, Write, Edit, Glob
 | M-04 | Hard | **不寫成女性抒情**——余更陽剛、更壯闊；柔處仍有骨。失敗模式：通篇低語、喃喃、輕嘆 |
 | M-05 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以 Step 9 自檢指令驗證通過才算合格 |
 
-**總計**：22 條（Hard 15 + Soft 7）。
+**總計**：22 條（Hard 17 + Soft 5）。
 
 ## Step 8: Find the Weakest Paragraph and Rewrite
 

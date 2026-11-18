@@ -34,7 +34,7 @@ allowed-tools: Read, Write, Edit, Glob
 一就不是八股文。八段為：破題、承題、起講、入手、起股、中股、後股、束
 股；其中起股、中股、後股、束股稱為「四股」，**每股必須由兩個對偶分句
 組成**，字數相同、句式相對、虛實相對、平仄相對。全篇須以聖人（孔孟程朱）
-的口吻立論，**禁用第一人稱「我」**。其餘 18 條 checklist 都在服務這三條。
+的口吻立論，**禁用第一人稱「我」**。其餘 21 條 checklist 都在服務這三條。
 
 ## 段落異名對照（各派稱呼差異）
 
@@ -229,7 +229,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 8: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 4–6 重寫
+逐條對照下面的 24 條 checklist。**任一條 [Hard] 違反就回 Step 4–6 重寫
 該段**。
 
 ### Checklist: Content（內容）
@@ -276,7 +276,7 @@ allowed-tools: Read, Write, Edit, Glob
 | M-05 | Hard | 不嘲弄、不搞笑、不刻意拗口——嚴肅認真做，讓讀者自行感受古今反差 |
 | M-06 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以 Step 9 自檢指令驗證通過才算合格 |
 
-**總計**:23 條（Hard 17 + Soft 6）。
+**總計**:24 條（Hard 18 + Soft 6）。
 
 ## Step 9: 朗讀檢查對仗與氣勢 + 標點清理
 

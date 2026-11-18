@@ -148,7 +148,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 7: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
+逐條對照下面的 22 條 checklist。**任一條 [Hard] 違反就回 Step 6 重寫該段**。
 
 ### Checklist: Content（內容）
 
@@ -344,7 +344,7 @@ allowed-tools: Read, Write, Edit, Glob
 - 本 skill 是**體裁轉換工具**，不是「把句子加長加文言」工具。原文的核心
   張力必須被保留，以章回武俠的形式重新承載
 - **對偶設計**：本 skill 與 `gulong-style` 互為對偶——金庸的章回招式派
-  vs 古龍的短句留白派。21 條 checklist 的每一條，gulong-style 都有反向
+  vs 古龍的短句留白派。22 條 checklist 的每一條，gulong-style 都有反向
   對應條款
 - **不要寫成古文觀止**——半文白是金庸的平衡點，純文言反而失去金庸感
 - **保留歷史厚度**——朝代與地名是金庸的錨。沒有歷史錨定的金庸體是金庸

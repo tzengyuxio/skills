@@ -140,7 +140,7 @@ allowed-tools: Read, Write, Edit, Glob
 
 ## Step 6: Self-check Against Checklist
 
-逐條對照下面 21 條 checklist。**任一條 [Hard] 違反就回 Step 5 重寫該段**。
+逐條對照下面 22 條 checklist。**任一條 [Hard] 違反就回 Step 5 重寫該段**。
 
 ### Checklist: Content（內容）
 
@@ -184,7 +184,7 @@ allowed-tools: Read, Write, Edit, Glob
 | M-05 | Soft | 若原文是議論／抒情／學術，先抽張力再為它設計一個可被炫耀的生活面 |
 | M-06 | Hard | **全形標點零違規**——CJK 字之間的 ASCII 半形 `, ; : ? !` 計數須為 0；破折號用兩個全形「——」；引號用「」/『』；以 Step 9 自檢指令驗證通過才算合格 |
 
-**總計**：22 條（Hard 16 + Soft 6）。
+**總計**：22 條（Hard 17 + Soft 5）。
 
 ## Step 7: 9-Step Workflow（速查）
 

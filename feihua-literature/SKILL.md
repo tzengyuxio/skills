@@ -117,7 +117,7 @@ target 越清楚，改寫時才知道哪些「資訊」要被廢話化掉。
 
 ## Step 6: Self-check Against Checklist
 
-逐條對照下面的 21 條 checklist。**任一條 [Hard] 違反就回 Step 4 重寫
+逐條對照下面的 20 條 checklist。**任一條 [Hard] 違反就回 Step 4 重寫
 該段**。
 
 ### Checklist: Content（內容）
